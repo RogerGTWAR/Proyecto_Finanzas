@@ -1,6 +1,4 @@
-﻿using Proyecto_Finanzas;
-using SharedModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +14,6 @@ namespace WindowsForm
 {
     public partial class BalanceGeneralForm : Form
     {
-        private List<Cuenta> listaCuentas = null;
         private ActivosBalanceForm cuentasBalanceForm;
         private CrearNumeroDeBalance crearNumeroDeBalance;
         private ClasificacionesForm clasificacionform;

@@ -11,13 +11,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForm.Repository;
-using Proyecto_Finanzas;
 
 namespace WindowsForm
 {
     public partial class PasivoCapitalBalanceForm : Form
     {
-        private readonly IRepository<Activo> cuentaRepository;
+        private readonly IRepository<Pasivo_Capital> pasivocapitalrepository;
         private readonly IRepository<NumeroDeBalances> balanceRepository;
         private readonly IRepository<Clasificacion> clasificacionrepository;
 
@@ -25,7 +24,7 @@ namespace WindowsForm
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
-            cuentaRepository = new CuentaRepository(connectionString);
+            pasivocapitalrepository = new Pasivo_CapitalRepository(connectionString);
             balanceRepository = new BalanceRepository(connectionString);
             clasificacionrepository = new ClasificacionRepository(connectionString);
             CargarBalancesComboBox();
@@ -42,7 +41,7 @@ namespace WindowsForm
                 if (CbID_Balance.SelectedValue != null)
                 {
                     int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
-                    var cuentas = cuentaRepository.GetAll()
+                    var cuentas = pasivocapitalrepository.GetAll()
                                                    .Where(c => c.NumeroDeBalance == selectedBalanceId)
                                                    .ToList();
                     total = cuentas.Sum(c => c.Monto);
@@ -72,7 +71,7 @@ namespace WindowsForm
         {
             try
             {
-                var cuentas = cuentaRepository.GetAll().ToList();
+                var cuentas = pasivocapitalrepository.GetAll().ToList();
                 dgvActivos.DataSource = cuentas;
                 if (!cuentas.Any())
                 {
@@ -146,7 +145,7 @@ namespace WindowsForm
 
                 int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
 
-                decimal totalAcumulado = cuentaRepository.GetAll()
+                decimal totalAcumulado = pasivocapitalrepository.GetAll()
                                                          .Where(c => c.NumeroDeBalance == selectedBalanceId)
                                                          .Sum(c => c.Monto);
 
@@ -167,7 +166,7 @@ namespace WindowsForm
                     ID_Clasificacion = idClasificacion 
                 };
 
-                cuentaRepository.Add(newCuenta);
+                pasivocapitalrepository.Add(newCuenta);
                 RefreshData();
                 txtMonto.Clear();
             }
@@ -184,7 +183,7 @@ namespace WindowsForm
                 if (dgvActivos.CurrentRow != null)
                 {
                     Activo selectedCuenta = (Activo)dgvActivos.CurrentRow.DataBoundItem;
-                    cuentaRepository.Delete(selectedCuenta.ID);
+                    pasivocapitalrepository.Delete(selectedCuenta.ID);
                     RefreshData();
                 }
             }

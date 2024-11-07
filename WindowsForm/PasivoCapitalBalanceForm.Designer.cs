@@ -68,7 +68,7 @@
             dgvActivos.ReadOnly = true;
             dgvActivos.RowHeadersWidth = 51;
             dgvActivos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvActivos.Size = new Size(816, 446);
+            dgvActivos.Size = new Size(816, 316);
             dgvActivos.TabIndex = 2;
             // 
             // btnEliminar

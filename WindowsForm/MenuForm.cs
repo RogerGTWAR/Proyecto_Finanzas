@@ -1,4 +1,3 @@
-using SharedModels;
 using System.Net.Http;
 namespace WindowsForm
 {

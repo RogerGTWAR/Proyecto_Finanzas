@@ -1,5 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using Proyecto_Finanzas;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -233,8 +232,22 @@ namespace WindowsForm.Repository
                 return cuentasBalance;
             }
 
-
+        public void Add(Activo newCuenta)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                string query = "INSERT INTO Pasivos_Capital (NumeroDeBalance,ID_Clasificacion, NombreCuenta, Monto, Total) VALUES (@NumeroDeBalance,@ID_Clasificacion, @NombreCuenta, @Monto, @Total)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NumeroDeBalance", newCuenta.NumeroDeBalance);
+                command.Parameters.AddWithValue("@ID_Clasificacion", newCuenta.ID_Clasificacion);
+                command.Parameters.AddWithValue("@NombreCuenta", newCuenta.NombreCuenta);
+                command.Parameters.AddWithValue("@Monto", newCuenta.Monto);
+                command.Parameters.AddWithValue("@Total", newCuenta.Total);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
         }
+    }
     }
 
 

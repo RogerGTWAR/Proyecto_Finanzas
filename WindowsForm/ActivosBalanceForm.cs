@@ -11,7 +11,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForm.Repository;
-using Proyecto_Finanzas;
 
 namespace WindowsForm
 {

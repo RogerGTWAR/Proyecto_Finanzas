@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsForm.Models;
 
 namespace WindowsForm
 {
@@ -13,5 +14,6 @@ namespace WindowsForm
         void Add(T ado);
         void Update(T ado);
         void Delete(int id);
+        void Add(Activo newCuenta);
     }
 }

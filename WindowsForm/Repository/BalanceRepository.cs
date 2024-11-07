@@ -96,5 +96,17 @@ namespace WindowsForm.Repository
                 command.ExecuteNonQuery();
             }
         }
+
+        public void Add(Activo newCuenta)
+        {
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                string query = "INSERT INTO NumerosDeBalance (NumeroDeBalance) VALUES (@NumeroDeBalance)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@NumeroDeBalance", newCuenta.NumeroDeBalance);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }
