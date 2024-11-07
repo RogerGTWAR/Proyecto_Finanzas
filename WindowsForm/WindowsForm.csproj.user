@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ClasificacionesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ActivosBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BalanceGeneralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CrearNumeroDeBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PasivoCapitalBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RazonesFinancierasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
