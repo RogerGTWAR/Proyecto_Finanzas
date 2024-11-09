@@ -93,7 +93,7 @@ namespace WindowsForm.Repository
             {
                 string query = "UPDATE Activos SET ID_DatosBalance = @ID_DatosBalance,ID_Clasificacion = @ID_Clasificacion, NombreCuenta = @NombreCuenta, Monto = @Monto, Total = @Total WHERE Id = @Id";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", cuenta.ID_DatosBalance);
+                command.Parameters.AddWithValue("@ID_DatosBalance", cuenta.ID_DatosBalance);
                 command.Parameters.AddWithValue("@ID_Clasificacion", cuenta.ID_Clasificacion);
                 command.Parameters.AddWithValue("@NombreCuenta", cuenta.NombreCuenta);
                 command.Parameters.AddWithValue("@Monto", cuenta.Monto);

@@ -163,7 +163,7 @@ namespace WindowsForm
                     Monto = monto,
                     ID_DatosBalance = selectedBalanceId,
                     Total = totalAcumulado,
-                    ID_Clasificacion = idClasificacion 
+                    ID_Clasificacion = idClasificacion
                 };
 
                 cuentaRepository.Add(newCuenta);
@@ -208,6 +208,60 @@ namespace WindowsForm
             return decimal.TryParse(txtMonto.Text, out monto) && monto > 0;
         }
 
-       
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvActivos.CurrentRow == null)
+                {
+                    MessageBox.Show("Por favor, selecciona una cuenta para actualizar.");
+                    return;
+                }
+                Activo selectedCuenta = (Activo)dgvActivos.CurrentRow.DataBoundItem;
+                if (string.IsNullOrEmpty(txtCuenta.Text) || !decimal.TryParse(txtMonto.Text, out decimal monto) || monto <= 0)
+                {
+                    MessageBox.Show("La cuenta debe ser seleccionada y el monto debe ser mayor que cero.");
+                    return;
+                }
+
+                if (cbClasificacioID.SelectedValue == null)
+                {
+                    MessageBox.Show("Debe seleccionar una clasificación.");
+                    return;
+                }
+
+                int idClasificacion = Convert.ToInt32(cbClasificacioID.SelectedValue);
+                int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
+                selectedCuenta.NombreCuenta = txtCuenta.Text;
+                selectedCuenta.Monto = monto;
+                selectedCuenta.ID_Clasificacion = idClasificacion;
+                decimal totalAcumulado = cuentaRepository.GetAll()
+                                                         .Where(c => c.ID_DatosBalance == selectedBalanceId)
+                                                         .Sum(c => c.Monto);
+
+                if (txtCuenta.Text == "Deducciones")
+                {
+                    totalAcumulado -= monto;
+                }
+                else
+                {
+                    totalAcumulado += monto;
+                }
+                selectedCuenta.Total = totalAcumulado;
+                cuentaRepository.Update(selectedCuenta);
+                RefreshData();
+                ActualizarTotal();
+                txtMonto.Clear();
+                txtCuenta.Clear();
+                cbClasificacioID.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar la cuenta: {ex.Message}");
+            }
+
+        }
+
+
     }
 }

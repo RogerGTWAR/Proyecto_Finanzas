@@ -171,10 +171,11 @@
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnActualizar.Location = new Point(794, 187);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(129, 39);
+            btnActualizar.Size = new Size(135, 39);
             btnActualizar.TabIndex = 12;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // txtCuenta
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             btnAgregar = new Button();
-            dgvActivos = new DataGridView();
+            dgvPasivosCapital = new DataGridView();
             btnEliminar = new Button();
             txtTotal = new TextBox();
             txtMonto = new TextBox();
@@ -44,7 +44,7 @@
             cbClasificacioID = new ComboBox();
             label5 = new Label();
             label6 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dgvActivos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPasivosCapital).BeginInit();
             SuspendLayout();
             // 
             // btnAgregar
@@ -60,17 +60,17 @@
             btnAgregar.UseVisualStyleBackColor = false;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // dgvActivos
+            // dgvPasivosCapital
             // 
-            dgvActivos.BackgroundColor = Color.White;
-            dgvActivos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvActivos.Location = new Point(338, 239);
-            dgvActivos.Name = "dgvActivos";
-            dgvActivos.ReadOnly = true;
-            dgvActivos.RowHeadersWidth = 51;
-            dgvActivos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvActivos.Size = new Size(816, 316);
-            dgvActivos.TabIndex = 2;
+            dgvPasivosCapital.BackgroundColor = Color.White;
+            dgvPasivosCapital.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPasivosCapital.Location = new Point(338, 239);
+            dgvPasivosCapital.Name = "dgvPasivosCapital";
+            dgvPasivosCapital.ReadOnly = true;
+            dgvPasivosCapital.RowHeadersWidth = 51;
+            dgvPasivosCapital.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvPasivosCapital.Size = new Size(816, 316);
+            dgvPasivosCapital.TabIndex = 2;
             // 
             // btnEliminar
             // 
@@ -171,10 +171,11 @@
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             btnActualizar.Location = new Point(794, 187);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(129, 39);
+            btnActualizar.Size = new Size(137, 39);
             btnActualizar.TabIndex = 12;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = false;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // txtCuenta
             // 
@@ -233,19 +234,19 @@
             Controls.Add(txtMonto);
             Controls.Add(txtTotal);
             Controls.Add(btnEliminar);
-            Controls.Add(dgvActivos);
+            Controls.Add(dgvPasivosCapital);
             Controls.Add(btnAgregar);
             Name = "PasivoCapitalBalanceForm";
             Text = "Pasivo y Capital";
             Load += ActivosCirculantesForm_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvActivos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPasivosCapital).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Button btnAgregar;
-        private DataGridView dgvActivos;
+        private DataGridView dgvPasivosCapital;
         private Button btnEliminar;
         private TextBox txtTotal;
         private TextBox txtMonto;

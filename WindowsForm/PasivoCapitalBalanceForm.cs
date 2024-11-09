@@ -72,7 +72,7 @@ namespace WindowsForm
             try
             {
                 var cuentas = pasivocapitalrepository.GetAll().ToList();
-                dgvActivos.DataSource = cuentas;
+                dgvPasivosCapital.DataSource = cuentas;
                 if (!cuentas.Any())
                 {
                     txtTotal.Clear();
@@ -163,7 +163,7 @@ namespace WindowsForm
                     Monto = monto,
                     ID_DatosBalance = selectedBalanceId,
                     Total = totalAcumulado,
-                    ID_Clasificacion = idClasificacion 
+                    ID_Clasificacion = idClasificacion
                 };
 
                 pasivocapitalrepository.Add(newCuenta);
@@ -180,9 +180,9 @@ namespace WindowsForm
         {
             try
             {
-                if (dgvActivos.CurrentRow != null)
+                if (dgvPasivosCapital.CurrentRow != null)
                 {
-                    Activo selectedCuenta = (Activo)dgvActivos.CurrentRow.DataBoundItem;
+                    Pasivo_Capital selectedCuenta = (Pasivo_Capital)dgvPasivosCapital.CurrentRow.DataBoundItem;
                     pasivocapitalrepository.Delete(selectedCuenta.ID);
                     RefreshData();
                 }
@@ -208,7 +208,55 @@ namespace WindowsForm
             return decimal.TryParse(txtMonto.Text, out monto) && monto > 0;
         }
 
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvPasivosCapital.CurrentRow == null)
+                {
+                    MessageBox.Show("Por favor, selecciona una cuenta de pasivo para actualizar.");
+                    return;
+                }
+                Pasivo_Capital selectedCuenta = (Pasivo_Capital)dgvPasivosCapital.CurrentRow.DataBoundItem;
+                if (string.IsNullOrEmpty(txtCuenta.Text) || !decimal.TryParse(txtMonto.Text, out decimal monto) || monto <= 0)
+                {
+                    MessageBox.Show("La cuenta debe ser seleccionada y el monto debe ser mayor que cero.");
+                    return;
+                }
+                if (cbClasificacioID.SelectedValue == null)
+                {
+                    MessageBox.Show("Debe seleccionar una clasificación.");
+                    return;
+                }
+                int idClasificacion = Convert.ToInt32(cbClasificacioID.SelectedValue);
+                int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
+                selectedCuenta.NombreCuenta = txtCuenta.Text;
+                selectedCuenta.Monto = monto;
+                selectedCuenta.ID_Clasificacion = idClasificacion;
+                decimal totalAcumulado = pasivocapitalrepository.GetAll()
+                                                          .Where(c => c.ID_DatosBalance == selectedBalanceId)
+                                                          .Sum(c => c.Monto);
+                if (txtCuenta.Text == "Deducciones")
+                {
+                    totalAcumulado -= monto;
+                }
+                else
+                {
+                    totalAcumulado += monto;
+                }
+                selectedCuenta.Total = totalAcumulado;
+                pasivocapitalrepository.Update(selectedCuenta);
+                RefreshData();
+                ActualizarTotal();
+                txtMonto.Clear();
+                txtCuenta.Clear();
+                cbClasificacioID.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar la cuenta de pasivo: {ex.Message}");
+            }
 
-
+        }
     }
 }
