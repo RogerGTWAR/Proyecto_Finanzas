@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WindowsForm.Models;
 
-namespace WindowsForm
+namespace WindowsForm.IRepository
 {
     public interface IRepository<T> where T : class
     {

@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsForm.IRepository;
 using WindowsForm.Models;
 
-namespace WindowsForm.Repository
+namespace WindowsForm.IRepository.Repository
 {
     public class ClasificacionRepository : IRepository<Clasificacion>
     {
@@ -32,8 +33,8 @@ namespace WindowsForm.Repository
                     {
                         clasificaciones.Add(new Clasificacion
                         {
-                            ID_Clasificacion = reader["ID_Clasificacion"] != DBNull.Value ? (int)reader["ID_Clasificacion"] : 0, 
-                            Descripcion = reader["Descripcion"] != DBNull.Value ? (string)reader["Descripcion"] : string.Empty 
+                            ID_Clasificacion = reader["ID_Clasificacion"] != DBNull.Value ? (int)reader["ID_Clasificacion"] : 0,
+                            Descripcion = reader["Descripcion"] != DBNull.Value ? (string)reader["Descripcion"] : string.Empty
                         });
                     }
                     catch (Exception ex)

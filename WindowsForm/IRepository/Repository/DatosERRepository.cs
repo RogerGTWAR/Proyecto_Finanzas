@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Data;
 using Microsoft.Data.SqlClient;
+using WindowsForm.IRepository;
 using WindowsForm.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace WindowsForm.Repository
+namespace WindowsForm.IRepository.Repository
 {
     public class DatosERRepository : IRepository<DatosER>
     {

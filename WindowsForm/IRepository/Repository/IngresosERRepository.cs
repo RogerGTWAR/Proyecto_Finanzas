@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsForm.IRepository;
 using WindowsForm.Models;
 
-namespace WindowsForm.Repository
+namespace WindowsForm.IRepository.Repository
 {
     public class IngresosERRepository : IRepository<Ingresos>
     {

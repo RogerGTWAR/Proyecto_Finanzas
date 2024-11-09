@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace WindowsForm.Repository
+using WindowsForm.IRepository;
+namespace WindowsForm.IRepository.Repository
 {
     public class CuentaRepository : IRepository<Activo>
     {
