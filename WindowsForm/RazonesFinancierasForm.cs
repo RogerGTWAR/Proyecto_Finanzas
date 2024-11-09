@@ -17,7 +17,7 @@ namespace WindowsForm
         {
             InitializeComponent();
         }
-
+        //Me falta
         private void RazonesFinancierasForm_Load(object sender, EventArgs e)
         {
 

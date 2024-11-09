@@ -43,6 +43,7 @@
             txtCuenta = new TextBox();
             cbClasificacioID = new ComboBox();
             label5 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvActivos).BeginInit();
             SuspendLayout();
             // 
@@ -86,14 +87,14 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(1029, 76);
+            txtTotal.Location = new Point(1029, 92);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(125, 27);
             txtTotal.TabIndex = 4;
             // 
             // txtMonto
             // 
-            txtMonto.Location = new Point(878, 76);
+            txtMonto.Location = new Point(878, 92);
             txtMonto.Name = "txtMonto";
             txtMonto.Size = new Size(125, 27);
             txtMonto.TabIndex = 5;
@@ -103,7 +104,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(898, 41);
+            label1.Location = new Point(898, 57);
             label1.Name = "label1";
             label1.Size = new Size(82, 31);
             label1.TabIndex = 6;
@@ -114,7 +115,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(734, 41);
+            label2.Location = new Point(734, 57);
             label2.Name = "label2";
             label2.Size = new Size(86, 31);
             label2.TabIndex = 7;
@@ -125,7 +126,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(1065, 41);
+            label3.Location = new Point(1065, 57);
             label3.Name = "label3";
             label3.Size = new Size(63, 31);
             label3.TabIndex = 8;
@@ -147,7 +148,7 @@
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
-            CbID_Balance.Location = new Point(327, 75);
+            CbID_Balance.Location = new Point(327, 91);
             CbID_Balance.Name = "CbID_Balance";
             CbID_Balance.Size = new Size(151, 28);
             CbID_Balance.TabIndex = 10;
@@ -157,11 +158,11 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(294, 41);
+            label4.Location = new Point(346, 57);
             label4.Name = "label4";
-            label4.Size = new Size(216, 31);
+            label4.Size = new Size(121, 31);
             label4.TabIndex = 11;
-            label4.Text = "Numero De Balance";
+            label4.Text = "Balance ID";
             // 
             // btnActualizar
             // 
@@ -177,7 +178,7 @@
             // 
             // txtCuenta
             // 
-            txtCuenta.Location = new Point(719, 76);
+            txtCuenta.Location = new Point(719, 92);
             txtCuenta.Name = "txtCuenta";
             txtCuenta.Size = new Size(125, 27);
             txtCuenta.TabIndex = 13;
@@ -185,7 +186,7 @@
             // cbClasificacioID
             // 
             cbClasificacioID.FormattingEnabled = true;
-            cbClasificacioID.Location = new Point(532, 75);
+            cbClasificacioID.Location = new Point(532, 91);
             cbClasificacioID.Name = "cbClasificacioID";
             cbClasificacioID.Size = new Size(151, 28);
             cbClasificacioID.TabIndex = 14;
@@ -195,11 +196,22 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(532, 41);
+            label5.Location = new Point(532, 57);
             label5.Name = "label5";
             label5.Size = new Size(169, 31);
             label5.TabIndex = 15;
             label5.Text = "Clasificacion ID";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(690, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(105, 38);
+            label6.TabIndex = 16;
+            label6.Text = "Activos";
             // 
             // ActivosBalanceForm
             // 
@@ -207,6 +219,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
             ClientSize = new Size(1343, 827);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(cbClasificacioID);
             Controls.Add(txtCuenta);
@@ -246,5 +259,6 @@
         private TextBox txtCuenta;
         private ComboBox cbClasificacioID;
         private Label label5;
+        private Label label6;
     }
 }

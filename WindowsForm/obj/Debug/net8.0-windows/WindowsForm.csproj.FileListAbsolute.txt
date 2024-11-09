@@ -66,7 +66,6 @@ C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\bin\Debug\net8.0-windows\
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.csproj.AssemblyReference.cache
-C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.BalanceGeneralForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.RazonesFinancierasForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.csproj.GenerateResource.cache
@@ -80,8 +79,12 @@ C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.pdb
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.genruntimeconfig.cache
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\ref\WindowsForm.dll
-C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.CrearNumeroDeBalance.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.ClasificacionesForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.ActivosBalanceForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.PasivoCapitalBalanceForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.sourcelink.json
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.DatosERForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.DatosBalanceForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuBalanceForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuERForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.ERForm.resources

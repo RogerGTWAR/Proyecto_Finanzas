@@ -7,10 +7,19 @@
     <Compile Update="ActivosBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="BalanceGeneralForm.cs">
+    <Compile Update="MenuBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CrearNumeroDeBalance.cs">
+    <Compile Update="DatosBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DatosERForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ERForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuERForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuForm.cs">

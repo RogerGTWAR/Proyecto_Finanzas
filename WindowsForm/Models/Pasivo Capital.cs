@@ -15,14 +15,14 @@ namespace WindowsForm.Models
 
         public Pasivo_Capital(string nombreCuenta, decimal monto, decimal total, int clasificacion, int numeroDeBalance = 0)
             {
-                NumeroDeBalance = numeroDeBalance;
+                ID_DatosBalance = numeroDeBalance;
                 NombreCuenta = nombreCuenta;
                 Monto = monto;
                 Total = total;
                 ID_Clasificacion = clasificacion;
             }
             public int ID { get; set; }
-            public int NumeroDeBalance { get; set; }
+            public int ID_DatosBalance { get; set; }
             public int ID_Clasificacion { get; set; }
             public string NombreCuenta { get; set; }
             public decimal Monto { get; set; }

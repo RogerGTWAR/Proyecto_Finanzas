@@ -12,25 +12,15 @@ using WindowsForm.Models;
 
 namespace WindowsForm
 {
-    public partial class BalanceGeneralForm : Form
+    public partial class MenuBalanceForm : Form
     {
         private ActivosBalanceForm cuentasBalanceForm;
-        private CrearNumeroDeBalance crearNumeroDeBalance;
+        private DatosBalanceForm crearNumeroDeBalance;
         private ClasificacionesForm clasificacionform;
         private PasivoCapitalBalanceForm pasivoCapitalBalanceForm;
-        public BalanceGeneralForm()
+        public MenuBalanceForm()
         {
             InitializeComponent();
-        }
-        private void MostrarClasificaciones(int indiceFormulario)
-        {
-            LimpiarPanelPrincipal();
-            clasificacionform = new ClasificacionesForm();
-            clasificacionform.TopLevel = false;
-            clasificacionform.FormBorderStyle = FormBorderStyle.None;
-            clasificacionform.Dock = DockStyle.Fill;
-            panelContenedor.Controls.Add(clasificacionform);
-            clasificacionform.Show();
         }
         private void btnActivosCirculantes_Click(object sender, EventArgs e)
         {
@@ -66,7 +56,7 @@ namespace WindowsForm
         private void btnBalances_Click(object sender, EventArgs e)
         {
             LimpiarPanelPrincipal();
-            crearNumeroDeBalance = new CrearNumeroDeBalance();
+            crearNumeroDeBalance = new DatosBalanceForm();
             crearNumeroDeBalance.TopLevel = false;
             crearNumeroDeBalance.FormBorderStyle = FormBorderStyle.None;
             crearNumeroDeBalance.Dock = DockStyle.Fill;

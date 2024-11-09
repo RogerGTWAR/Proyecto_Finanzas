@@ -123,7 +123,7 @@ namespace WindowsForm.Repository
             {
                 string query = "INSERT INTO Activos (NumeroDeBalance) VALUES (@NumeroDeBalance)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", newCuenta.NumeroDeBalance);
+                command.Parameters.AddWithValue("@NumeroDeBalance", newCuenta.ID_DatosBalance);
                 connection.Open();
                 command.ExecuteNonQuery();
             }

@@ -13,10 +13,10 @@ using WindowsForm.Repository;
 
 namespace WindowsForm
 {
-    public partial class CrearNumeroDeBalance : Form
+    public partial class DatosBalanceForm : Form
     {
-        private readonly IRepository<NumeroDeBalances> balanceIDRepository;
-        public CrearNumeroDeBalance()
+        private readonly IRepository<DatosBalanceG> balanceIDRepository;
+        public DatosBalanceForm()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
@@ -33,7 +33,7 @@ namespace WindowsForm
             }
             catch (Exception)
             {
-                MessageBox.Show("Error al cargar los datos de BalanceID");
+                MessageBox.Show("Error al cargar los datos de Balance General");
             }
         }
 
@@ -46,27 +46,23 @@ namespace WindowsForm
         {
             try
             {
-                int numeroDeBalance;
-                if (int.TryParse(txtNumeroDeBalance.Text, out numeroDeBalance))
+                DatosBalanceG newBalance = new DatosBalanceG
                 {
-                    NumeroDeBalances newBalanceID = new NumeroDeBalances
-                    {
-                        NumeroDeBalance = numeroDeBalance,
-                    };
-                    balanceIDRepository.Add(newBalanceID);
-                    RefreshData();
-                    txtNumeroDeBalance.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("El número de balance no es válido.");
-                }
+                    NombreBG = txtNombreBalance.Text,
+                    FechaInicio = dtpFechaInicio.Value,
+                    Fechafin = dtpFechaFin.Value
+                };
+
+                balanceIDRepository.Add(newBalance);
+                RefreshData();
+                txtNombreBalance.Clear();
+                dtpFechaInicio.Value = DateTime.Now;
+                dtpFechaFin.Value = DateTime.Now;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al agregar Numero de Balance: " + ex.Message);
+                MessageBox.Show("Error al agregar el Balance General: " + ex.Message);
             }
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -75,7 +71,7 @@ namespace WindowsForm
             {
                 if (dgvBalance.SelectedRows.Count > 0)
                 {
-                    int id = Convert.ToInt32(dgvBalance.SelectedRows[0].Cells["ID"].Value);
+                    int id = Convert.ToInt32(dgvBalance.SelectedRows[0].Cells["ID_DatosBalance"].Value);
                     balanceIDRepository.Delete(id);
                     RefreshData();
                     MessageBox.Show("Balance eliminado exitosamente.");

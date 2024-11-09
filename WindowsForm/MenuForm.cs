@@ -3,9 +3,9 @@ namespace WindowsForm
 {
     public partial class MenuForm : Form
     {
-        private BalanceGeneralForm balanceForm;
+        private MenuBalanceForm balanceForm;
         private RazonesFinancierasForm razonesform;
-
+        private MenuERForm menuERForm;
         public MenuForm()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace WindowsForm
         private void MostrarRegistroForm()
         {
             LimpiarPanelPrincipal();
-            balanceForm = new BalanceGeneralForm();
+            balanceForm = new MenuBalanceForm();
             balanceForm.TopLevel = false;
             balanceForm.FormBorderStyle = FormBorderStyle.None;
             balanceForm.Dock = DockStyle.Fill;
@@ -78,6 +78,17 @@ namespace WindowsForm
             razonesform.Dock = DockStyle.Fill;
             panelContenedor.Controls.Add(razonesform);
             razonesform.Show();
+        }
+
+        private void btnER_Click(object sender, EventArgs e)
+        {
+            LimpiarPanelPrincipal();
+            menuERForm = new MenuERForm();
+            menuERForm.TopLevel = false;
+            menuERForm.FormBorderStyle = FormBorderStyle.None;
+            menuERForm.Dock = DockStyle.Fill;
+            panelContenedor.Controls.Add(menuERForm);
+            menuERForm.Show();
         }
     }
 }

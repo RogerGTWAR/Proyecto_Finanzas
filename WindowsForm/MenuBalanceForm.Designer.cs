@@ -1,6 +1,6 @@
 ﻿namespace WindowsForm
 {
-    partial class BalanceGeneralForm
+    partial class MenuBalanceForm
     {
         /// <summary>
         /// Required designer variable.
@@ -87,7 +87,7 @@
             btnBalances.Name = "btnBalances";
             btnBalances.Size = new Size(251, 40);
             btnBalances.TabIndex = 9;
-            btnBalances.Text = "Numero De Balances";
+            btnBalances.Text = "Crear un Balance";
             btnBalances.UseVisualStyleBackColor = false;
             btnBalances.Click += btnBalances_Click;
             // 

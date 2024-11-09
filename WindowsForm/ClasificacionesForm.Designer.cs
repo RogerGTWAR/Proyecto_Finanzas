@@ -32,6 +32,7 @@
             btnAgregar = new Button();
             txtDescripcion = new TextBox();
             label2 = new Label();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvClasificaciones).BeginInit();
             SuspendLayout();
             // 
@@ -78,12 +79,24 @@
             label2.TabIndex = 6;
             label2.Text = "Descripcion";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(389, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(338, 38);
+            label1.TabIndex = 7;
+            label1.Text = "Clasificaciones de cuentas";
+            // 
             // ClasificacionesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
             ClientSize = new Size(963, 568);
+            Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(txtDescripcion);
             Controls.Add(btnAgregar);
@@ -102,5 +115,6 @@
         private Button btnAgregar;
         private TextBox txtDescripcion;
         private Label label2;
+        private Label label1;
     }
 }

@@ -8,7 +8,7 @@ using WindowsForm.Models;
 
 namespace WindowsForm.Repository
 {
-    public class BalanceRepository : IRepository<NumeroDeBalances>
+    public class BalanceRepository : IRepository<DatosBalanceG>
     {
         private readonly string _connectionString;
 
@@ -17,69 +17,77 @@ namespace WindowsForm.Repository
             _connectionString = connectionString;
         }
 
-        public IEnumerable<NumeroDeBalances> GetAll()
+        public IEnumerable<DatosBalanceG> GetAll()
         {
-            List<NumeroDeBalances> balanceIds = new List<NumeroDeBalances>();
+            List<DatosBalanceG> balances = new List<DatosBalanceG>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM NumerosDeBalance";
+                string query = "SELECT * FROM DatosBalance";
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    balanceIds.Add(new NumeroDeBalances
+                    balances.Add(new DatosBalanceG
                     {
-                        ID = (int)reader["ID"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"],
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
+                        NombreBG = reader["NombreBG"] != DBNull.Value ? (string)reader["NombreBG"] : string.Empty,
+                        FechaInicio = reader["FechaInicio"] != DBNull.Value ? (DateTime)reader["FechaInicio"] : DateTime.MinValue,
+                        Fechafin = reader["Fechafin"] != DBNull.Value ? (DateTime)reader["Fechafin"] : DateTime.MinValue
                     });
                 }
             }
-            return balanceIds;
+            return balances;
         }
 
-        public NumeroDeBalances GetById(int id)
+        public DatosBalanceG GetById(int id)
         {
-            NumeroDeBalances balanceId = null;
+            DatosBalanceG balance = null;
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM NumerosDeBalance WHERE ID = @Id";
+                string query = "SELECT * FROM DatosBalance WHERE ID_DatosBalance = @ID_DatosBalance";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@ID_DatosBalance", id);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    balanceId = new NumeroDeBalances
+                    balance = new DatosBalanceG
                     {
-                        ID = (int)reader["ID"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"]
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
+                        NombreBG = reader["NombreBG"] != DBNull.Value ? (string)reader["NombreBG"] : string.Empty,
+                        FechaInicio = reader["FechaInicio"] != DBNull.Value ? (DateTime)reader["FechaInicio"] : DateTime.MinValue,
+                        Fechafin = reader["Fechafin"] != DBNull.Value ? (DateTime)reader["Fechafin"] : DateTime.MinValue
                     };
                 }
             }
-            return balanceId;
+            return balance;
         }
 
-        public void Add(NumeroDeBalances balanceId)
+        public void Add(DatosBalanceG balance)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "INSERT INTO NumerosDeBalance (NumeroDeBalance) VALUES (@NumeroDeBalance)";
+                string query = "INSERT INTO DatosBalance (NombreBG, FechaInicio, Fechafin) VALUES (@NombreBG, @FechaInicio, @Fechafin)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", balanceId.NumeroDeBalance);
+                command.Parameters.AddWithValue("@NombreBG", balance.NombreBG);
+                command.Parameters.AddWithValue("@FechaInicio", balance.FechaInicio);
+                command.Parameters.AddWithValue("@Fechafin", balance.Fechafin);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        public void Update(NumeroDeBalances balanceId)
+        public void Update(DatosBalanceG balance)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "UPDATE NumerosDeBalance SET NumeroDeBalance = @NumeroDeBalance WHERE NumeroDeBalance = @Id";
+                string query = "UPDATE DatosBalance SET NombreBG = @NombreBG, FechaInicio = @FechaInicio, Fechafin = @Fechafin WHERE ID_DatosBalance = @ID_DatosBalance";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", balanceId.NumeroDeBalance);
-                command.Parameters.AddWithValue("@Id", balanceId.NumeroDeBalance);
+                command.Parameters.AddWithValue("@NombreBG", balance.NombreBG);
+                command.Parameters.AddWithValue("@FechaInicio", balance.FechaInicio);
+                command.Parameters.AddWithValue("@Fechafin", balance.Fechafin);
+                command.Parameters.AddWithValue("@ID_DatosBalance", balance.ID_DatosBalance);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -89,9 +97,9 @@ namespace WindowsForm.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "DELETE FROM NumerosDeBalance WHERE NumeroDeBalance = @Id";
+                string query = "DELETE FROM DatosBalance WHERE ID_DatosBalance = @ID_DatosBalance";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@ID_DatosBalance", id);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -99,14 +107,7 @@ namespace WindowsForm.Repository
 
         public void Add(Activo newCuenta)
         {
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                string query = "INSERT INTO NumerosDeBalance (NumeroDeBalance) VALUES (@NumeroDeBalance)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", newCuenta.NumeroDeBalance);
-                connection.Open();
-                command.ExecuteNonQuery();
-            }
+            throw new NotImplementedException();
         }
     }
 }

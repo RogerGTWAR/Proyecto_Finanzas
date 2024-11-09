@@ -17,7 +17,7 @@ namespace WindowsForm
     public partial class ActivosBalanceForm : Form
     {
         private readonly IRepository<Activo> cuentaRepository;
-        private readonly IRepository<NumeroDeBalances> balanceRepository;
+        private readonly IRepository<DatosBalanceG> balanceRepository;
         private readonly IRepository<Clasificacion> clasificacionrepository;
 
         public ActivosBalanceForm()
@@ -42,7 +42,7 @@ namespace WindowsForm
                 {
                     int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
                     var cuentas = cuentaRepository.GetAll()
-                                                   .Where(c => c.NumeroDeBalance == selectedBalanceId)
+                                                   .Where(c => c.ID_DatosBalance == selectedBalanceId)
                                                    .ToList();
                     total = cuentas.Sum(c => c.Monto);
                     if (decimal.TryParse(txtMonto.Text, out decimal monto) && monto > 0)
@@ -98,8 +98,8 @@ namespace WindowsForm
             {
                 var balances = balanceRepository.GetAll();
                 CbID_Balance.DataSource = balances;
-                CbID_Balance.DisplayMember = "NumeroDeBalance";
-                CbID_Balance.ValueMember = "NumeroDeBalance";
+                CbID_Balance.DisplayMember = "NombreBG";
+                CbID_Balance.ValueMember = "ID_DatosBalance";
                 CbID_Balance.SelectedIndexChanged += (sender, args) => RefreshData();
             }
             catch (Exception)
@@ -146,7 +146,7 @@ namespace WindowsForm
                 int selectedBalanceId = Convert.ToInt32(CbID_Balance.SelectedValue);
 
                 decimal totalAcumulado = cuentaRepository.GetAll()
-                                                         .Where(c => c.NumeroDeBalance == selectedBalanceId)
+                                                         .Where(c => c.ID_DatosBalance == selectedBalanceId)
                                                          .Sum(c => c.Monto);
 
                 if (txtCuenta.Text == "Deducciones")
@@ -161,7 +161,7 @@ namespace WindowsForm
                 {
                     NombreCuenta = txtCuenta.Text,
                     Monto = monto,
-                    NumeroDeBalance = selectedBalanceId,
+                    ID_DatosBalance = selectedBalanceId,
                     Total = totalAcumulado,
                     ID_Clasificacion = idClasificacion 
                 };
@@ -200,7 +200,7 @@ namespace WindowsForm
 
         private void btnBalanceID_Click(object sender, EventArgs e)
         {
-            CrearNumeroDeBalance balanceForm = new CrearNumeroDeBalance();
+            DatosBalanceForm balanceForm = new DatosBalanceForm();
             balanceForm.Show();
         }
         private bool IsValidMonto(out decimal monto)

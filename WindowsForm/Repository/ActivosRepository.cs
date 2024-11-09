@@ -30,7 +30,7 @@ namespace WindowsForm.Repository
                     Activo cuenta = new Activo
                     {
                         ID = (int)reader["ID"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"],
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = reader["Monto"] != DBNull.Value ? (decimal)reader["Monto"] : 0m,
@@ -58,7 +58,7 @@ namespace WindowsForm.Repository
                     cuenta = new Activo
                     {
                         ID = (int)reader["Id"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"],
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = reader["Monto"] != DBNull.Value ? (decimal)reader["Monto"] : 0m,
@@ -75,9 +75,9 @@ namespace WindowsForm.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "INSERT INTO Activos (NumeroDeBalance,ID_Clasificacion, NombreCuenta, Monto, Total) VALUES (@NumeroDeBalance,@ID_Clasificacion, @NombreCuenta, @Monto, @Total)";
+                string query = "INSERT INTO Activos (ID_DatosBalance,ID_Clasificacion, NombreCuenta, Monto, Total) VALUES (@ID_DatosBalance,@ID_Clasificacion, @NombreCuenta, @Monto, @Total)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", cuenta.NumeroDeBalance);
+                command.Parameters.AddWithValue("@ID_DatosBalance", cuenta.ID_DatosBalance);
                 command.Parameters.AddWithValue("@ID_Clasificacion", cuenta.ID_Clasificacion);
                 command.Parameters.AddWithValue("@NombreCuenta", cuenta.NombreCuenta);
                 command.Parameters.AddWithValue("@Monto", cuenta.Monto);
@@ -91,9 +91,9 @@ namespace WindowsForm.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "UPDATE Activos SET NumeroDeBalance = @NumeroDeBalance,ID_Clasificacion = @ID_Clasificacion, NombreCuenta = @NombreCuenta, Monto = @Monto, Total = @Total WHERE Id = @Id";
+                string query = "UPDATE Activos SET ID_DatosBalance = @ID_DatosBalance,ID_Clasificacion = @ID_Clasificacion, NombreCuenta = @NombreCuenta, Monto = @Monto, Total = @Total WHERE Id = @Id";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", cuenta.NumeroDeBalance);
+                command.Parameters.AddWithValue("@NumeroDeBalance", cuenta.ID_DatosBalance);
                 command.Parameters.AddWithValue("@ID_Clasificacion", cuenta.ID_Clasificacion);
                 command.Parameters.AddWithValue("@NombreCuenta", cuenta.NombreCuenta);
                 command.Parameters.AddWithValue("@Monto", cuenta.Monto);
@@ -134,7 +134,7 @@ namespace WindowsForm.Repository
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Activos WHERE NumeroDeBalance = @NumeroDeBalance";
+                string query = "SELECT * FROM Activos WHERE ID_DatosBalance = @ID_DatosBalance";
                 if (!string.IsNullOrEmpty(nombreCuenta))
                 {
                     query += " AND NombreCuenta LIKE @NombreCuenta";
@@ -145,7 +145,7 @@ namespace WindowsForm.Repository
                 }
 
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@NumeroDeBalance", idBalance);
+                command.Parameters.AddWithValue("@ID_DatosBalance", idBalance);
                 if (!string.IsNullOrEmpty(nombreCuenta))
                 {
                     command.Parameters.AddWithValue("@NombreCuenta", "%" + nombreCuenta + "%");
@@ -164,7 +164,7 @@ namespace WindowsForm.Repository
                     cuentasBalance.Add(new Activo
                     {
                         ID = (int)reader["ID"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"],
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = (decimal)reader["Monto"]
                     });
@@ -183,7 +183,7 @@ namespace WindowsForm.Repository
 
                 if (numeroDeBalance.HasValue)
                 {
-                    query += " AND NumeroDeBalance = @NumeroDeBalance";
+                    query += " AND ID_DatosBalance = @ID_DatosBalance";
                 }
                 if (!string.IsNullOrEmpty(nombreCuenta))
                 {
@@ -199,7 +199,7 @@ namespace WindowsForm.Repository
 
                 if (numeroDeBalance.HasValue)
                 {
-                    command.Parameters.AddWithValue("@NumeroDeBalance", numeroDeBalance.Value);
+                    command.Parameters.AddWithValue("@ID_DatosBalance", numeroDeBalance.Value);
                 }
 
                 if (!string.IsNullOrEmpty(nombreCuenta))
@@ -221,7 +221,7 @@ namespace WindowsForm.Repository
                     {
                         ID = (int)reader["ID"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
-                        NumeroDeBalance = (int)reader["NumeroDeBalance"],
+                        ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = (decimal)reader["Monto"]
                     });

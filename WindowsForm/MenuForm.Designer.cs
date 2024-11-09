@@ -87,12 +87,13 @@
             btnER.ForeColor = Color.White;
             btnER.Image = (Image)resources.GetObject("btnER.Image");
             btnER.ImageAlign = ContentAlignment.MiddleLeft;
-            btnER.Location = new Point(12, 99);
+            btnER.Location = new Point(12, 115);
             btnER.Name = "btnER";
-            btnER.Size = new Size(235, 85);
+            btnER.Size = new Size(235, 95);
             btnER.TabIndex = 7;
             btnER.Text = "Estado de Resultado";
             btnER.UseVisualStyleBackColor = false;
+            btnER.Click += btnER_Click;
             // 
             // btnRazonesFinancieras
             // 
@@ -104,7 +105,7 @@
             btnRazonesFinancieras.ForeColor = Color.White;
             btnRazonesFinancieras.Image = (Image)resources.GetObject("btnRazonesFinancieras.Image");
             btnRazonesFinancieras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRazonesFinancieras.Location = new Point(12, 163);
+            btnRazonesFinancieras.Location = new Point(12, 195);
             btnRazonesFinancieras.Name = "btnRazonesFinancieras";
             btnRazonesFinancieras.Size = new Size(232, 129);
             btnRazonesFinancieras.TabIndex = 6;
