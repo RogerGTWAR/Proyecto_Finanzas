@@ -30,7 +30,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     Activo cuenta = new Activo
                     {
-                        ID = (int)reader["ID"],
+                        ID_Activo = (int)reader["ID_Activo"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
@@ -49,7 +49,7 @@ namespace WindowsForm.IRepository.Repository
             Activo cuenta = null;
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Activos WHERE Id = @Id";
+                string query = "SELECT * FROM Activos WHERE ID_Activo = @ID_Activo";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
@@ -58,7 +58,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuenta = new Activo
                     {
-                        ID = (int)reader["Id"],
+                        ID_Activo = (int)reader["ID_Activo"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
@@ -99,7 +99,7 @@ namespace WindowsForm.IRepository.Repository
                 command.Parameters.AddWithValue("@NombreCuenta", cuenta.NombreCuenta);
                 command.Parameters.AddWithValue("@Monto", cuenta.Monto);
                 command.Parameters.AddWithValue("@Total", cuenta.Total);
-                command.Parameters.AddWithValue("@Id", cuenta.ID);
+                command.Parameters.AddWithValue("@ID_Activo", cuenta.ID_Activo);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -109,9 +109,9 @@ namespace WindowsForm.IRepository.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "DELETE FROM Activos WHERE Id = @Id";
+                string query = "DELETE FROM Activos WHERE ID_Activo = @ID_Activo";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@ID_Activo", id);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -164,7 +164,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuentasBalance.Add(new Activo
                     {
-                        ID = (int)reader["ID"],
+                        ID_Activo = (int)reader["ID_Activo"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = (decimal)reader["Monto"]
@@ -220,7 +220,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuentasBalance.Add(new Activo
                     {
-                        ID = (int)reader["ID"],
+                        ID_Activo = (int)reader["ID_Activo"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],

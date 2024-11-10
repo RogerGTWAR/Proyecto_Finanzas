@@ -19,7 +19,7 @@ namespace WindowsForm.Models
             Total = total;
             ID_Clasificacion = clasificacion;
         }
-        public int ID { get; set; }
+        public int ID_Activo { get; set; }
         public int ID_DatosBalance { get; set; }
         public int ID_Clasificacion { get; set; }
         public string NombreCuenta { get; set; }

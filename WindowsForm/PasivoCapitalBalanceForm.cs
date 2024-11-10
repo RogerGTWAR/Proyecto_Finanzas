@@ -184,7 +184,7 @@ namespace WindowsForm
                 if (dgvPasivosCapital.CurrentRow != null)
                 {
                     Pasivo_Capital selectedCuenta = (Pasivo_Capital)dgvPasivosCapital.CurrentRow.DataBoundItem;
-                    pasivocapitalrepository.Delete(selectedCuenta.ID);
+                    pasivocapitalrepository.Delete(selectedCuenta.ID_Pasivo_Capital);
                     RefreshData();
                 }
             }

@@ -88,3 +88,5 @@ C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuBalanceForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuERForm.resources
 C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.ERForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.CuentasRazonesForm.resources
+C:\Users\rpere\Downloads\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuRazonesFinancieras.resources

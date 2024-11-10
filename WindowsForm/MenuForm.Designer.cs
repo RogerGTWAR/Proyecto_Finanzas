@@ -62,7 +62,7 @@
             panelTitulo.Dock = DockStyle.Top;
             panelTitulo.Location = new Point(0, 0);
             panelTitulo.Name = "panelTitulo";
-            panelTitulo.Size = new Size(1229, 42);
+            panelTitulo.Size = new Size(1515, 42);
             panelTitulo.TabIndex = 5;
             // 
             // panel2
@@ -74,7 +74,7 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 42);
             panel2.Name = "panel2";
-            panel2.Size = new Size(262, 794);
+            panel2.Size = new Size(262, 855);
             panel2.TabIndex = 6;
             // 
             // btnER
@@ -119,7 +119,7 @@
             panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(0, 0);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1229, 836);
+            panelContenedor.Size = new Size(1515, 897);
             panelContenedor.TabIndex = 0;
             // 
             // MenuForm
@@ -127,7 +127,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
-            ClientSize = new Size(1229, 836);
+            ClientSize = new Size(1515, 897);
             Controls.Add(panel2);
             Controls.Add(panelTitulo);
             Controls.Add(panelContenedor);

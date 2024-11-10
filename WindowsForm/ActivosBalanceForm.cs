@@ -184,7 +184,7 @@ namespace WindowsForm
                 if (dgvActivos.CurrentRow != null)
                 {
                     Activo selectedCuenta = (Activo)dgvActivos.CurrentRow.DataBoundItem;
-                    cuentaRepository.Delete(selectedCuenta.ID);
+                    cuentaRepository.Delete(selectedCuenta.ID_Activo);
                     RefreshData();
                 }
             }
@@ -262,7 +262,5 @@ namespace WindowsForm
             }
 
         }
-
-
     }
 }

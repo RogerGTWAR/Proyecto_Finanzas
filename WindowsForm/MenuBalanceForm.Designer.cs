@@ -107,13 +107,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(552, 51);
+            label1.Location = new Point(444, 38);
             label1.Name = "label1";
-            label1.Size = new Size(185, 31);
+            label1.Size = new Size(383, 41);
             label1.TabIndex = 2;
-            label1.Text = "Balance General";
+            label1.Text = "Menu del Balance General";
             // 
             // panelContenedor
             // 
@@ -124,7 +124,7 @@
             panelContenedor.TabIndex = 3;
             panelContenedor.Paint += panelContenedor_Paint;
             // 
-            // BalanceGeneralForm
+            // MenuBalanceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             ClientSize = new Size(1473, 784);
             Controls.Add(panelContenedor);
             Controls.Add(panel1);
-            Name = "BalanceGeneralForm";
+            Name = "MenuBalanceForm";
             Text = "BalanceGeneralForm";
             Load += BalanceGeneralForm_Load;
             panel1.ResumeLayout(false);

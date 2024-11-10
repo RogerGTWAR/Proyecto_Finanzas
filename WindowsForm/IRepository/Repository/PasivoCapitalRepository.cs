@@ -31,7 +31,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     Pasivo_Capital cuenta = new Pasivo_Capital
                     {
-                        ID = (int)reader["ID"],
+                        ID_Pasivo_Capital = (int)reader["ID_Pasivo_Capital"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
@@ -50,7 +50,7 @@ namespace WindowsForm.IRepository.Repository
             Pasivo_Capital cuenta = null;
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM Pasivos_Capital WHERE Id = @Id";
+                string query = "SELECT * FROM Pasivos_Capital WHERE ID_Pasivo_Capital = @ID_Pasivo_Capital";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
@@ -59,7 +59,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuenta = new Pasivo_Capital
                     {
-                        ID = (int)reader["Id"],
+                        ID_Pasivo_Capital = (int)reader["ID_Pasivo_Capital"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreCuenta = (string)reader["NombreCuenta"],
@@ -100,7 +100,7 @@ namespace WindowsForm.IRepository.Repository
                 command.Parameters.AddWithValue("@NombreCuenta", cuenta.NombreCuenta);
                 command.Parameters.AddWithValue("@Monto", cuenta.Monto);
                 command.Parameters.AddWithValue("@Total", cuenta.Total);
-                command.Parameters.AddWithValue("@Id", cuenta.ID);
+                command.Parameters.AddWithValue("@ID_Pasivo_Capital", cuenta.ID_Pasivo_Capital);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -110,9 +110,9 @@ namespace WindowsForm.IRepository.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "DELETE FROM Pasivos_Capital WHERE Id = @Id";
+                string query = "DELETE FROM Pasivos_Capital WHERE ID_Pasivo_Capital = @ID_Pasivo_Capital";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@ID_Pasivo_Capital", id);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -165,7 +165,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuentasBalance.Add(new Pasivo_Capital
                     {
-                        ID = (int)reader["ID"],
+                        ID_Pasivo_Capital = (int)reader["ID_Pasivo_Capital"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],
                         Monto = (decimal)reader["Monto"]
@@ -221,7 +221,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     cuentasBalance.Add(new Pasivo_Capital
                     {
-                        ID = (int)reader["ID"],
+                        ID_Pasivo_Capital = (int)reader["ID_Pasivo_Capital"],
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         NombreCuenta = (string)reader["NombreCuenta"],
