@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsForm.Repository;
+using WindowsForm.IRepository.Repository;
 using WindowsForm.IRepository;
 
 namespace WindowsForm

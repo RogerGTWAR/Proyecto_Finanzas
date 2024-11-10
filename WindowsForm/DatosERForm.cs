@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForm.IRepository;
 using WindowsForm.Models;
-using WindowsForm.Repository;
+using WindowsForm.IRepository.Repository;
 
 namespace WindowsForm
 {
