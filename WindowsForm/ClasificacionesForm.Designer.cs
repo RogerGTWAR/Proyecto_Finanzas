@@ -30,13 +30,13 @@
         {
             components = new System.ComponentModel.Container();
             dgvClasificaciones = new DataGridView();
+            iDClasificacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            descripcionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            clasificacionBindingSource = new BindingSource(components);
             btnAgregar = new Button();
             txtDescripcion = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            clasificacionBindingSource = new BindingSource(components);
-            iDClasificacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            descripcionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvClasificaciones).BeginInit();
             ((System.ComponentModel.ISupportInitialize)clasificacionBindingSource).BeginInit();
             SuspendLayout();
@@ -48,59 +48,13 @@
             dgvClasificaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClasificaciones.Columns.AddRange(new DataGridViewColumn[] { iDClasificacionDataGridViewTextBoxColumn, descripcionDataGridViewTextBoxColumn });
             dgvClasificaciones.DataSource = clasificacionBindingSource;
-            dgvClasificaciones.Location = new Point(365, 177);
+            dgvClasificaciones.Location = new Point(815, 177);
             dgvClasificaciones.Name = "dgvClasificaciones";
             dgvClasificaciones.ReadOnly = true;
             dgvClasificaciones.RowHeadersWidth = 51;
             dgvClasificaciones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvClasificaciones.Size = new Size(308, 188);
             dgvClasificaciones.TabIndex = 0;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.BackColor = Color.SeaGreen;
-            btnAgregar.FlatStyle = FlatStyle.Popup;
-            btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(693, 177);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(109, 70);
-            btnAgregar.TabIndex = 2;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = false;
-            btnAgregar.Click += btnAgregar_Click;
-            // 
-            // txtDescripcion
-            // 
-            txtDescripcion.Location = new Point(455, 116);
-            txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(161, 27);
-            txtDescripcion.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(480, 85);
-            label2.Name = "label2";
-            label2.Size = new Size(114, 28);
-            label2.TabIndex = 6;
-            label2.Text = "Descripcion";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(389, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(338, 38);
-            label1.TabIndex = 7;
-            label1.Text = "Clasificaciones de cuentas";
-            // 
-            // clasificacionBindingSource
-            // 
-            clasificacionBindingSource.DataSource = typeof(Models.Clasificacion);
             // 
             // iDClasificacionDataGridViewTextBoxColumn
             // 
@@ -120,12 +74,58 @@
             descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             descripcionDataGridViewTextBoxColumn.Width = 125;
             // 
+            // clasificacionBindingSource
+            // 
+            clasificacionBindingSource.DataSource = typeof(Models.Clasificacion);
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.BackColor = Color.SeaGreen;
+            btnAgregar.FlatStyle = FlatStyle.Popup;
+            btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(1143, 177);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(109, 70);
+            btnAgregar.TabIndex = 2;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // txtDescripcion
+            // 
+            txtDescripcion.Location = new Point(905, 116);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(161, 27);
+            txtDescripcion.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(930, 85);
+            label2.Name = "label2";
+            label2.Size = new Size(114, 28);
+            label2.TabIndex = 6;
+            label2.Text = "Descripcion";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(839, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(338, 38);
+            label1.TabIndex = 7;
+            label1.Text = "Clasificaciones de cuentas";
+            // 
             // ClasificacionesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(963, 568);
+            ClientSize = new Size(1360, 568);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(txtDescripcion);

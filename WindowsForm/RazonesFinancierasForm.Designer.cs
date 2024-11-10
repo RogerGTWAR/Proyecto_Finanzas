@@ -67,7 +67,6 @@
             cbID_CuentasDeRazones = new ComboBox();
             cbID_DatosBalance = new ComboBox();
             dgvRazones = new DataGridView();
-            razonesFinancieraBindingSource = new BindingSource(components);
             iDRazonesFinancierasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             iDCuentasDeRazonesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             iDDatosBalanceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -86,12 +85,18 @@
             mUBDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             mUODataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             mUNDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            razonesFinancieraBindingSource = new BindingSource(components);
+            panel1 = new Panel();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRazones).BeginInit();
             ((System.ComponentModel.ISupportInitialize)razonesFinancieraBindingSource).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -99,7 +104,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(634, 9);
+            label1.Location = new Point(657, 24);
             label1.Name = "label1";
             label1.Size = new Size(298, 41);
             label1.TabIndex = 1;
@@ -181,7 +186,7 @@
             // 
             btnRazonesFinancieras.BackColor = Color.White;
             btnRazonesFinancieras.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRazonesFinancieras.Location = new Point(393, 353);
+            btnRazonesFinancieras.Location = new Point(130, 344);
             btnRazonesFinancieras.Name = "btnRazonesFinancieras";
             btnRazonesFinancieras.Size = new Size(131, 52);
             btnRazonesFinancieras.TabIndex = 42;
@@ -375,7 +380,7 @@
             groupBox1.FlatStyle = FlatStyle.Popup;
             groupBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(309, 63);
+            groupBox1.Location = new Point(22, 68);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(215, 249);
             groupBox1.TabIndex = 66;
@@ -397,7 +402,7 @@
             groupBox2.FlatStyle = FlatStyle.Popup;
             groupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(543, 63);
+            groupBox2.Location = new Point(256, 68);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(534, 249);
             groupBox2.TabIndex = 67;
@@ -414,7 +419,7 @@
             groupBox3.Controls.Add(txtRazonPasivoCapital);
             groupBox3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.ForeColor = Color.White;
-            groupBox3.Location = new Point(1124, 63);
+            groupBox3.Location = new Point(837, 68);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(351, 249);
             groupBox3.TabIndex = 68;
@@ -450,9 +455,9 @@
             groupBox4.Controls.Add(txtMargenUtilidadNeta);
             groupBox4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox4.ForeColor = Color.White;
-            groupBox4.Location = new Point(1538, 63);
+            groupBox4.Location = new Point(1251, 68);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(316, 249);
+            groupBox4.Size = new Size(325, 249);
             groupBox4.TabIndex = 69;
             groupBox4.TabStop = false;
             groupBox4.Text = "Razones de Rentabilidad";
@@ -460,7 +465,7 @@
             // cbID_DatosER
             // 
             cbID_DatosER.FormattingEnabled = true;
-            cbID_DatosER.Location = new Point(1033, 318);
+            cbID_DatosER.Location = new Point(872, 361);
             cbID_DatosER.Name = "cbID_DatosER";
             cbID_DatosER.Size = new Size(151, 28);
             cbID_DatosER.TabIndex = 71;
@@ -468,7 +473,7 @@
             // cbID_CuentasDeRazones
             // 
             cbID_CuentasDeRazones.FormattingEnabled = true;
-            cbID_CuentasDeRazones.Location = new Point(647, 318);
+            cbID_CuentasDeRazones.Location = new Point(413, 361);
             cbID_CuentasDeRazones.Name = "cbID_CuentasDeRazones";
             cbID_CuentasDeRazones.Size = new Size(151, 28);
             cbID_CuentasDeRazones.TabIndex = 72;
@@ -476,7 +481,7 @@
             // cbID_DatosBalance
             // 
             cbID_DatosBalance.FormattingEnabled = true;
-            cbID_DatosBalance.Location = new Point(849, 318);
+            cbID_DatosBalance.Location = new Point(639, 361);
             cbID_DatosBalance.Name = "cbID_DatosBalance";
             cbID_DatosBalance.Size = new Size(151, 28);
             cbID_DatosBalance.TabIndex = 73;
@@ -488,17 +493,14 @@
             dgvRazones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvRazones.Columns.AddRange(new DataGridViewColumn[] { iDRazonesFinancierasDataGridViewTextBoxColumn, iDCuentasDeRazonesDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDDatosERDataGridViewTextBoxColumn, capitalTrabajoNetoDataGridViewTextBoxColumn, razonCirculanteDataGridViewTextBoxColumn, pruebaAcidaDataGridViewTextBoxColumn, rotacionInventarioDataGridViewTextBoxColumn, rotacionCuentasPorCobrarDataGridViewTextBoxColumn, periodoPromedioCobroDataGridViewTextBoxColumn, rotacionActivosFijosDataGridViewTextBoxColumn, rotacionActivosTotalesDataGridViewTextBoxColumn, razonDeudaTotalDataGridViewTextBoxColumn, razonPasivoCapitalDataGridViewTextBoxColumn, razonRotacionInteresUtilidadDataGridViewTextBoxColumn, mUBDataGridViewTextBoxColumn, mUODataGridViewTextBoxColumn, mUNDataGridViewTextBoxColumn });
             dgvRazones.DataSource = razonesFinancieraBindingSource;
-            dgvRazones.Location = new Point(393, 411);
+            dgvRazones.Dock = DockStyle.Bottom;
+            dgvRazones.Location = new Point(0, 428);
             dgvRazones.Name = "dgvRazones";
             dgvRazones.ReadOnly = true;
             dgvRazones.RowHeadersWidth = 51;
             dgvRazones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRazones.Size = new Size(995, 267);
+            dgvRazones.Size = new Size(1576, 621);
             dgvRazones.TabIndex = 74;
-            // 
-            // razonesFinancieraBindingSource
-            // 
-            razonesFinancieraBindingSource.DataSource = typeof(Models.RazonesFinanciera);
             // 
             // iDRazonesFinancierasDataGridViewTextBoxColumn
             // 
@@ -662,22 +664,70 @@
             mUNDataGridViewTextBoxColumn.ReadOnly = true;
             mUNDataGridViewTextBoxColumn.Width = 125;
             // 
+            // razonesFinancieraBindingSource
+            // 
+            razonesFinancieraBindingSource.DataSource = typeof(Models.RazonesFinanciera);
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(dgvRazones);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(btnRazonesFinancieras);
+            panel1.Controls.Add(cbID_DatosBalance);
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(cbID_CuentasDeRazones);
+            panel1.Controls.Add(cbID_DatosER);
+            panel1.Controls.Add(groupBox3);
+            panel1.Controls.Add(groupBox4);
+            panel1.Location = new Point(291, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1576, 1049);
+            panel1.TabIndex = 75;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(872, 330);
+            label5.Name = "label5";
+            label5.Size = new Size(150, 28);
+            label5.TabIndex = 76;
+            label5.Text = "Balance General";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(619, 330);
+            label4.Name = "label4";
+            label4.Size = new Size(189, 28);
+            label4.TabIndex = 75;
+            label4.Text = "Estado de Resultado";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(446, 330);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 28);
+            label3.TabIndex = 65;
+            label3.Text = "Cuentas";
+            // 
             // RazonesFinancierasForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
             ClientSize = new Size(1914, 1096);
-            Controls.Add(dgvRazones);
-            Controls.Add(cbID_DatosBalance);
-            Controls.Add(cbID_CuentasDeRazones);
-            Controls.Add(cbID_DatosER);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(btnRazonesFinancieras);
-            Controls.Add(label1);
+            Controls.Add(panel1);
             Name = "RazonesFinancierasForm";
             Text = "  RazonesFinancierasForm";
             Load += RazonesFinancierasForm_Load;
@@ -691,8 +741,9 @@
             groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRazones).EndInit();
             ((System.ComponentModel.ISupportInitialize)razonesFinancieraBindingSource).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -753,5 +804,9 @@
         private DataGridViewTextBoxColumn mUBDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn mUODataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn mUNDataGridViewTextBoxColumn;
+        private Panel panel1;
+        private Label label5;
+        private Label label4;
+        private Label label3;
     }
 }

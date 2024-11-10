@@ -440,12 +440,12 @@
             dgv.Columns.AddRange(new DataGridViewColumn[] { iDCuentasDeRazonesDataGridViewTextBoxColumn, nombreDeLaEmpresaDataGridViewTextBoxColumn, activoCirculanteDataGridViewTextBoxColumn, pasivoCirculanteDataGridViewTextBoxColumn, inventarioDataGridViewTextBoxColumn, activoTotalDataGridViewTextBoxColumn, pasivoTotalDataGridViewTextBoxColumn, capitalContableDataGridViewTextBoxColumn, activoFijoDataGridViewTextBoxColumn, interesesPagadosDataGridViewTextBoxColumn, cuentasPorCobrarDataGridViewTextBoxColumn, utilidadOperativaDataGridViewTextBoxColumn, ventasNetasDataGridViewTextBoxColumn, costoVentasDataGridViewTextBoxColumn, ventasAnualesDataGridViewTextBoxColumn, utilidadAntesDeImpuestosDataGridViewTextBoxColumn, utilidadNetaDataGridViewTextBoxColumn });
             dgv.DataSource = cuentasDeLasRazonesBindingSource;
             dgv.Dock = DockStyle.Bottom;
-            dgv.Location = new Point(0, 535);
+            dgv.Location = new Point(0, 547);
             dgv.Name = "dgv";
             dgv.ReadOnly = true;
             dgv.RowHeadersWidth = 51;
             dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.Size = new Size(1188, 464);
+            dgv.Size = new Size(1188, 494);
             dgv.TabIndex = 37;
             dgv.CellContentClick += dgv_CellContentClick_1;
             // 
@@ -689,7 +689,7 @@
             panel1.Controls.Add(groupBox1);
             panel1.Location = new Point(365, -3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1188, 999);
+            panel1.Size = new Size(1188, 1041);
             panel1.TabIndex = 42;
             // 
             // CuentasRazonesForm
@@ -697,7 +697,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1547, 997);
+            ClientSize = new Size(1547, 1105);
             Controls.Add(panel1);
             Name = "CuentasRazonesForm";
             Text = "CuentasRazonesForm";

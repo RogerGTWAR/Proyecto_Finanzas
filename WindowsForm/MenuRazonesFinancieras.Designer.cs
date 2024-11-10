@@ -44,7 +44,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1263, 185);
+            panel1.Size = new Size(1545, 185);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -52,7 +52,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(453, 46);
+            label1.Location = new Point(685, 40);
             label1.Name = "label1";
             label1.Size = new Size(588, 50);
             label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             btnRazones.FlatStyle = FlatStyle.Popup;
             btnRazones.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRazones.ForeColor = SystemColors.ControlText;
-            btnRazones.Location = new Point(724, 115);
+            btnRazones.Location = new Point(1023, 111);
             btnRazones.Name = "btnRazones";
             btnRazones.Size = new Size(175, 40);
             btnRazones.TabIndex = 1;
@@ -78,7 +78,7 @@
             btnCuentas.FlatStyle = FlatStyle.Popup;
             btnCuentas.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCuentas.ForeColor = SystemColors.ControlText;
-            btnCuentas.Location = new Point(467, 115);
+            btnCuentas.Location = new Point(766, 111);
             btnCuentas.Name = "btnCuentas";
             btnCuentas.Size = new Size(175, 40);
             btnCuentas.TabIndex = 0;
@@ -91,7 +91,7 @@
             panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(0, 185);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1263, 540);
+            panelContenedor.Size = new Size(1545, 540);
             panelContenedor.TabIndex = 1;
             // 
             // MenuRazonesFinancieras
@@ -99,7 +99,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1263, 725);
+            ClientSize = new Size(1545, 725);
             Controls.Add(panelContenedor);
             Controls.Add(panel1);
             ForeColor = SystemColors.ControlText;
