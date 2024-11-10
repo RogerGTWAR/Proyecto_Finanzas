@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,21 +64,21 @@ namespace WindowsForm
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNombreEmpresa.Text) ||
-     string.IsNullOrWhiteSpace(txtActivoCirculante.Text) ||
-     string.IsNullOrWhiteSpace(txtPasivoCirculante.Text) ||
-     string.IsNullOrWhiteSpace(txtInventario.Text) ||
-     string.IsNullOrWhiteSpace(txtActivoTotal.Text) ||
-     string.IsNullOrWhiteSpace(txtPasivoTotal.Text) ||
-     string.IsNullOrWhiteSpace(txtCapitalContable.Text) ||
-     string.IsNullOrWhiteSpace(txtActivosFijos.Text) ||
-     string.IsNullOrWhiteSpace(txtInteresesPagados.Text) ||
-     string.IsNullOrWhiteSpace(txtCuentasPorCobrar.Text) ||
-     string.IsNullOrWhiteSpace(txtUtilidadOperativa.Text) ||
-     string.IsNullOrWhiteSpace(txtVentasNetas.Text) ||
-     string.IsNullOrWhiteSpace(txtCostoVentas.Text) ||
-     string.IsNullOrWhiteSpace(txtVentasAnuales.Text) ||
-     string.IsNullOrWhiteSpace(txtUtilidadAntesImpuestos.Text) ||
-     string.IsNullOrWhiteSpace(txtUtilidadNeta.Text))
+               string.IsNullOrWhiteSpace(txtActivoCirculante.Text) ||
+               string.IsNullOrWhiteSpace(txtPasivoCirculante.Text) ||
+               string.IsNullOrWhiteSpace(txtInventario.Text) ||
+               string.IsNullOrWhiteSpace(txtActivoTotal.Text) ||
+               string.IsNullOrWhiteSpace(txtPasivoTotal.Text) || 
+               string.IsNullOrWhiteSpace(txtCapitalContable.Text) ||
+               string.IsNullOrWhiteSpace(txtActivosFijos.Text) ||
+               string.IsNullOrWhiteSpace(txtInteresesPagados.Text) ||
+               string.IsNullOrWhiteSpace(txtCuentasPorCobrar.Text) ||
+               string.IsNullOrWhiteSpace(txtUtilidadOperativa.Text) ||
+               string.IsNullOrWhiteSpace(txtVentasNetas.Text) ||
+               string.IsNullOrWhiteSpace(txtCostoVentas.Text) ||
+               string.IsNullOrWhiteSpace(txtVentasAnuales.Text) ||
+               string.IsNullOrWhiteSpace(txtUtilidadAntesImpuestos.Text) ||
+               string.IsNullOrWhiteSpace(txtUtilidadNeta.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -88,21 +89,21 @@ namespace WindowsForm
                 CuentasDeLasRazones nuevaCuenta = new CuentasDeLasRazones
                 {
                     NombreDeLaEmpresa = txtNombreEmpresa.Text,
-                    ActivoCirculante = Convert.ToDecimal(txtActivoCirculante.Text),
-                    PasivoCirculante = Convert.ToDecimal(txtPasivoCirculante.Text),
-                    Inventario = Convert.ToDecimal(txtInventario.Text),
-                    ActivoTotal = Convert.ToDecimal(txtActivoTotal.Text),
-                    PasivoTotal = Convert.ToDecimal(txtPasivoTotal.Text),
-                    CapitalContable = Convert.ToDecimal(txtCapitalContable.Text),
-                    ActivoFijo = Convert.ToDecimal(txtActivosFijos.Text),
-                    InteresesPagados = Convert.ToDecimal(txtInteresesPagados.Text),
-                    CuentasPorCobrar = Convert.ToDecimal(txtCuentasPorCobrar.Text),
-                    UtilidadOperativa = Convert.ToDecimal(txtUtilidadOperativa.Text),
-                    VentasNetas = Convert.ToDecimal(txtVentasNetas.Text),
-                    CostoVentas = Convert.ToDecimal(txtCostoVentas.Text),
-                    VentasAnuales = Convert.ToDecimal(txtVentasAnuales.Text),
-                    UtilidadAntesDeImpuestos = Convert.ToDecimal(txtUtilidadAntesImpuestos.Text),
-                    UtilidadNeta = Convert.ToDecimal(txtUtilidadNeta.Text)
+                    ActivoCirculante = Convert.ToDecimal(txtActivoCirculante.Text, CultureInfo.InvariantCulture),
+                    PasivoCirculante = Convert.ToDecimal(txtPasivoCirculante.Text, CultureInfo.InvariantCulture),
+                    Inventario = Convert.ToDecimal(txtInventario.Text, CultureInfo.InvariantCulture),
+                    ActivoTotal = Convert.ToDecimal(txtActivoTotal.Text, CultureInfo.InvariantCulture),
+                    PasivoTotal = Convert.ToDecimal(txtPasivoTotal.Text, CultureInfo.InvariantCulture),
+                    CapitalContable = Convert.ToDecimal(txtCapitalContable.Text, CultureInfo.InvariantCulture),
+                    ActivoFijo = Convert.ToDecimal(txtActivosFijos.Text, CultureInfo.InvariantCulture),
+                    InteresesPagados = Convert.ToDecimal(txtInteresesPagados.Text, CultureInfo.InvariantCulture),
+                    CuentasPorCobrar = Convert.ToDecimal(txtCuentasPorCobrar.Text, CultureInfo.InvariantCulture),
+                    UtilidadOperativa = Convert.ToDecimal(txtUtilidadOperativa.Text, CultureInfo.InvariantCulture),
+                    VentasNetas = Convert.ToDecimal(txtVentasNetas.Text, CultureInfo.InvariantCulture),
+                    CostoVentas = Convert.ToDecimal(txtCostoVentas.Text, CultureInfo.InvariantCulture),
+                    VentasAnuales = Convert.ToDecimal(txtVentasAnuales.Text, CultureInfo.InvariantCulture),
+                    UtilidadAntesDeImpuestos = Convert.ToDecimal(txtUtilidadAntesImpuestos.Text, CultureInfo.InvariantCulture),
+                    UtilidadNeta = Convert.ToDecimal(txtUtilidadNeta.Text, CultureInfo.InvariantCulture)
                 };
                 cuentasRazonesrepository.Add(nuevaCuenta);
                 RefreshData();
@@ -201,22 +202,22 @@ namespace WindowsForm
                 {
                     DataGridViewRow selectedRow = dgv.Rows[e.RowIndex];
 
-                    txtNombreEmpresa.Text = selectedRow.Cells["NombreDeLaEmpresa"].Value?.ToString() ?? string.Empty;
-                    txtActivoCirculante.Text = selectedRow.Cells["ActivoCirculante"].Value?.ToString() ?? string.Empty;
-                    txtPasivoCirculante.Text = selectedRow.Cells["PasivoCirculante"].Value?.ToString() ?? string.Empty;
-                    txtInventario.Text = selectedRow.Cells["Inventario"].Value?.ToString() ?? string.Empty;
-                    txtActivoTotal.Text = selectedRow.Cells["ActivoTotal"].Value?.ToString() ?? string.Empty;
-                    txtPasivoTotal.Text = selectedRow.Cells["PasivoTotal"].Value?.ToString() ?? string.Empty;
-                    txtCapitalContable.Text = selectedRow.Cells["CapitalContable"].Value?.ToString() ?? string.Empty;
-                    txtActivosFijos.Text = selectedRow.Cells["ActivoFijo"].Value?.ToString() ?? string.Empty;
-                    txtInteresesPagados.Text = selectedRow.Cells["InteresesPagados"].Value?.ToString() ?? string.Empty;
-                    txtCuentasPorCobrar.Text = selectedRow.Cells["CuentasPorCobrar"].Value?.ToString() ?? string.Empty;
-                    txtUtilidadOperativa.Text = selectedRow.Cells["UtilidadOperativa"].Value?.ToString() ?? string.Empty;
-                    txtVentasNetas.Text = selectedRow.Cells["VentasNetas"].Value?.ToString() ?? string.Empty;
-                    txtCostoVentas.Text = selectedRow.Cells["CostoVentas"].Value?.ToString() ?? string.Empty;
-                    txtVentasAnuales.Text = selectedRow.Cells["VentasAnuales"].Value?.ToString() ?? string.Empty;
-                    txtUtilidadAntesImpuestos.Text = selectedRow.Cells["UtilidadAntesDeImpuestos"].Value?.ToString() ?? string.Empty;
-                    txtUtilidadNeta.Text = selectedRow.Cells["UtilidadNeta"].Value?.ToString() ?? string.Empty;
+                    txtNombreEmpresa.Text = selectedRow.Cells["nombreDeLaEmpresaDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtActivoCirculante.Text = selectedRow.Cells["activoCirculanteDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtPasivoCirculante.Text = selectedRow.Cells["pasivoCirculanteDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtInventario.Text = selectedRow.Cells["inventarioDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtActivoTotal.Text = selectedRow.Cells["activoTotalDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtPasivoTotal.Text = selectedRow.Cells["pasivoTotalDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtCapitalContable.Text = selectedRow.Cells["capitalContableDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtActivosFijos.Text = selectedRow.Cells["activoFijoDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtInteresesPagados.Text = selectedRow.Cells["interesesPagadosDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtCuentasPorCobrar.Text = selectedRow.Cells["cuentasPorCobrarDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtUtilidadOperativa.Text = selectedRow.Cells["utilidadOperativaDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtVentasNetas.Text = selectedRow.Cells["utilidadOperativaDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtCostoVentas.Text = selectedRow.Cells["ventasNetasDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtVentasAnuales.Text = selectedRow.Cells["ventasAnualesDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtUtilidadAntesImpuestos.Text = selectedRow.Cells["utilidadAntesDeImpuestosDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtUtilidadNeta.Text = selectedRow.Cells["utilidadNetaDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
                 }
             }
             catch (Exception ex)

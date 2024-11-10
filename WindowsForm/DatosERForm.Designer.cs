@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             dgvDatosER = new DataGridView();
             txtNombreER = new TextBox();
             dtpFechaInicio = new DateTimePicker();
@@ -37,19 +38,28 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            datosERBindingSource = new BindingSource(components);
+            iDDatosERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechaInicioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechafinDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvDatosER).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)datosERBindingSource).BeginInit();
             SuspendLayout();
             // 
             // dgvDatosER
             // 
+            dgvDatosER.AutoGenerateColumns = false;
             dgvDatosER.BackgroundColor = Color.White;
             dgvDatosER.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDatosER.Location = new Point(393, 231);
+            dgvDatosER.Columns.AddRange(new DataGridViewColumn[] { iDDatosERDataGridViewTextBoxColumn, nombreERDataGridViewTextBoxColumn, fechaInicioDataGridViewTextBoxColumn, fechafinDataGridViewTextBoxColumn });
+            dgvDatosER.DataSource = datosERBindingSource;
+            dgvDatosER.Location = new Point(434, 231);
             dgvDatosER.Name = "dgvDatosER";
             dgvDatosER.ReadOnly = true;
             dgvDatosER.RowHeadersWidth = 51;
             dgvDatosER.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDatosER.Size = new Size(567, 188);
+            dgvDatosER.Size = new Size(521, 188);
             dgvDatosER.TabIndex = 0;
             // 
             // txtNombreER
@@ -95,7 +105,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(434, 100);
+            label1.Location = new Point(460, 100);
             label1.Name = "label1";
             label1.Size = new Size(144, 28);
             label1.TabIndex = 5;
@@ -134,6 +144,46 @@
             label4.TabIndex = 8;
             label4.Text = "Creacion de Estado de Resultado";
             // 
+            // datosERBindingSource
+            // 
+            datosERBindingSource.DataSource = typeof(Models.DatosER);
+            // 
+            // iDDatosERDataGridViewTextBoxColumn
+            // 
+            iDDatosERDataGridViewTextBoxColumn.DataPropertyName = "ID_DatosER";
+            iDDatosERDataGridViewTextBoxColumn.HeaderText = "ID";
+            iDDatosERDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDDatosERDataGridViewTextBoxColumn.Name = "iDDatosERDataGridViewTextBoxColumn";
+            iDDatosERDataGridViewTextBoxColumn.ReadOnly = true;
+            iDDatosERDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // nombreERDataGridViewTextBoxColumn
+            // 
+            nombreERDataGridViewTextBoxColumn.DataPropertyName = "NombreER";
+            nombreERDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            nombreERDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nombreERDataGridViewTextBoxColumn.Name = "nombreERDataGridViewTextBoxColumn";
+            nombreERDataGridViewTextBoxColumn.ReadOnly = true;
+            nombreERDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fechaInicioDataGridViewTextBoxColumn
+            // 
+            fechaInicioDataGridViewTextBoxColumn.DataPropertyName = "FechaInicio";
+            fechaInicioDataGridViewTextBoxColumn.HeaderText = "Fecha de Inicio";
+            fechaInicioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            fechaInicioDataGridViewTextBoxColumn.Name = "fechaInicioDataGridViewTextBoxColumn";
+            fechaInicioDataGridViewTextBoxColumn.ReadOnly = true;
+            fechaInicioDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // fechafinDataGridViewTextBoxColumn
+            // 
+            fechafinDataGridViewTextBoxColumn.DataPropertyName = "Fechafin";
+            fechafinDataGridViewTextBoxColumn.HeaderText = "Fecha de Finalizacion";
+            fechafinDataGridViewTextBoxColumn.MinimumWidth = 6;
+            fechafinDataGridViewTextBoxColumn.Name = "fechafinDataGridViewTextBoxColumn";
+            fechafinDataGridViewTextBoxColumn.ReadOnly = true;
+            fechafinDataGridViewTextBoxColumn.Width = 125;
+            // 
             // DatosERForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -153,6 +203,7 @@
             Text = "DatosER";
             Load += DatosER_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDatosER).EndInit();
+            ((System.ComponentModel.ISupportInitialize)datosERBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,5 +219,10 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private DataGridViewTextBoxColumn iDDatosERDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombreERDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn fechaInicioDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn fechafinDataGridViewTextBoxColumn;
+        private BindingSource datosERBindingSource;
     }
 }

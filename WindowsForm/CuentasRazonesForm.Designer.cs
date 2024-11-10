@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             txtActivoCirculante = new TextBox();
             txtPasivoCirculante = new TextBox();
             txtActivoTotal = new TextBox();
@@ -63,13 +64,34 @@
             btnActualizar = new Button();
             label18 = new Label();
             dgv = new DataGridView();
+            iDCuentasDeRazonesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreDeLaEmpresaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            activoCirculanteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            pasivoCirculanteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            inventarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            activoTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            pasivoTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            capitalContableDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            activoFijoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            interesesPagadosDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cuentasPorCobrarDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            utilidadOperativaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ventasNetasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            costoVentasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ventasAnualesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            utilidadNetaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cuentasDeLasRazonesBindingSource = new BindingSource(components);
             txtNombreEmpresa = new TextBox();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             label10 = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cuentasDeLasRazonesBindingSource).BeginInit();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // txtActivoCirculante
@@ -99,7 +121,7 @@
             // txtPasivoTotal
             // 
             txtPasivoTotal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPasivoTotal.Location = new Point(214, 145);
+            txtPasivoTotal.Location = new Point(208, 168);
             txtPasivoTotal.Name = "txtPasivoTotal";
             txtPasivoTotal.Size = new Size(156, 27);
             txtPasivoTotal.TabIndex = 3;
@@ -363,7 +385,7 @@
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.ForeColor = SystemColors.ControlText;
-            btnAgregar.Location = new Point(457, 556);
+            btnAgregar.Location = new Point(17, 471);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(131, 44);
             btnAgregar.TabIndex = 32;
@@ -377,7 +399,7 @@
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = SystemColors.ControlText;
-            btnEliminar.Location = new Point(1245, 556);
+            btnEliminar.Location = new Point(1029, 471);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(131, 44);
             btnEliminar.TabIndex = 34;
@@ -391,7 +413,7 @@
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnActualizar.ForeColor = SystemColors.ControlText;
-            btnActualizar.Location = new Point(858, 556);
+            btnActualizar.Location = new Point(495, 471);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(131, 44);
             btnActualizar.TabIndex = 35;
@@ -404,7 +426,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(826, 26);
+            label18.Location = new Point(442, 0);
             label18.Name = "label18";
             label18.Size = new Size(130, 41);
             label18.TabIndex = 36;
@@ -412,20 +434,181 @@
             // 
             // dgv
             // 
+            dgv.AutoGenerateColumns = false;
             dgv.BackgroundColor = Color.White;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv.Location = new Point(455, 602);
+            dgv.Columns.AddRange(new DataGridViewColumn[] { iDCuentasDeRazonesDataGridViewTextBoxColumn, nombreDeLaEmpresaDataGridViewTextBoxColumn, activoCirculanteDataGridViewTextBoxColumn, pasivoCirculanteDataGridViewTextBoxColumn, inventarioDataGridViewTextBoxColumn, activoTotalDataGridViewTextBoxColumn, pasivoTotalDataGridViewTextBoxColumn, capitalContableDataGridViewTextBoxColumn, activoFijoDataGridViewTextBoxColumn, interesesPagadosDataGridViewTextBoxColumn, cuentasPorCobrarDataGridViewTextBoxColumn, utilidadOperativaDataGridViewTextBoxColumn, ventasNetasDataGridViewTextBoxColumn, costoVentasDataGridViewTextBoxColumn, ventasAnualesDataGridViewTextBoxColumn, utilidadAntesDeImpuestosDataGridViewTextBoxColumn, utilidadNetaDataGridViewTextBoxColumn });
+            dgv.DataSource = cuentasDeLasRazonesBindingSource;
+            dgv.Dock = DockStyle.Bottom;
+            dgv.Location = new Point(0, 535);
             dgv.Name = "dgv";
             dgv.ReadOnly = true;
             dgv.RowHeadersWidth = 51;
             dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.Size = new Size(921, 176);
+            dgv.Size = new Size(1188, 464);
             dgv.TabIndex = 37;
             dgv.CellContentClick += dgv_CellContentClick_1;
             // 
+            // iDCuentasDeRazonesDataGridViewTextBoxColumn
+            // 
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.DataPropertyName = "ID_CuentasDeRazones";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.HeaderText = "ID";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.Name = "iDCuentasDeRazonesDataGridViewTextBoxColumn";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.ReadOnly = true;
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // nombreDeLaEmpresaDataGridViewTextBoxColumn
+            // 
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.DataPropertyName = "NombreDeLaEmpresa";
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.HeaderText = "Nombre de la Empresa";
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.Name = "nombreDeLaEmpresaDataGridViewTextBoxColumn";
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.ReadOnly = true;
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // activoCirculanteDataGridViewTextBoxColumn
+            // 
+            activoCirculanteDataGridViewTextBoxColumn.DataPropertyName = "ActivoCirculante";
+            activoCirculanteDataGridViewTextBoxColumn.HeaderText = "Activo Circulante";
+            activoCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            activoCirculanteDataGridViewTextBoxColumn.Name = "activoCirculanteDataGridViewTextBoxColumn";
+            activoCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
+            activoCirculanteDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // pasivoCirculanteDataGridViewTextBoxColumn
+            // 
+            pasivoCirculanteDataGridViewTextBoxColumn.DataPropertyName = "PasivoCirculante";
+            pasivoCirculanteDataGridViewTextBoxColumn.HeaderText = "Pasivo Circulante";
+            pasivoCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            pasivoCirculanteDataGridViewTextBoxColumn.Name = "pasivoCirculanteDataGridViewTextBoxColumn";
+            pasivoCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
+            pasivoCirculanteDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // inventarioDataGridViewTextBoxColumn
+            // 
+            inventarioDataGridViewTextBoxColumn.DataPropertyName = "Inventario";
+            inventarioDataGridViewTextBoxColumn.HeaderText = "Inventario";
+            inventarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            inventarioDataGridViewTextBoxColumn.Name = "inventarioDataGridViewTextBoxColumn";
+            inventarioDataGridViewTextBoxColumn.ReadOnly = true;
+            inventarioDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // activoTotalDataGridViewTextBoxColumn
+            // 
+            activoTotalDataGridViewTextBoxColumn.DataPropertyName = "ActivoTotal";
+            activoTotalDataGridViewTextBoxColumn.HeaderText = "Activo Total";
+            activoTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            activoTotalDataGridViewTextBoxColumn.Name = "activoTotalDataGridViewTextBoxColumn";
+            activoTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            activoTotalDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // pasivoTotalDataGridViewTextBoxColumn
+            // 
+            pasivoTotalDataGridViewTextBoxColumn.DataPropertyName = "PasivoTotal";
+            pasivoTotalDataGridViewTextBoxColumn.HeaderText = "Pasivo Total";
+            pasivoTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            pasivoTotalDataGridViewTextBoxColumn.Name = "pasivoTotalDataGridViewTextBoxColumn";
+            pasivoTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            pasivoTotalDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // capitalContableDataGridViewTextBoxColumn
+            // 
+            capitalContableDataGridViewTextBoxColumn.DataPropertyName = "CapitalContable";
+            capitalContableDataGridViewTextBoxColumn.HeaderText = "Capital Contable";
+            capitalContableDataGridViewTextBoxColumn.MinimumWidth = 6;
+            capitalContableDataGridViewTextBoxColumn.Name = "capitalContableDataGridViewTextBoxColumn";
+            capitalContableDataGridViewTextBoxColumn.ReadOnly = true;
+            capitalContableDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // activoFijoDataGridViewTextBoxColumn
+            // 
+            activoFijoDataGridViewTextBoxColumn.DataPropertyName = "ActivoFijo";
+            activoFijoDataGridViewTextBoxColumn.HeaderText = "Activo Fijo";
+            activoFijoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            activoFijoDataGridViewTextBoxColumn.Name = "activoFijoDataGridViewTextBoxColumn";
+            activoFijoDataGridViewTextBoxColumn.ReadOnly = true;
+            activoFijoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // interesesPagadosDataGridViewTextBoxColumn
+            // 
+            interesesPagadosDataGridViewTextBoxColumn.DataPropertyName = "InteresesPagados";
+            interesesPagadosDataGridViewTextBoxColumn.HeaderText = "Intereses Pagados";
+            interesesPagadosDataGridViewTextBoxColumn.MinimumWidth = 6;
+            interesesPagadosDataGridViewTextBoxColumn.Name = "interesesPagadosDataGridViewTextBoxColumn";
+            interesesPagadosDataGridViewTextBoxColumn.ReadOnly = true;
+            interesesPagadosDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // cuentasPorCobrarDataGridViewTextBoxColumn
+            // 
+            cuentasPorCobrarDataGridViewTextBoxColumn.DataPropertyName = "CuentasPorCobrar";
+            cuentasPorCobrarDataGridViewTextBoxColumn.HeaderText = "Cuentas x Cobrar";
+            cuentasPorCobrarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            cuentasPorCobrarDataGridViewTextBoxColumn.Name = "cuentasPorCobrarDataGridViewTextBoxColumn";
+            cuentasPorCobrarDataGridViewTextBoxColumn.ReadOnly = true;
+            cuentasPorCobrarDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // utilidadOperativaDataGridViewTextBoxColumn
+            // 
+            utilidadOperativaDataGridViewTextBoxColumn.DataPropertyName = "UtilidadOperativa";
+            utilidadOperativaDataGridViewTextBoxColumn.HeaderText = "Utilidad Operativa";
+            utilidadOperativaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            utilidadOperativaDataGridViewTextBoxColumn.Name = "utilidadOperativaDataGridViewTextBoxColumn";
+            utilidadOperativaDataGridViewTextBoxColumn.ReadOnly = true;
+            utilidadOperativaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // ventasNetasDataGridViewTextBoxColumn
+            // 
+            ventasNetasDataGridViewTextBoxColumn.DataPropertyName = "VentasNetas";
+            ventasNetasDataGridViewTextBoxColumn.HeaderText = "Ventas Netas";
+            ventasNetasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            ventasNetasDataGridViewTextBoxColumn.Name = "ventasNetasDataGridViewTextBoxColumn";
+            ventasNetasDataGridViewTextBoxColumn.ReadOnly = true;
+            ventasNetasDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // costoVentasDataGridViewTextBoxColumn
+            // 
+            costoVentasDataGridViewTextBoxColumn.DataPropertyName = "CostoVentas";
+            costoVentasDataGridViewTextBoxColumn.HeaderText = "Costo Ventas";
+            costoVentasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            costoVentasDataGridViewTextBoxColumn.Name = "costoVentasDataGridViewTextBoxColumn";
+            costoVentasDataGridViewTextBoxColumn.ReadOnly = true;
+            costoVentasDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // ventasAnualesDataGridViewTextBoxColumn
+            // 
+            ventasAnualesDataGridViewTextBoxColumn.DataPropertyName = "VentasAnuales";
+            ventasAnualesDataGridViewTextBoxColumn.HeaderText = "Ventas Anuales";
+            ventasAnualesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            ventasAnualesDataGridViewTextBoxColumn.Name = "ventasAnualesDataGridViewTextBoxColumn";
+            ventasAnualesDataGridViewTextBoxColumn.ReadOnly = true;
+            ventasAnualesDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // utilidadAntesDeImpuestosDataGridViewTextBoxColumn
+            // 
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.DataPropertyName = "UtilidadAntesDeImpuestos";
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.HeaderText = "Utilidad Antes De Impuestos";
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.MinimumWidth = 6;
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.Name = "utilidadAntesDeImpuestosDataGridViewTextBoxColumn";
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.ReadOnly = true;
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // utilidadNetaDataGridViewTextBoxColumn
+            // 
+            utilidadNetaDataGridViewTextBoxColumn.DataPropertyName = "UtilidadNeta";
+            utilidadNetaDataGridViewTextBoxColumn.HeaderText = "Utilidad Neta";
+            utilidadNetaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            utilidadNetaDataGridViewTextBoxColumn.Name = "utilidadNetaDataGridViewTextBoxColumn";
+            utilidadNetaDataGridViewTextBoxColumn.ReadOnly = true;
+            utilidadNetaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // cuentasDeLasRazonesBindingSource
+            // 
+            cuentasDeLasRazonesBindingSource.DataSource = typeof(Models.CuentasDeLasRazones);
+            // 
             // txtNombreEmpresa
             // 
-            txtNombreEmpresa.Location = new Point(1082, 68);
+            txtNombreEmpresa.Location = new Point(657, 393);
             txtNombreEmpresa.Name = "txtNombreEmpresa";
             txtNombreEmpresa.Size = new Size(156, 27);
             txtNombreEmpresa.TabIndex = 38;
@@ -452,9 +635,9 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(429, 70);
+            groupBox1.Location = new Point(40, 44);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(413, 461);
+            groupBox1.Size = new Size(413, 411);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
             groupBox1.Text = "Balance General";
@@ -475,7 +658,7 @@
             groupBox2.Controls.Add(txtVentasAnuales);
             groupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(871, 121);
+            groupBox2.Location = new Point(480, 44);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(505, 312);
             groupBox2.TabIndex = 41;
@@ -487,37 +670,47 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(1045, 34);
+            label10.Location = new Point(627, 359);
             label10.Name = "label10";
             label10.Size = new Size(248, 31);
             label10.TabIndex = 18;
             label10.Text = "Nombre de la Empresa";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(dgv);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(txtNombreEmpresa);
+            panel1.Controls.Add(btnActualizar);
+            panel1.Controls.Add(groupBox2);
+            panel1.Controls.Add(btnEliminar);
+            panel1.Controls.Add(label18);
+            panel1.Controls.Add(btnAgregar);
+            panel1.Controls.Add(groupBox1);
+            panel1.Location = new Point(365, -3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1188, 999);
+            panel1.TabIndex = 42;
             // 
             // CuentasRazonesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1537, 997);
-            Controls.Add(label10);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
-            Controls.Add(txtNombreEmpresa);
-            Controls.Add(dgv);
-            Controls.Add(label18);
-            Controls.Add(btnActualizar);
-            Controls.Add(btnEliminar);
-            Controls.Add(btnAgregar);
+            ClientSize = new Size(1547, 997);
+            Controls.Add(panel1);
             Name = "CuentasRazonesForm";
             Text = "CuentasRazonesForm";
             Load += CuentasRazonesForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cuentasDeLasRazonesBindingSource).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -561,5 +754,24 @@
         private GroupBox groupBox1;
         private GroupBox groupBox2;
         private Label label10;
+        private BindingSource cuentasDeLasRazonesBindingSource;
+        private DataGridViewTextBoxColumn iDCuentasDeRazonesDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombreDeLaEmpresaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn activoCirculanteDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn pasivoCirculanteDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn inventarioDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn activoTotalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn pasivoTotalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn capitalContableDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn activoFijoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn interesesPagadosDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cuentasPorCobrarDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn utilidadOperativaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn ventasNetasDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn costoVentasDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn ventasAnualesDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn utilidadAntesDeImpuestosDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn utilidadNetaDataGridViewTextBoxColumn;
+        private Panel panel1;
     }
 }

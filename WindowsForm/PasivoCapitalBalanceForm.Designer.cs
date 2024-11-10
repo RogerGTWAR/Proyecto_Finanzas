@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnAgregar = new Button();
             dgvPasivosCapital = new DataGridView();
             btnEliminar = new Button();
@@ -44,7 +45,15 @@
             cbClasificacioID = new ComboBox();
             label5 = new Label();
             label6 = new Label();
+            pasivoCapitalBindingSource = new BindingSource(components);
+            iDPasivoCapitalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDDatosBalanceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDClasificacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreCuentaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            montoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            totalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvPasivosCapital).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pasivoCapitalBindingSource).BeginInit();
             SuspendLayout();
             // 
             // btnAgregar
@@ -52,7 +61,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(338, 184);
+            btnAgregar.Location = new Point(330, 145);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(129, 44);
             btnAgregar.TabIndex = 1;
@@ -62,14 +71,17 @@
             // 
             // dgvPasivosCapital
             // 
+            dgvPasivosCapital.AutoGenerateColumns = false;
             dgvPasivosCapital.BackgroundColor = Color.White;
             dgvPasivosCapital.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPasivosCapital.Location = new Point(338, 239);
+            dgvPasivosCapital.Columns.AddRange(new DataGridViewColumn[] { iDPasivoCapitalDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
+            dgvPasivosCapital.DataSource = pasivoCapitalBindingSource;
+            dgvPasivosCapital.Location = new Point(394, 212);
             dgvPasivosCapital.Name = "dgvPasivosCapital";
             dgvPasivosCapital.ReadOnly = true;
             dgvPasivosCapital.RowHeadersWidth = 51;
             dgvPasivosCapital.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPasivosCapital.Size = new Size(816, 316);
+            dgvPasivosCapital.Size = new Size(662, 316);
             dgvPasivosCapital.TabIndex = 2;
             // 
             // btnEliminar
@@ -77,7 +89,7 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(554, 187);
+            btnEliminar.Location = new Point(546, 148);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(129, 39);
             btnEliminar.TabIndex = 3;
@@ -137,7 +149,7 @@
             btnRefresh.BackColor = Color.SeaGreen;
             btnRefresh.FlatStyle = FlatStyle.Popup;
             btnRefresh.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnRefresh.Location = new Point(1025, 187);
+            btnRefresh.Location = new Point(1017, 148);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(129, 39);
             btnRefresh.TabIndex = 9;
@@ -169,7 +181,7 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(794, 187);
+            btnActualizar.Location = new Point(786, 148);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(137, 39);
             btnActualizar.TabIndex = 12;
@@ -214,6 +226,63 @@
             label6.TabIndex = 16;
             label6.Text = "Pasivo y Capital Contable";
             // 
+            // pasivoCapitalBindingSource
+            // 
+            pasivoCapitalBindingSource.DataSource = typeof(Models.Pasivo_Capital);
+            // 
+            // iDPasivoCapitalDataGridViewTextBoxColumn
+            // 
+            iDPasivoCapitalDataGridViewTextBoxColumn.DataPropertyName = "ID_Pasivo_Capital";
+            iDPasivoCapitalDataGridViewTextBoxColumn.HeaderText = "ID";
+            iDPasivoCapitalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDPasivoCapitalDataGridViewTextBoxColumn.Name = "iDPasivoCapitalDataGridViewTextBoxColumn";
+            iDPasivoCapitalDataGridViewTextBoxColumn.ReadOnly = true;
+            iDPasivoCapitalDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // iDDatosBalanceDataGridViewTextBoxColumn
+            // 
+            iDDatosBalanceDataGridViewTextBoxColumn.DataPropertyName = "ID_DatosBalance";
+            iDDatosBalanceDataGridViewTextBoxColumn.HeaderText = "ID del Balance";
+            iDDatosBalanceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDDatosBalanceDataGridViewTextBoxColumn.Name = "iDDatosBalanceDataGridViewTextBoxColumn";
+            iDDatosBalanceDataGridViewTextBoxColumn.ReadOnly = true;
+            iDDatosBalanceDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // iDClasificacionDataGridViewTextBoxColumn
+            // 
+            iDClasificacionDataGridViewTextBoxColumn.DataPropertyName = "ID_Clasificacion";
+            iDClasificacionDataGridViewTextBoxColumn.HeaderText = "Clasificacion";
+            iDClasificacionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDClasificacionDataGridViewTextBoxColumn.Name = "iDClasificacionDataGridViewTextBoxColumn";
+            iDClasificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreCuentaDataGridViewTextBoxColumn
+            // 
+            nombreCuentaDataGridViewTextBoxColumn.DataPropertyName = "NombreCuenta";
+            nombreCuentaDataGridViewTextBoxColumn.HeaderText = "Nombre de la Cuenta";
+            nombreCuentaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nombreCuentaDataGridViewTextBoxColumn.Name = "nombreCuentaDataGridViewTextBoxColumn";
+            nombreCuentaDataGridViewTextBoxColumn.ReadOnly = true;
+            nombreCuentaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // montoDataGridViewTextBoxColumn
+            // 
+            montoDataGridViewTextBoxColumn.DataPropertyName = "Monto";
+            montoDataGridViewTextBoxColumn.HeaderText = "Monto";
+            montoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
+            montoDataGridViewTextBoxColumn.ReadOnly = true;
+            montoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            totalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            totalDataGridViewTextBoxColumn.ReadOnly = true;
+            totalDataGridViewTextBoxColumn.Width = 125;
+            // 
             // PasivoCapitalBalanceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -240,6 +309,7 @@
             Text = "Pasivo y Capital";
             Load += ActivosCirculantesForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvPasivosCapital).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pasivoCapitalBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,5 +331,12 @@
         private ComboBox cbClasificacioID;
         private Label label5;
         private Label label6;
+        private DataGridViewTextBoxColumn iDPasivoCapitalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDDatosBalanceDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDClasificacionDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombreCuentaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private BindingSource pasivoCapitalBindingSource;
     }
 }

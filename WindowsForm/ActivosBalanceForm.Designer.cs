@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             btnAgregar = new Button();
             dgvActivos = new DataGridView();
             btnEliminar = new Button();
@@ -44,7 +45,15 @@
             cbClasificacioID = new ComboBox();
             label5 = new Label();
             label6 = new Label();
+            activoBindingSource = new BindingSource(components);
+            iDActivoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDDatosBalanceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDClasificacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreCuentaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            montoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            totalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvActivos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)activoBindingSource).BeginInit();
             SuspendLayout();
             // 
             // btnAgregar
@@ -52,7 +61,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(338, 184);
+            btnAgregar.Location = new Point(327, 184);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(129, 44);
             btnAgregar.TabIndex = 1;
@@ -62,14 +71,17 @@
             // 
             // dgvActivos
             // 
+            dgvActivos.AutoGenerateColumns = false;
             dgvActivos.BackgroundColor = Color.White;
             dgvActivos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvActivos.Location = new Point(338, 239);
+            dgvActivos.Columns.AddRange(new DataGridViewColumn[] { iDActivoDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
+            dgvActivos.DataSource = activoBindingSource;
+            dgvActivos.Location = new Point(403, 253);
             dgvActivos.Name = "dgvActivos";
             dgvActivos.ReadOnly = true;
             dgvActivos.RowHeadersWidth = 51;
             dgvActivos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvActivos.Size = new Size(816, 326);
+            dgvActivos.Size = new Size(701, 326);
             dgvActivos.TabIndex = 2;
             // 
             // btnEliminar
@@ -214,6 +226,64 @@
             label6.TabIndex = 16;
             label6.Text = "Activos";
             // 
+            // activoBindingSource
+            // 
+            activoBindingSource.DataSource = typeof(Models.Activo);
+            // 
+            // iDActivoDataGridViewTextBoxColumn
+            // 
+            iDActivoDataGridViewTextBoxColumn.DataPropertyName = "ID_Activo";
+            iDActivoDataGridViewTextBoxColumn.HeaderText = "ID";
+            iDActivoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDActivoDataGridViewTextBoxColumn.Name = "iDActivoDataGridViewTextBoxColumn";
+            iDActivoDataGridViewTextBoxColumn.ReadOnly = true;
+            iDActivoDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // iDDatosBalanceDataGridViewTextBoxColumn
+            // 
+            iDDatosBalanceDataGridViewTextBoxColumn.DataPropertyName = "ID_DatosBalance";
+            iDDatosBalanceDataGridViewTextBoxColumn.HeaderText = "ID del Balance";
+            iDDatosBalanceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDDatosBalanceDataGridViewTextBoxColumn.Name = "iDDatosBalanceDataGridViewTextBoxColumn";
+            iDDatosBalanceDataGridViewTextBoxColumn.ReadOnly = true;
+            iDDatosBalanceDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // iDClasificacionDataGridViewTextBoxColumn
+            // 
+            iDClasificacionDataGridViewTextBoxColumn.DataPropertyName = "ID_Clasificacion";
+            iDClasificacionDataGridViewTextBoxColumn.HeaderText = "Clasificacion";
+            iDClasificacionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDClasificacionDataGridViewTextBoxColumn.Name = "iDClasificacionDataGridViewTextBoxColumn";
+            iDClasificacionDataGridViewTextBoxColumn.ReadOnly = true;
+            iDClasificacionDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nombreCuentaDataGridViewTextBoxColumn
+            // 
+            nombreCuentaDataGridViewTextBoxColumn.DataPropertyName = "NombreCuenta";
+            nombreCuentaDataGridViewTextBoxColumn.HeaderText = "Nombre de la Cuenta";
+            nombreCuentaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            nombreCuentaDataGridViewTextBoxColumn.Name = "nombreCuentaDataGridViewTextBoxColumn";
+            nombreCuentaDataGridViewTextBoxColumn.ReadOnly = true;
+            nombreCuentaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // montoDataGridViewTextBoxColumn
+            // 
+            montoDataGridViewTextBoxColumn.DataPropertyName = "Monto";
+            montoDataGridViewTextBoxColumn.HeaderText = "Monto";
+            montoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
+            montoDataGridViewTextBoxColumn.ReadOnly = true;
+            montoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            totalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            totalDataGridViewTextBoxColumn.ReadOnly = true;
+            totalDataGridViewTextBoxColumn.Width = 125;
+            // 
             // ActivosBalanceForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -240,6 +310,7 @@
             Text = "CuentasBalanceForm";
             Load += ActivosCirculantesForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvActivos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)activoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,5 +332,12 @@
         private ComboBox cbClasificacioID;
         private Label label5;
         private Label label6;
+        private DataGridViewTextBoxColumn iDActivoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDDatosBalanceDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDClasificacionDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nombreCuentaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private BindingSource activoBindingSource;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             txtMargenUtilidadNeta = new TextBox();
             txtRazonEndeudamiento = new TextBox();
@@ -62,15 +63,35 @@
             label2 = new Label();
             txtRotaciondeiau = new TextBox();
             groupBox4 = new GroupBox();
-            dgvRazones = new DataGridView();
             cbID_DatosER = new ComboBox();
             cbID_CuentasDeRazones = new ComboBox();
             cbID_DatosBalance = new ComboBox();
+            dgvRazones = new DataGridView();
+            razonesFinancieraBindingSource = new BindingSource(components);
+            iDRazonesFinancierasDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDCuentasDeRazonesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDDatosBalanceDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            iDDatosERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            capitalTrabajoNetoDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            razonCirculanteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            pruebaAcidaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            rotacionInventarioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            periodoPromedioCobroDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            rotacionActivosFijosDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            rotacionActivosTotalesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            razonDeudaTotalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            razonPasivoCapitalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            mUBDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            mUODataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            mUNDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRazones).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)razonesFinancieraBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -86,72 +107,81 @@
             // 
             // txtMargenUtilidadNeta
             // 
-            txtMargenUtilidadNeta.Location = new Point(62, 222);
+            txtMargenUtilidadNeta.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMargenUtilidadNeta.Location = new Point(72, 187);
             txtMargenUtilidadNeta.Name = "txtMargenUtilidadNeta";
-            txtMargenUtilidadNeta.Size = new Size(155, 38);
+            txtMargenUtilidadNeta.Size = new Size(155, 25);
             txtMargenUtilidadNeta.TabIndex = 30;
             // 
             // txtRazonEndeudamiento
             // 
-            txtRazonEndeudamiento.Location = new Point(82, 87);
+            txtRazonEndeudamiento.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRazonEndeudamiento.Location = new Point(82, 65);
             txtRazonEndeudamiento.Name = "txtRazonEndeudamiento";
-            txtRazonEndeudamiento.Size = new Size(155, 38);
+            txtRazonEndeudamiento.Size = new Size(155, 27);
             txtRazonEndeudamiento.TabIndex = 32;
             // 
             // txtPruebaAcida
             // 
-            txtPruebaAcida.Location = new Point(17, 281);
+            txtPruebaAcida.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPruebaAcida.Location = new Point(33, 208);
             txtPruebaAcida.Name = "txtPruebaAcida";
-            txtPruebaAcida.Size = new Size(155, 38);
+            txtPruebaAcida.Size = new Size(155, 27);
             txtPruebaAcida.TabIndex = 33;
             // 
             // txtRazonCorriente
             // 
-            txtRazonCorriente.Location = new Point(17, 184);
+            txtRazonCorriente.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRazonCorriente.Location = new Point(30, 136);
             txtRazonCorriente.Name = "txtRazonCorriente";
-            txtRazonCorriente.Size = new Size(155, 38);
+            txtRazonCorriente.Size = new Size(155, 27);
             txtRazonCorriente.TabIndex = 34;
             // 
             // txtRotacionInventario
             // 
-            txtRotacionInventario.Location = new Point(54, 87);
+            txtRotacionInventario.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRotacionInventario.Location = new Point(54, 65);
             txtRotacionInventario.Name = "txtRotacionInventario";
-            txtRotacionInventario.Size = new Size(155, 38);
+            txtRotacionInventario.Size = new Size(155, 27);
             txtRotacionInventario.TabIndex = 36;
             // 
             // txtPeriodoPromedioCobro
             // 
-            txtPeriodoPromedioCobro.Location = new Point(312, 89);
+            txtPeriodoPromedioCobro.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPeriodoPromedioCobro.Location = new Point(307, 65);
             txtPeriodoPromedioCobro.Name = "txtPeriodoPromedioCobro";
-            txtPeriodoPromedioCobro.Size = new Size(155, 38);
+            txtPeriodoPromedioCobro.Size = new Size(155, 27);
             txtPeriodoPromedioCobro.TabIndex = 38;
             // 
             // txtRotacionCuentasPorCobrar
             // 
-            txtRotacionCuentasPorCobrar.Location = new Point(47, 181);
+            txtRotacionCuentasPorCobrar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRotacionCuentasPorCobrar.Location = new Point(47, 136);
             txtRotacionCuentasPorCobrar.Name = "txtRotacionCuentasPorCobrar";
-            txtRotacionCuentasPorCobrar.Size = new Size(155, 38);
+            txtRotacionCuentasPorCobrar.Size = new Size(155, 27);
             txtRotacionCuentasPorCobrar.TabIndex = 39;
             // 
             // txtCapitalTrabajo
             // 
-            txtCapitalTrabajo.Location = new Point(17, 88);
+            txtCapitalTrabajo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCapitalTrabajo.Location = new Point(30, 66);
             txtCapitalTrabajo.Name = "txtCapitalTrabajo";
-            txtCapitalTrabajo.Size = new Size(155, 38);
+            txtCapitalTrabajo.Size = new Size(155, 27);
             txtCapitalTrabajo.TabIndex = 40;
             // 
             // txtMargenBruto
             // 
-            txtMargenBruto.Location = new Point(66, 67);
+            txtMargenBruto.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMargenBruto.Location = new Point(72, 65);
             txtMargenBruto.Name = "txtMargenBruto";
-            txtMargenBruto.Size = new Size(155, 38);
+            txtMargenBruto.Size = new Size(155, 27);
             txtMargenBruto.TabIndex = 41;
             // 
             // btnRazonesFinancieras
             // 
             btnRazonesFinancieras.BackColor = Color.White;
             btnRazonesFinancieras.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRazonesFinancieras.Location = new Point(377, 529);
+            btnRazonesFinancieras.Location = new Point(393, 353);
             btnRazonesFinancieras.Name = "btnRazonesFinancieras";
             btnRazonesFinancieras.Size = new Size(131, 52);
             btnRazonesFinancieras.TabIndex = 42;
@@ -164,7 +194,7 @@
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(21, 36);
+            label17.Location = new Point(31, 34);
             label17.Name = "label17";
             label17.Size = new Size(233, 28);
             label17.TabIndex = 43;
@@ -175,7 +205,7 @@
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(17, 57);
+            label18.Location = new Point(30, 34);
             label18.Name = "label18";
             label18.Size = new Size(169, 28);
             label18.TabIndex = 44;
@@ -186,7 +216,7 @@
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.White;
-            label20.Location = new Point(23, 56);
+            label20.Location = new Point(23, 34);
             label20.Name = "label20";
             label20.Size = new Size(209, 28);
             label20.TabIndex = 46;
@@ -197,7 +227,7 @@
             label21.AutoSize = true;
             label21.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = Color.White;
-            label21.Location = new Point(17, 153);
+            label21.Location = new Point(27, 105);
             label21.Name = "label21";
             label21.Size = new Size(158, 28);
             label21.TabIndex = 47;
@@ -208,7 +238,7 @@
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(17, 253);
+            label22.Location = new Point(33, 180);
             label22.Name = "label22";
             label22.Size = new Size(132, 28);
             label22.TabIndex = 48;
@@ -219,7 +249,7 @@
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.White;
-            label24.Location = new Point(23, 150);
+            label24.Location = new Point(23, 105);
             label24.Name = "label24";
             label24.Size = new Size(261, 28);
             label24.TabIndex = 50;
@@ -230,7 +260,7 @@
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(277, 58);
+            label25.Location = new Point(272, 34);
             label25.Name = "label25";
             label25.Size = new Size(256, 28);
             label25.TabIndex = 51;
@@ -241,7 +271,7 @@
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.White;
-            label26.Location = new Point(62, 56);
+            label26.Location = new Point(62, 34);
             label26.Name = "label26";
             label26.Size = new Size(202, 28);
             label26.TabIndex = 52;
@@ -252,7 +282,7 @@
             label27.AutoSize = true;
             label27.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = Color.White;
-            label27.Location = new Point(35, 191);
+            label27.Location = new Point(35, 156);
             label27.Name = "label27";
             label27.Size = new Size(229, 28);
             label27.TabIndex = 53;
@@ -260,30 +290,34 @@
             // 
             // txtRotacionActivosFijos
             // 
-            txtRotacionActivosFijos.Location = new Point(314, 183);
+            txtRotacionActivosFijos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRotacionActivosFijos.Location = new Point(306, 136);
             txtRotacionActivosFijos.Name = "txtRotacionActivosFijos";
-            txtRotacionActivosFijos.Size = new Size(155, 38);
+            txtRotacionActivosFijos.Size = new Size(155, 27);
             txtRotacionActivosFijos.TabIndex = 58;
             // 
             // txtRotacionActivosTotales
             // 
-            txtRotacionActivosTotales.Location = new Point(161, 270);
+            txtRotacionActivosTotales.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRotacionActivosTotales.Location = new Point(157, 211);
             txtRotacionActivosTotales.Name = "txtRotacionActivosTotales";
-            txtRotacionActivosTotales.Size = new Size(155, 38);
+            txtRotacionActivosTotales.Size = new Size(155, 27);
             txtRotacionActivosTotales.TabIndex = 59;
             // 
             // txtMargenUtilidadOperativa
             // 
-            txtMargenUtilidadOperativa.Location = new Point(66, 144);
+            txtMargenUtilidadOperativa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtMargenUtilidadOperativa.Location = new Point(72, 126);
             txtMargenUtilidadOperativa.Name = "txtMargenUtilidadOperativa";
-            txtMargenUtilidadOperativa.Size = new Size(155, 38);
+            txtMargenUtilidadOperativa.Size = new Size(155, 27);
             txtMargenUtilidadOperativa.TabIndex = 60;
             // 
             // txtRazonPasivoCapital
             // 
-            txtRazonPasivoCapital.Location = new Point(78, 183);
+            txtRazonPasivoCapital.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRazonPasivoCapital.Location = new Point(78, 136);
             txtRazonPasivoCapital.Name = "txtRazonPasivoCapital";
-            txtRazonPasivoCapital.Size = new Size(155, 38);
+            txtRazonPasivoCapital.Size = new Size(155, 27);
             txtRazonPasivoCapital.TabIndex = 61;
             // 
             // label31
@@ -291,7 +325,7 @@
             label31.AutoSize = true;
             label31.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label31.ForeColor = Color.White;
-            label31.Location = new Point(11, 113);
+            label31.Location = new Point(17, 95);
             label31.Name = "label31";
             label31.Size = new Size(299, 28);
             label31.TabIndex = 62;
@@ -302,7 +336,7 @@
             label32.AutoSize = true;
             label32.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label32.ForeColor = Color.White;
-            label32.Location = new Point(140, 239);
+            label32.Location = new Point(136, 180);
             label32.Name = "label32";
             label32.Size = new Size(228, 28);
             label32.TabIndex = 63;
@@ -313,7 +347,7 @@
             label33.AutoSize = true;
             label33.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label33.ForeColor = Color.White;
-            label33.Location = new Point(298, 152);
+            label33.Location = new Point(290, 105);
             label33.Name = "label33";
             label33.Size = new Size(203, 28);
             label33.TabIndex = 64;
@@ -324,7 +358,7 @@
             label34.AutoSize = true;
             label34.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label34.ForeColor = Color.White;
-            label34.Location = new Point(62, 152);
+            label34.Location = new Point(62, 105);
             label34.Name = "label34";
             label34.Size = new Size(207, 28);
             label34.TabIndex = 65;
@@ -343,7 +377,7 @@
             groupBox1.ForeColor = Color.White;
             groupBox1.Location = new Point(309, 63);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(215, 329);
+            groupBox1.Size = new Size(215, 249);
             groupBox1.TabIndex = 66;
             groupBox1.TabStop = false;
             groupBox1.Text = "Razones Liquidas";
@@ -365,7 +399,7 @@
             groupBox2.ForeColor = Color.White;
             groupBox2.Location = new Point(543, 63);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(534, 330);
+            groupBox2.Size = new Size(534, 249);
             groupBox2.TabIndex = 67;
             groupBox2.TabStop = false;
             groupBox2.Text = "Razones de Actividad";
@@ -382,7 +416,7 @@
             groupBox3.ForeColor = Color.White;
             groupBox3.Location = new Point(1124, 63);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(351, 330);
+            groupBox3.Size = new Size(351, 249);
             groupBox3.TabIndex = 68;
             groupBox3.TabStop = false;
             groupBox3.Text = "Razones de Endeudamiento";
@@ -392,7 +426,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(37, 239);
+            label2.Location = new Point(35, 180);
             label2.Name = "label2";
             label2.Size = new Size(284, 28);
             label2.TabIndex = 70;
@@ -400,9 +434,10 @@
             // 
             // txtRotaciondeiau
             // 
-            txtRotaciondeiau.Location = new Point(82, 270);
+            txtRotaciondeiau.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRotaciondeiau.Location = new Point(80, 211);
             txtRotaciondeiau.Name = "txtRotaciondeiau";
-            txtRotaciondeiau.Size = new Size(155, 38);
+            txtRotaciondeiau.Size = new Size(155, 27);
             txtRotaciondeiau.TabIndex = 69;
             // 
             // groupBox4
@@ -415,28 +450,17 @@
             groupBox4.Controls.Add(txtMargenUtilidadNeta);
             groupBox4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox4.ForeColor = Color.White;
-            groupBox4.Location = new Point(644, 399);
+            groupBox4.Location = new Point(1538, 63);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(316, 269);
+            groupBox4.Size = new Size(316, 249);
             groupBox4.TabIndex = 69;
             groupBox4.TabStop = false;
             groupBox4.Text = "Razones de Rentabilidad";
             // 
-            // dgvRazones
-            // 
-            dgvRazones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRazones.Location = new Point(559, 705);
-            dgvRazones.Name = "dgvRazones";
-            dgvRazones.ReadOnly = true;
-            dgvRazones.RowHeadersWidth = 51;
-            dgvRazones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRazones.Size = new Size(300, 188);
-            dgvRazones.TabIndex = 70;
-            // 
             // cbID_DatosER
             // 
             cbID_DatosER.FormattingEnabled = true;
-            cbID_DatosER.Location = new Point(1027, 399);
+            cbID_DatosER.Location = new Point(1033, 318);
             cbID_DatosER.Name = "cbID_DatosER";
             cbID_DatosER.Size = new Size(151, 28);
             cbID_DatosER.TabIndex = 71;
@@ -444,7 +468,7 @@
             // cbID_CuentasDeRazones
             // 
             cbID_CuentasDeRazones.FormattingEnabled = true;
-            cbID_CuentasDeRazones.Location = new Point(1027, 604);
+            cbID_CuentasDeRazones.Location = new Point(647, 318);
             cbID_CuentasDeRazones.Name = "cbID_CuentasDeRazones";
             cbID_CuentasDeRazones.Size = new Size(151, 28);
             cbID_CuentasDeRazones.TabIndex = 72;
@@ -452,21 +476,202 @@
             // cbID_DatosBalance
             // 
             cbID_DatosBalance.FormattingEnabled = true;
-            cbID_DatosBalance.Location = new Point(1027, 518);
+            cbID_DatosBalance.Location = new Point(849, 318);
             cbID_DatosBalance.Name = "cbID_DatosBalance";
             cbID_DatosBalance.Size = new Size(151, 28);
             cbID_DatosBalance.TabIndex = 73;
+            // 
+            // dgvRazones
+            // 
+            dgvRazones.AutoGenerateColumns = false;
+            dgvRazones.BackgroundColor = Color.White;
+            dgvRazones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRazones.Columns.AddRange(new DataGridViewColumn[] { iDRazonesFinancierasDataGridViewTextBoxColumn, iDCuentasDeRazonesDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDDatosERDataGridViewTextBoxColumn, capitalTrabajoNetoDataGridViewTextBoxColumn, razonCirculanteDataGridViewTextBoxColumn, pruebaAcidaDataGridViewTextBoxColumn, rotacionInventarioDataGridViewTextBoxColumn, rotacionCuentasPorCobrarDataGridViewTextBoxColumn, periodoPromedioCobroDataGridViewTextBoxColumn, rotacionActivosFijosDataGridViewTextBoxColumn, rotacionActivosTotalesDataGridViewTextBoxColumn, razonDeudaTotalDataGridViewTextBoxColumn, razonPasivoCapitalDataGridViewTextBoxColumn, razonRotacionInteresUtilidadDataGridViewTextBoxColumn, mUBDataGridViewTextBoxColumn, mUODataGridViewTextBoxColumn, mUNDataGridViewTextBoxColumn });
+            dgvRazones.DataSource = razonesFinancieraBindingSource;
+            dgvRazones.Location = new Point(393, 411);
+            dgvRazones.Name = "dgvRazones";
+            dgvRazones.ReadOnly = true;
+            dgvRazones.RowHeadersWidth = 51;
+            dgvRazones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvRazones.Size = new Size(995, 267);
+            dgvRazones.TabIndex = 74;
+            // 
+            // razonesFinancieraBindingSource
+            // 
+            razonesFinancieraBindingSource.DataSource = typeof(Models.RazonesFinanciera);
+            // 
+            // iDRazonesFinancierasDataGridViewTextBoxColumn
+            // 
+            iDRazonesFinancierasDataGridViewTextBoxColumn.DataPropertyName = "ID_RazonesFinancieras";
+            iDRazonesFinancierasDataGridViewTextBoxColumn.HeaderText = "ID";
+            iDRazonesFinancierasDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDRazonesFinancierasDataGridViewTextBoxColumn.Name = "iDRazonesFinancierasDataGridViewTextBoxColumn";
+            iDRazonesFinancierasDataGridViewTextBoxColumn.ReadOnly = true;
+            iDRazonesFinancierasDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // iDCuentasDeRazonesDataGridViewTextBoxColumn
+            // 
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.DataPropertyName = "ID_CuentasDeRazones";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.HeaderText = "ID de las Cuentas";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.Name = "iDCuentasDeRazonesDataGridViewTextBoxColumn";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.ReadOnly = true;
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // iDDatosBalanceDataGridViewTextBoxColumn
+            // 
+            iDDatosBalanceDataGridViewTextBoxColumn.DataPropertyName = "ID_DatosBalance";
+            iDDatosBalanceDataGridViewTextBoxColumn.HeaderText = "ID del Balance";
+            iDDatosBalanceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDDatosBalanceDataGridViewTextBoxColumn.Name = "iDDatosBalanceDataGridViewTextBoxColumn";
+            iDDatosBalanceDataGridViewTextBoxColumn.ReadOnly = true;
+            iDDatosBalanceDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // iDDatosERDataGridViewTextBoxColumn
+            // 
+            iDDatosERDataGridViewTextBoxColumn.DataPropertyName = "ID_DatosER";
+            iDDatosERDataGridViewTextBoxColumn.HeaderText = "ID del Estado de Resultado";
+            iDDatosERDataGridViewTextBoxColumn.MinimumWidth = 6;
+            iDDatosERDataGridViewTextBoxColumn.Name = "iDDatosERDataGridViewTextBoxColumn";
+            iDDatosERDataGridViewTextBoxColumn.ReadOnly = true;
+            iDDatosERDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // capitalTrabajoNetoDataGridViewTextBoxColumn
+            // 
+            capitalTrabajoNetoDataGridViewTextBoxColumn.DataPropertyName = "CapitalTrabajoNeto";
+            capitalTrabajoNetoDataGridViewTextBoxColumn.HeaderText = "Capital Trabajo";
+            capitalTrabajoNetoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            capitalTrabajoNetoDataGridViewTextBoxColumn.Name = "capitalTrabajoNetoDataGridViewTextBoxColumn";
+            capitalTrabajoNetoDataGridViewTextBoxColumn.ReadOnly = true;
+            capitalTrabajoNetoDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // razonCirculanteDataGridViewTextBoxColumn
+            // 
+            razonCirculanteDataGridViewTextBoxColumn.DataPropertyName = "RazonCirculante";
+            razonCirculanteDataGridViewTextBoxColumn.HeaderText = "Razon Circulante";
+            razonCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
+            razonCirculanteDataGridViewTextBoxColumn.Name = "razonCirculanteDataGridViewTextBoxColumn";
+            razonCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
+            razonCirculanteDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // pruebaAcidaDataGridViewTextBoxColumn
+            // 
+            pruebaAcidaDataGridViewTextBoxColumn.DataPropertyName = "PruebaAcida";
+            pruebaAcidaDataGridViewTextBoxColumn.HeaderText = "Prueba Acida";
+            pruebaAcidaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            pruebaAcidaDataGridViewTextBoxColumn.Name = "pruebaAcidaDataGridViewTextBoxColumn";
+            pruebaAcidaDataGridViewTextBoxColumn.ReadOnly = true;
+            pruebaAcidaDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // rotacionInventarioDataGridViewTextBoxColumn
+            // 
+            rotacionInventarioDataGridViewTextBoxColumn.DataPropertyName = "RotacionInventario";
+            rotacionInventarioDataGridViewTextBoxColumn.HeaderText = "Rotacion Inventario";
+            rotacionInventarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            rotacionInventarioDataGridViewTextBoxColumn.Name = "rotacionInventarioDataGridViewTextBoxColumn";
+            rotacionInventarioDataGridViewTextBoxColumn.ReadOnly = true;
+            rotacionInventarioDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // rotacionCuentasPorCobrarDataGridViewTextBoxColumn
+            // 
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.DataPropertyName = "RotacionCuentasPorCobrar";
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.HeaderText = "Rotacion de CxC";
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.Name = "rotacionCuentasPorCobrarDataGridViewTextBoxColumn";
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.ReadOnly = true;
+            rotacionCuentasPorCobrarDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // periodoPromedioCobroDataGridViewTextBoxColumn
+            // 
+            periodoPromedioCobroDataGridViewTextBoxColumn.DataPropertyName = "PeriodoPromedioCobro";
+            periodoPromedioCobroDataGridViewTextBoxColumn.HeaderText = "Periodo Promedio Cobro";
+            periodoPromedioCobroDataGridViewTextBoxColumn.MinimumWidth = 6;
+            periodoPromedioCobroDataGridViewTextBoxColumn.Name = "periodoPromedioCobroDataGridViewTextBoxColumn";
+            periodoPromedioCobroDataGridViewTextBoxColumn.ReadOnly = true;
+            periodoPromedioCobroDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // rotacionActivosFijosDataGridViewTextBoxColumn
+            // 
+            rotacionActivosFijosDataGridViewTextBoxColumn.DataPropertyName = "RotacionActivosFijos";
+            rotacionActivosFijosDataGridViewTextBoxColumn.HeaderText = "Rotacion Activos Fijos";
+            rotacionActivosFijosDataGridViewTextBoxColumn.MinimumWidth = 6;
+            rotacionActivosFijosDataGridViewTextBoxColumn.Name = "rotacionActivosFijosDataGridViewTextBoxColumn";
+            rotacionActivosFijosDataGridViewTextBoxColumn.ReadOnly = true;
+            rotacionActivosFijosDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // rotacionActivosTotalesDataGridViewTextBoxColumn
+            // 
+            rotacionActivosTotalesDataGridViewTextBoxColumn.DataPropertyName = "RotacionActivosTotales";
+            rotacionActivosTotalesDataGridViewTextBoxColumn.HeaderText = "Rotacion Activos Totales";
+            rotacionActivosTotalesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            rotacionActivosTotalesDataGridViewTextBoxColumn.Name = "rotacionActivosTotalesDataGridViewTextBoxColumn";
+            rotacionActivosTotalesDataGridViewTextBoxColumn.ReadOnly = true;
+            rotacionActivosTotalesDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // razonDeudaTotalDataGridViewTextBoxColumn
+            // 
+            razonDeudaTotalDataGridViewTextBoxColumn.DataPropertyName = "RazonDeudaTotal";
+            razonDeudaTotalDataGridViewTextBoxColumn.HeaderText = "Razon Deuda Total";
+            razonDeudaTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            razonDeudaTotalDataGridViewTextBoxColumn.Name = "razonDeudaTotalDataGridViewTextBoxColumn";
+            razonDeudaTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            razonDeudaTotalDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // razonPasivoCapitalDataGridViewTextBoxColumn
+            // 
+            razonPasivoCapitalDataGridViewTextBoxColumn.DataPropertyName = "RazonPasivoCapital";
+            razonPasivoCapitalDataGridViewTextBoxColumn.HeaderText = "Razon Pasivo Capital";
+            razonPasivoCapitalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            razonPasivoCapitalDataGridViewTextBoxColumn.Name = "razonPasivoCapitalDataGridViewTextBoxColumn";
+            razonPasivoCapitalDataGridViewTextBoxColumn.ReadOnly = true;
+            razonPasivoCapitalDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // razonRotacionInteresUtilidadDataGridViewTextBoxColumn
+            // 
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.DataPropertyName = "RazonRotacionInteresUtilidad";
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.HeaderText = "Razon Rotacion Interes Utilidad";
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.MinimumWidth = 6;
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.Name = "razonRotacionInteresUtilidadDataGridViewTextBoxColumn";
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.ReadOnly = true;
+            razonRotacionInteresUtilidadDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // mUBDataGridViewTextBoxColumn
+            // 
+            mUBDataGridViewTextBoxColumn.DataPropertyName = "MUB";
+            mUBDataGridViewTextBoxColumn.HeaderText = "MUB";
+            mUBDataGridViewTextBoxColumn.MinimumWidth = 6;
+            mUBDataGridViewTextBoxColumn.Name = "mUBDataGridViewTextBoxColumn";
+            mUBDataGridViewTextBoxColumn.ReadOnly = true;
+            mUBDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // mUODataGridViewTextBoxColumn
+            // 
+            mUODataGridViewTextBoxColumn.DataPropertyName = "MUO";
+            mUODataGridViewTextBoxColumn.HeaderText = "MUO";
+            mUODataGridViewTextBoxColumn.MinimumWidth = 6;
+            mUODataGridViewTextBoxColumn.Name = "mUODataGridViewTextBoxColumn";
+            mUODataGridViewTextBoxColumn.ReadOnly = true;
+            mUODataGridViewTextBoxColumn.Width = 125;
+            // 
+            // mUNDataGridViewTextBoxColumn
+            // 
+            mUNDataGridViewTextBoxColumn.DataPropertyName = "MUN";
+            mUNDataGridViewTextBoxColumn.HeaderText = "MUN";
+            mUNDataGridViewTextBoxColumn.MinimumWidth = 6;
+            mUNDataGridViewTextBoxColumn.Name = "mUNDataGridViewTextBoxColumn";
+            mUNDataGridViewTextBoxColumn.ReadOnly = true;
+            mUNDataGridViewTextBoxColumn.Width = 125;
             // 
             // RazonesFinancierasForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1503, 1096);
+            ClientSize = new Size(1914, 1096);
+            Controls.Add(dgvRazones);
             Controls.Add(cbID_DatosBalance);
             Controls.Add(cbID_CuentasDeRazones);
             Controls.Add(cbID_DatosER);
-            Controls.Add(dgvRazones);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -485,6 +690,7 @@
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvRazones).EndInit();
+            ((System.ComponentModel.ISupportInitialize)razonesFinancieraBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -524,9 +730,28 @@
         private Label label2;
         private TextBox txtRotaciondeiau;
         private GroupBox groupBox4;
-        private DataGridView dgvRazones;
         private ComboBox cbID_DatosER;
         private ComboBox cbID_CuentasDeRazones;
         private ComboBox cbID_DatosBalance;
+        private DataGridView dgvRazones;
+        private BindingSource razonesFinancieraBindingSource;
+        private DataGridViewTextBoxColumn iDRazonesFinancierasDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDCuentasDeRazonesDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDDatosBalanceDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn iDDatosERDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn capitalTrabajoNetoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razonCirculanteDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn pruebaAcidaDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn rotacionInventarioDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn rotacionCuentasPorCobrarDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn periodoPromedioCobroDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn rotacionActivosFijosDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn rotacionActivosTotalesDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razonDeudaTotalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razonPasivoCapitalDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn razonRotacionInteresUtilidadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn mUBDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn mUODataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn mUNDataGridViewTextBoxColumn;
     }
 }
