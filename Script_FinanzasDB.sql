@@ -52,26 +52,43 @@ CREATE DATABASE FinanzasDB;
 
 --Razones Financieras
 CREATE TABLE CuentasRazones (
-    ID_CuentasDeRazones INT IDENTITY(1,1) PRIMARY KEY,
+    ID_CuentasDeRazones INT Identity(1,1) PRIMARY KEY,
     NombreDeLaEmpresa NVARCHAR(255) NOT NULL,
-    ActivoCirculante DECIMAL(18,2) NOT NULL,
-    PasivoCirculante DECIMAL(18,2) NOT NULL,
-    Inventario DECIMAL(18,2) NOT NULL,
-    ActivoTotal DECIMAL(18,2) NOT NULL,
-    PasivoTotal DECIMAL(18,2) NOT NULL,
-    CapitalContable DECIMAL(18,2) NOT NULL,
-    ActivoFijo DECIMAL(18,2) NOT NULL,
-    InteresesPagados DECIMAL(18,2) NOT NULL,
-    CuentasPorCobrar DECIMAL(18,2) NOT NULL,
-    UtilidadOperativa DECIMAL(18,2) NOT NULL,
-    VentasNetas DECIMAL(18,2) NOT NULL,
-    CostoVentas DECIMAL(18,2) NOT NULL,
-    VentasAnuales DECIMAL(18,2) NOT NULL,
-    UtilidadAntesDeImpuestos DECIMAL(18,2) NOT NULL,
-    UtilidadNeta DECIMAL(18,2) NOT NULL
+
+    -- Balance General
+    ActivoCirculante DECIMAL(18, 2),
+    ActivoFijo DECIMAL(18, 2),
+    ActivoTotal DECIMAL(18, 2),
+    Inventario DECIMAL(18, 2),
+    CuentasPorCobrar DECIMAL(18, 2),
+
+    -- Pasivo
+    PasivoCirculante DECIMAL(18, 2),
+    PasivoNoCirculante DECIMAL(18, 2),
+    PasivoTotal DECIMAL(18, 2),
+
+    -- Capital
+    CapitalContable DECIMAL(18, 2),
+	CapitalSocial DECIMAL(18, 2),
+
+    -- Estado de Resultados
+    VentasCredito DECIMAL(18, 2),
+    VentasNetas DECIMAL(18, 2),
+    CostoVentas DECIMAL(18, 2),
+    UtilidadOperativa DECIMAL(18, 2),
+    UtilidadAntesDeImpuestos DECIMAL(18, 2),
+    UtilidadNeta DECIMAL(18, 2),
+    UtilidadAntesDeInteresesImpuestos DECIMAL(18, 2),
+    CargosporIntereses DECIMAL(18, 2),
+    UtilidadNetaParaAccionista DECIMAL(18, 2),
+
+    -- Otras Cuentas (Ratios Financieros)
+    AccionesenCirculacion DECIMAL(18, 2),
+    PreciodelMercadoporAccion DECIMAL(18, 2),
 );
+
 CREATE TABLE RazonesFinancieras (
-    ID_RazonesFinancieras INT IDENTITY(1,1) PRIMARY KEY,
+    ID_RazonFinanciera INT IDENTITY(1,1) PRIMARY KEY, //Cambiar nombre
     ID_CuentasDeRazones INT NOT NULL,
 	ID_DatosER INT,
 	ID_DatosBalance INT,
@@ -89,6 +106,10 @@ CREATE TABLE RazonesFinancieras (
     MUB DECIMAL(18,2),
     MUO DECIMAL(18,2),
     MUN DECIMAL(18,2),
+	UtilidadporAccion DECIMAL(18,2),
+    RazonPrecio DECIMAL(18,2),
+    ValorenLibros DECIMAL(18,2),
+	ValorenLibrosporAccion DECIMAL(18,2),
     FOREIGN KEY (ID_CuentasDeRazones) REFERENCES CuentasRazones(ID_CuentasDeRazones),
     FOREIGN KEY (ID_DatosER) REFERENCES DatosERx(ID_DatosER),
     FOREIGN KEY (ID_DatosBalance) REFERENCES DatosBalance(ID_DatosBalance)
