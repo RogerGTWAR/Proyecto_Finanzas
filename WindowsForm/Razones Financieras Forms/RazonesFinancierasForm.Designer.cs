@@ -132,6 +132,7 @@
             txtMargenUtilidadNeta.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMargenUtilidadNeta.Location = new Point(57, 187);
             txtMargenUtilidadNeta.Name = "txtMargenUtilidadNeta";
+            txtMargenUtilidadNeta.ReadOnly = true;
             txtMargenUtilidadNeta.Size = new Size(155, 27);
             txtMargenUtilidadNeta.TabIndex = 30;
             // 
@@ -140,6 +141,7 @@
             txtRazonEndeudamiento.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRazonEndeudamiento.Location = new Point(53, 65);
             txtRazonEndeudamiento.Name = "txtRazonEndeudamiento";
+            txtRazonEndeudamiento.ReadOnly = true;
             txtRazonEndeudamiento.Size = new Size(155, 27);
             txtRazonEndeudamiento.TabIndex = 32;
             // 
@@ -148,6 +150,7 @@
             txtPruebaAcida.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPruebaAcida.Location = new Point(6, 211);
             txtPruebaAcida.Name = "txtPruebaAcida";
+            txtPruebaAcida.ReadOnly = true;
             txtPruebaAcida.Size = new Size(155, 27);
             txtPruebaAcida.TabIndex = 33;
             // 
@@ -156,6 +159,7 @@
             txtRazonCorriente.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRazonCorriente.Location = new Point(6, 136);
             txtRazonCorriente.Name = "txtRazonCorriente";
+            txtRazonCorriente.ReadOnly = true;
             txtRazonCorriente.Size = new Size(155, 27);
             txtRazonCorriente.TabIndex = 34;
             // 
@@ -164,6 +168,7 @@
             txtRotacionInventario.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRotacionInventario.Location = new Point(37, 65);
             txtRotacionInventario.Name = "txtRotacionInventario";
+            txtRotacionInventario.ReadOnly = true;
             txtRotacionInventario.Size = new Size(155, 27);
             txtRotacionInventario.TabIndex = 36;
             // 
@@ -172,6 +177,7 @@
             txtPeriodoPromedioCobro.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtPeriodoPromedioCobro.Location = new Point(283, 65);
             txtPeriodoPromedioCobro.Name = "txtPeriodoPromedioCobro";
+            txtPeriodoPromedioCobro.ReadOnly = true;
             txtPeriodoPromedioCobro.Size = new Size(155, 27);
             txtPeriodoPromedioCobro.TabIndex = 38;
             // 
@@ -180,6 +186,7 @@
             txtRotacionCuentasPorCobrar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRotacionCuentasPorCobrar.Location = new Point(30, 136);
             txtRotacionCuentasPorCobrar.Name = "txtRotacionCuentasPorCobrar";
+            txtRotacionCuentasPorCobrar.ReadOnly = true;
             txtRotacionCuentasPorCobrar.Size = new Size(155, 27);
             txtRotacionCuentasPorCobrar.TabIndex = 39;
             // 
@@ -188,6 +195,7 @@
             txtCapitalTrabajo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCapitalTrabajo.Location = new Point(6, 66);
             txtCapitalTrabajo.Name = "txtCapitalTrabajo";
+            txtCapitalTrabajo.ReadOnly = true;
             txtCapitalTrabajo.Size = new Size(155, 27);
             txtCapitalTrabajo.TabIndex = 40;
             // 
@@ -196,6 +204,7 @@
             txtMargenBruto.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMargenBruto.Location = new Point(57, 65);
             txtMargenBruto.Name = "txtMargenBruto";
+            txtMargenBruto.ReadOnly = true;
             txtMargenBruto.Size = new Size(155, 27);
             txtMargenBruto.TabIndex = 41;
             // 
@@ -316,6 +325,7 @@
             txtRotacionActivosFijos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRotacionActivosFijos.Location = new Point(282, 136);
             txtRotacionActivosFijos.Name = "txtRotacionActivosFijos";
+            txtRotacionActivosFijos.ReadOnly = true;
             txtRotacionActivosFijos.Size = new Size(155, 27);
             txtRotacionActivosFijos.TabIndex = 58;
             // 
@@ -324,6 +334,7 @@
             txtRotacionActivosTotales.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRotacionActivosTotales.Location = new Point(126, 211);
             txtRotacionActivosTotales.Name = "txtRotacionActivosTotales";
+            txtRotacionActivosTotales.ReadOnly = true;
             txtRotacionActivosTotales.Size = new Size(155, 27);
             txtRotacionActivosTotales.TabIndex = 59;
             // 
@@ -332,6 +343,7 @@
             txtMargenUtilidadOperativa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtMargenUtilidadOperativa.Location = new Point(57, 126);
             txtMargenUtilidadOperativa.Name = "txtMargenUtilidadOperativa";
+            txtMargenUtilidadOperativa.ReadOnly = true;
             txtMargenUtilidadOperativa.Size = new Size(155, 27);
             txtMargenUtilidadOperativa.TabIndex = 60;
             // 
@@ -340,6 +352,7 @@
             txtRazonPasivoCapital.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRazonPasivoCapital.Location = new Point(49, 136);
             txtRazonPasivoCapital.Name = "txtRazonPasivoCapital";
+            txtRazonPasivoCapital.ReadOnly = true;
             txtRazonPasivoCapital.Size = new Size(155, 27);
             txtRazonPasivoCapital.TabIndex = 61;
             // 
@@ -460,6 +473,7 @@
             txtRotaciondeiau.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRotaciondeiau.Location = new Point(51, 211);
             txtRotaciondeiau.Name = "txtRotaciondeiau";
+            txtRotaciondeiau.ReadOnly = true;
             txtRotaciondeiau.Size = new Size(155, 27);
             txtRotaciondeiau.TabIndex = 69;
             // 
@@ -821,6 +835,7 @@
             txtValorenLibrosA.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtValorenLibrosA.Location = new Point(36, 252);
             txtValorenLibrosA.Name = "txtValorenLibrosA";
+            txtValorenLibrosA.ReadOnly = true;
             txtValorenLibrosA.Size = new Size(155, 27);
             txtValorenLibrosA.TabIndex = 63;
             // 
@@ -840,6 +855,7 @@
             txtUtilidadporAccion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUtilidadporAccion.Location = new Point(39, 65);
             txtUtilidadporAccion.Name = "txtUtilidadporAccion";
+            txtUtilidadporAccion.ReadOnly = true;
             txtUtilidadporAccion.Size = new Size(155, 27);
             txtUtilidadporAccion.TabIndex = 41;
             // 
@@ -859,6 +875,7 @@
             txtRazonPrecio.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtRazonPrecio.Location = new Point(39, 126);
             txtRazonPrecio.Name = "txtRazonPrecio";
+            txtRazonPrecio.ReadOnly = true;
             txtRazonPrecio.Size = new Size(155, 27);
             txtRazonPrecio.TabIndex = 60;
             // 
@@ -878,6 +895,7 @@
             txtValorenLibros.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtValorenLibros.Location = new Point(39, 187);
             txtValorenLibros.Name = "txtValorenLibros";
+            txtValorenLibros.ReadOnly = true;
             txtValorenLibros.Size = new Size(155, 27);
             txtValorenLibros.TabIndex = 30;
             // 
