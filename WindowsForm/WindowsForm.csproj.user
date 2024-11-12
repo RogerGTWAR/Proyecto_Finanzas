@@ -4,37 +4,37 @@
     <Compile Update="ClasificacionesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ActivosBalanceForm.cs">
+    <Compile Update="Balance General Forms\ActivosBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="CuentasRazonesForm.cs">
+    <Compile Update="Razones Financieras Forms\CuentasRazonesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MenuBalanceForm.cs">
+    <Compile Update="Balance General Forms\MenuBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DatosBalanceForm.cs">
+    <Compile Update="Balance General Forms\DatosBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DatosERForm.cs">
+    <Compile Update="Estado de Resultado Forms\DatosERForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ERForm.cs">
+    <Compile Update="Estado de Resultado Forms\ERForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MenuERForm.cs">
+    <Compile Update="Estado de Resultado Forms\MenuERForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MenuRazonesFinancieras.cs">
+    <Compile Update="Razones Financieras Forms\MenuRazonesFinancieras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PasivoCapitalBalanceForm.cs">
+    <Compile Update="Balance General Forms\PasivoCapitalBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RazonesFinancierasForm.cs">
+    <Compile Update="Razones Financieras Forms\RazonesFinancierasForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

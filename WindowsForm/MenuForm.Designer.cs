@@ -141,7 +141,6 @@
 
         #endregion
         private Button btnRegistro;
-        private Button btnSalir;
         private Panel panelTitulo;
         private Panel panel2;
         private Button btnER;

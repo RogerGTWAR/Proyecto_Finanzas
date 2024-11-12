@@ -8,7 +8,7 @@ using WindowsForm.Models;
 
 namespace WindowsForm.IRepository.Repository
 {
-    public class CuentasRazonesRepository : IRepository<CuentasDeLasRazones>
+    public class CuentasRazonesRepository : IRepository<CuentaDeLasRazones>
     {
         private readonly string _connectionString;
 
@@ -17,36 +17,48 @@ namespace WindowsForm.IRepository.Repository
             _connectionString = connectionString;
         }
 
-        public void Add(CuentasDeLasRazones cuenta)
+        public void Add(CuentaDeLasRazones cuenta)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = @"INSERT INTO CuentasRazones 
-                (NombreDeLaEmpresa, ActivoCirculante, PasivoCirculante, Inventario, ActivoTotal, PasivoTotal, 
-                CapitalContable, ActivoFijo, InteresesPagados, CuentasPorCobrar, UtilidadOperativa, VentasNetas, 
-                CostoVentas, VentasAnuales, UtilidadAntesDeImpuestos, UtilidadNeta) 
-                VALUES 
-                (@NombreDeLaEmpresa, @ActivoCirculante, @PasivoCirculante, @Inventario, @ActivoTotal, @PasivoTotal, 
-                @CapitalContable, @ActivoFijo, @InteresesPagados, @CuentasPorCobrar, @UtilidadOperativa, @VentasNetas, 
-                @CostoVentas, @VentasAnuales, @UtilidadAntesDeImpuestos, @UtilidadNeta)";
+                (NombreDeLaEmpresa, ActivoCirculante, PasivoCirculante, PasivoNoCirculante, Inventario, 
+                ActivoTotal, PasivoTotal, CapitalContable, ActivoFijo, CuentasPorCobrar, UtilidadOperativa, CapitalSocial, 
+                VentasCredito, VentasNetas, CostoVentas, UtilidadAntesDeImpuestos, UtilidadNeta, 
+                UtilidadAntesDeInteresesImpuestos, CargosporIntereses, UtilidadNetaparaAccionista, 
+                AccionesenCirculacion, PreciodelMercadoporAccion) 
+                 VALUES 
+                 (@NombreDeLaEmpresa, @ActivoCirculante, @PasivoCirculante, @PasivoNoCirculante, @Inventario, 
+                @ActivoTotal, @PasivoTotal, @CapitalContable, @ActivoFijo, @CuentasPorCobrar, @UtilidadOperativa, @CapitalSocial, 
+                @VentasCredito, @VentasNetas, @CostoVentas, @UtilidadAntesDeImpuestos, @UtilidadNeta, 
+                @UtilidadAntesDeInteresesImpuestos, @CargosporIntereses, @UtilidadNetaparaAccionista, 
+                @AccionesenCirculacion, @PreciodelMercadoporAccion)";
 
                 SqlCommand command = new SqlCommand(query, connection);
+
                 command.Parameters.AddWithValue("@NombreDeLaEmpresa", cuenta.NombreDeLaEmpresa);
                 command.Parameters.AddWithValue("@ActivoCirculante", cuenta.ActivoCirculante);
                 command.Parameters.AddWithValue("@PasivoCirculante", cuenta.PasivoCirculante);
+                command.Parameters.AddWithValue("@PasivoNoCirculante", cuenta.PasivoNoCirculante);
                 command.Parameters.AddWithValue("@Inventario", cuenta.Inventario);
                 command.Parameters.AddWithValue("@ActivoTotal", cuenta.ActivoTotal);
                 command.Parameters.AddWithValue("@PasivoTotal", cuenta.PasivoTotal);
                 command.Parameters.AddWithValue("@CapitalContable", cuenta.CapitalContable);
                 command.Parameters.AddWithValue("@ActivoFijo", cuenta.ActivoFijo);
-                command.Parameters.AddWithValue("@InteresesPagados", cuenta.InteresesPagados);
                 command.Parameters.AddWithValue("@CuentasPorCobrar", cuenta.CuentasPorCobrar);
                 command.Parameters.AddWithValue("@UtilidadOperativa", cuenta.UtilidadOperativa);
+                command.Parameters.AddWithValue("@CapitalSocial", cuenta.CapitalSocial);
+                command.Parameters.AddWithValue("@VentasCredito", cuenta.VentasCredito);
                 command.Parameters.AddWithValue("@VentasNetas", cuenta.VentasNetas);
                 command.Parameters.AddWithValue("@CostoVentas", cuenta.CostoVentas);
-                command.Parameters.AddWithValue("@VentasAnuales", cuenta.VentasAnuales);
                 command.Parameters.AddWithValue("@UtilidadAntesDeImpuestos", cuenta.UtilidadAntesDeImpuestos);
                 command.Parameters.AddWithValue("@UtilidadNeta", cuenta.UtilidadNeta);
+                command.Parameters.AddWithValue("@UtilidadAntesDeInteresesImpuestos", cuenta.UtilidadAntesDeInteresesImpuestos);
+                command.Parameters.AddWithValue("@CargosporIntereses", cuenta.CargosporIntereses);
+                command.Parameters.AddWithValue("@UtilidadNetaparaAccionista", cuenta.UtilidadNetaparaAccionista);
+                command.Parameters.AddWithValue("@AccionesenCirculacion", cuenta.AccionesenCirculacion);
+                command.Parameters.AddWithValue("@PreciodelMercadoporAccion", cuenta.PreciodelMercadoporAccion);
+
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -70,9 +82,9 @@ namespace WindowsForm.IRepository.Repository
             }
         }
 
-        public IEnumerable<CuentasDeLasRazones> GetAll()
+        public IEnumerable<CuentaDeLasRazones> GetAll()
         {
-            List<CuentasDeLasRazones> cuentas = new List<CuentasDeLasRazones>();
+            List<CuentaDeLasRazones> cuentas = new List<CuentaDeLasRazones>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM CuentasRazones";
@@ -82,25 +94,31 @@ namespace WindowsForm.IRepository.Repository
 
                 while (reader.Read())
                 {
-                    CuentasDeLasRazones cuenta = new CuentasDeLasRazones
+                    CuentaDeLasRazones cuenta = new CuentaDeLasRazones
                     {
                         ID_CuentasDeRazones = (int)reader["ID_CuentasDeRazones"],
                         NombreDeLaEmpresa = (string)reader["NombreDeLaEmpresa"],
                         ActivoCirculante = (decimal)reader["ActivoCirculante"],
                         PasivoCirculante = (decimal)reader["PasivoCirculante"],
+                        PasivoNoCirculante = (decimal)reader["PasivoNoCirculante"],
                         Inventario = (decimal)reader["Inventario"],
                         ActivoTotal = (decimal)reader["ActivoTotal"],
                         PasivoTotal = (decimal)reader["PasivoTotal"],
                         CapitalContable = (decimal)reader["CapitalContable"],
                         ActivoFijo = (decimal)reader["ActivoFijo"],
-                        InteresesPagados = (decimal)reader["InteresesPagados"],
                         CuentasPorCobrar = (decimal)reader["CuentasPorCobrar"],
                         UtilidadOperativa = (decimal)reader["UtilidadOperativa"],
+                        CapitalSocial = (decimal)reader["CapitalSocial"],
+                        VentasCredito = (decimal)reader["VentasCredito"],
                         VentasNetas = (decimal)reader["VentasNetas"],
                         CostoVentas = (decimal)reader["CostoVentas"],
-                        VentasAnuales = (decimal)reader["VentasAnuales"],
                         UtilidadAntesDeImpuestos = (decimal)reader["UtilidadAntesDeImpuestos"],
-                        UtilidadNeta = (decimal)reader["UtilidadNeta"]
+                        UtilidadNeta = (decimal)reader["UtilidadNeta"],
+                        UtilidadAntesDeInteresesImpuestos = (decimal)reader["UtilidadAntesDeInteresesImpuestos"],
+                        CargosporIntereses = (decimal)reader["CargosporIntereses"],
+                        UtilidadNetaparaAccionista = (decimal)reader["UtilidadNetaparaAccionista"],
+                        AccionesenCirculacion = (decimal)reader["AccionesenCirculacion"],
+                        PreciodelMercadoporAccion = (decimal)reader["PreciodelMercadoporAccion"]
                     };
                     cuentas.Add(cuenta);
                 }
@@ -108,9 +126,9 @@ namespace WindowsForm.IRepository.Repository
             return cuentas;
         }
 
-        public CuentasDeLasRazones GetById(int id)
+        public CuentaDeLasRazones GetById(int id)
         {
-            CuentasDeLasRazones cuenta = null;
+            CuentaDeLasRazones cuenta = null;
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM CuentasRazones WHERE ID_CuentasDeRazones = @ID";
@@ -121,74 +139,90 @@ namespace WindowsForm.IRepository.Repository
 
                 if (reader.Read())
                 {
-                    cuenta = new CuentasDeLasRazones
+                    cuenta = new CuentaDeLasRazones
                     {
                         ID_CuentasDeRazones = (int)reader["ID_CuentasDeRazones"],
                         NombreDeLaEmpresa = (string)reader["NombreDeLaEmpresa"],
                         ActivoCirculante = (decimal)reader["ActivoCirculante"],
                         PasivoCirculante = (decimal)reader["PasivoCirculante"],
+                        PasivoNoCirculante = (decimal)reader["PasivoNoCirculante"],
                         Inventario = (decimal)reader["Inventario"],
                         ActivoTotal = (decimal)reader["ActivoTotal"],
                         PasivoTotal = (decimal)reader["PasivoTotal"],
                         CapitalContable = (decimal)reader["CapitalContable"],
                         ActivoFijo = (decimal)reader["ActivoFijo"],
-                        InteresesPagados = (decimal)reader["InteresesPagados"],
                         CuentasPorCobrar = (decimal)reader["CuentasPorCobrar"],
                         UtilidadOperativa = (decimal)reader["UtilidadOperativa"],
+                        CapitalSocial = (decimal)reader["CapitalSocial"],
+                        VentasCredito = (decimal)reader["VentasCredito"],
                         VentasNetas = (decimal)reader["VentasNetas"],
                         CostoVentas = (decimal)reader["CostoVentas"],
-                        VentasAnuales = (decimal)reader["VentasAnuales"],
                         UtilidadAntesDeImpuestos = (decimal)reader["UtilidadAntesDeImpuestos"],
-                        UtilidadNeta = (decimal)reader["UtilidadNeta"]
+                        UtilidadNeta = (decimal)reader["UtilidadNeta"],
+                        UtilidadAntesDeInteresesImpuestos = (decimal)reader["UtilidadAntesDeInteresesImpuestos"],
+                        CargosporIntereses = (decimal)reader["CargosporIntereses"],
+                        UtilidadNetaparaAccionista = (decimal)reader["UtilidadNetaparaAccionista"],
+                        AccionesenCirculacion = (decimal)reader["AccionesenCirculacion"],
+                        PreciodelMercadoporAccion = (decimal)reader["PreciodelMercadoporAccion"]
                     };
                 }
             }
             return cuenta;
         }
 
-        public void Update(CuentasDeLasRazones cuenta)
+        public void Update(CuentaDeLasRazones ado)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = @"UPDATE CuentasRazones SET 
-                                NombreDeLaEmpresa = @NombreDeLaEmpresa, 
-                                ActivoCirculante = @ActivoCirculante, 
-                                PasivoCirculante = @PasivoCirculante, 
-                                Inventario = @Inventario, 
-                                ActivoTotal = @ActivoTotal, 
-                                PasivoTotal = @PasivoTotal, 
-                                CapitalContable = @CapitalContable, 
-                                ActivoFijo = @ActivoFijo, 
-                                InteresesPagados = @InteresesPagados, 
-                                CuentasPorCobrar = @CuentasPorCobrar, 
-                                UtilidadOperativa = @UtilidadOperativa, 
-                                VentasNetas = @VentasNetas, 
-                                CostoVentas = @CostoVentas, 
-                                VentasAnuales = @VentasAnuales, 
-                                UtilidadAntesDeImpuestos = @UtilidadAntesDeImpuestos, 
-                                UtilidadNeta = @UtilidadNeta 
-                                WHERE ID_CuentasDeRazones = @ID";
+                         NombreDeLaEmpresa = @NombreDeLaEmpresa, 
+                         ActivoCirculante = @ActivoCirculante, 
+                         PasivoCirculante = @PasivoCirculante, 
+                         PasivoNoCirculante = @PasivoNoCirculante,
+                         Inventario = @Inventario, 
+                         ActivoTotal = @ActivoTotal, 
+                         PasivoTotal = @PasivoTotal, 
+                         CapitalContable = @CapitalContable,
+                         ActivoFijo = @ActivoFijo,
+                         CuentasPorCobrar = @CuentasPorCobrar,
+                         UtilidadOperativa = @UtilidadOperativa,
+                         CapitalSocial = @CapitalSocial,
+                         VentasCredito = @VentasCredito,
+                         VentasNetas = @VentasNetas,
+                         CostoVentas = @CostoVentas,
+                         UtilidadAntesDeImpuestos = @UtilidadAntesDeImpuestos,
+                         UtilidadNeta = @UtilidadNeta,
+                         UtilidadAntesDeInteresesImpuestos = @UtilidadAntesDeInteresesImpuestos,
+                         CargosporIntereses = @CargosporIntereses,
+                         UtilidadNetaparaAccionista = @UtilidadNetaparaAccionista,
+                         AccionesenCirculacion = @AccionesenCirculacion,
+                         PreciodelMercadoporAccion = @PreciodelMercadoporAccion
+                         WHERE ID_CuentasDeRazones = @ID";
 
                 SqlCommand command = new SqlCommand(query, connection);
-
-                command.Parameters.AddWithValue("@NombreDeLaEmpresa", cuenta.NombreDeLaEmpresa);
-                command.Parameters.AddWithValue("@ActivoCirculante", cuenta.ActivoCirculante);
-                command.Parameters.AddWithValue("@PasivoCirculante", cuenta.PasivoCirculante);
-                command.Parameters.AddWithValue("@Inventario", cuenta.Inventario);
-                command.Parameters.AddWithValue("@ActivoTotal", cuenta.ActivoTotal);
-                command.Parameters.AddWithValue("@PasivoTotal", cuenta.PasivoTotal);
-                command.Parameters.AddWithValue("@CapitalContable", cuenta.CapitalContable);
-                command.Parameters.AddWithValue("@ActivoFijo", cuenta.ActivoFijo);
-                command.Parameters.AddWithValue("@InteresesPagados", cuenta.InteresesPagados);
-                command.Parameters.AddWithValue("@CuentasPorCobrar", cuenta.CuentasPorCobrar);
-                command.Parameters.AddWithValue("@UtilidadOperativa", cuenta.UtilidadOperativa);
-                command.Parameters.AddWithValue("@VentasNetas", cuenta.VentasNetas);
-                command.Parameters.AddWithValue("@CostoVentas", cuenta.CostoVentas);
-                command.Parameters.AddWithValue("@VentasAnuales", cuenta.VentasAnuales);
-                command.Parameters.AddWithValue("@UtilidadAntesDeImpuestos", cuenta.UtilidadAntesDeImpuestos);
-                command.Parameters.AddWithValue("@UtilidadNeta", cuenta.UtilidadNeta);
-                command.Parameters.AddWithValue("@ID", cuenta.ID_CuentasDeRazones);
-
+                command.Parameters.AddWithValue("@NombreDeLaEmpresa", ado.NombreDeLaEmpresa);
+                command.Parameters.AddWithValue("@ActivoCirculante", ado.ActivoCirculante);
+                command.Parameters.AddWithValue("@PasivoCirculante", ado.PasivoCirculante);
+                command.Parameters.AddWithValue("@PasivoNoCirculante", ado.PasivoNoCirculante);
+                command.Parameters.AddWithValue("@Inventario", ado.Inventario);
+                command.Parameters.AddWithValue("@ActivoTotal", ado.ActivoTotal);
+                command.Parameters.AddWithValue("@PasivoTotal", ado.PasivoTotal);
+                command.Parameters.AddWithValue("@CapitalContable", ado.CapitalContable);
+                command.Parameters.AddWithValue("@ActivoFijo", ado.ActivoFijo);
+                command.Parameters.AddWithValue("@CuentasPorCobrar", ado.CuentasPorCobrar);
+                command.Parameters.AddWithValue("@UtilidadOperativa", ado.UtilidadOperativa);
+                command.Parameters.AddWithValue("@CapitalSocial", ado.CapitalSocial);
+                command.Parameters.AddWithValue("@VentasCredito", ado.VentasCredito);
+                command.Parameters.AddWithValue("@VentasNetas", ado.VentasNetas);
+                command.Parameters.AddWithValue("@CostoVentas", ado.CostoVentas);
+                command.Parameters.AddWithValue("@UtilidadAntesDeImpuestos", ado.UtilidadAntesDeImpuestos);
+                command.Parameters.AddWithValue("@UtilidadNeta", ado.UtilidadNeta);
+                command.Parameters.AddWithValue("@UtilidadAntesDeInteresesImpuestos", ado.UtilidadAntesDeInteresesImpuestos);
+                command.Parameters.AddWithValue("@CargosporIntereses", ado.CargosporIntereses);
+                command.Parameters.AddWithValue("@UtilidadNetaparaAccionista", ado.UtilidadNetaparaAccionista);
+                command.Parameters.AddWithValue("@AccionesenCirculacion", ado.AccionesenCirculacion);
+                command.Parameters.AddWithValue("@PreciodelMercadoporAccion", ado.PreciodelMercadoporAccion);
+                command.Parameters.AddWithValue("@ID", ado.ID_CuentasDeRazones);
                 connection.Open();
                 command.ExecuteNonQuery();
             }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0KoW0OVNZ6A=",
+  "dgSpecHash": "aaKRdqX4uTs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rpere\\Downloads\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
+  "projectFilePath": "C:\\Users\\rpere\\OneDrive\\Desktop\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rpere\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rpere\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

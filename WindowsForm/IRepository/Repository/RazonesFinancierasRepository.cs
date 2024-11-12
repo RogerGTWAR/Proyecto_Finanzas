@@ -32,7 +32,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     RazonesFinanciera razon = new RazonesFinanciera
                     {
-                        ID_RazonesFinancieras = (int)reader["ID_RazonesFinancieras"],
+                        ID_RazonFinanciera = (int)reader["ID_RazonFinanciera"],
                         ID_CuentasDeRazones = (int)reader["ID_CuentasDeRazones"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_DatosER = (int)reader["ID_DatosER"],
@@ -49,7 +49,11 @@ namespace WindowsForm.IRepository.Repository
                         RazonRotacionInteresUtilidad = (decimal)reader["RazonRotacionInteresUtilidad"],
                         MUB = (decimal)reader["MUB"],
                         MUO = (decimal)reader["MUO"],
-                        MUN = (decimal)reader["MUN"]
+                        MUN = (decimal)reader["MUN"],
+                        UtilidadporAccion = (decimal)reader["UtilidadporAccion"],
+                        RazonPrecio = (decimal)reader["RazonPrecio"],
+                        ValorenLibros = (decimal)reader["ValorenLibros"],
+                        ValorenLibrosporAccion = (decimal)reader["ValorenLibrosporAccion"]
                     };
                     razonesList.Add(razon);
                 }
@@ -63,7 +67,7 @@ namespace WindowsForm.IRepository.Repository
 
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "SELECT * FROM RazonesFinancieras WHERE ID_RazonesFinancieras = @Id";
+                string query = "SELECT * FROM RazonesFinancieras WHERE ID_RazonFinanciera = @Id";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
@@ -73,7 +77,7 @@ namespace WindowsForm.IRepository.Repository
                 {
                     razon = new RazonesFinanciera
                     {
-                        ID_RazonesFinancieras = (int)reader["ID_RazonesFinancieras"],
+                        ID_RazonFinanciera = (int)reader["ID_RazonFinanciera"],
                         ID_CuentasDeRazones = (int)reader["ID_CuentasDeRazones"],
                         ID_DatosBalance = (int)reader["ID_DatosBalance"],
                         ID_DatosER = (int)reader["ID_DatosER"],
@@ -90,7 +94,11 @@ namespace WindowsForm.IRepository.Repository
                         RazonRotacionInteresUtilidad = (decimal)reader["RazonRotacionInteresUtilidad"],
                         MUB = (decimal)reader["MUB"],
                         MUO = (decimal)reader["MUO"],
-                        MUN = (decimal)reader["MUN"]
+                        MUN = (decimal)reader["MUN"],
+                        UtilidadporAccion = (decimal)reader["UtilidadporAccion"],
+                        RazonPrecio = (decimal)reader["RazonPrecio"],
+                        ValorenLibros = (decimal)reader["ValorenLibros"],
+                        ValorenLibrosporAccion = (decimal)reader["ValorenLibrosporAccion"]
                     };
                 }
             }
@@ -105,12 +113,12 @@ namespace WindowsForm.IRepository.Repository
                                  (ID_CuentasDeRazones, ID_DatosBalance, ID_DatosER, CapitalTrabajoNeto, RazonCirculante, 
                                   PruebaAcida, RotacionInventario, RotacionCuentasPorCobrar, PeriodoPromedioCobro, 
                                   RotacionActivosFijos, RotacionActivosTotales, RazonDeudaTotal, RazonPasivoCapital, 
-                                  RazonRotacionInteresUtilidad, MUB, MUO, MUN) 
+                                  RazonRotacionInteresUtilidad, MUB, MUO, MUN, UtilidadporAccion, RazonPrecio, ValorenLibros, ValorenLibrosporAccion) 
                                  VALUES 
                                  (@ID_CuentasDeRazones, @ID_DatosBalance, @ID_DatosER, @CapitalTrabajoNeto, @RazonCirculante, 
                                   @PruebaAcida, @RotacionInventario, @RotacionCuentasPorCobrar, @PeriodoPromedioCobro, 
                                   @RotacionActivosFijos, @RotacionActivosTotales, @RazonDeudaTotal, @RazonPasivoCapital, 
-                                  @RazonRotacionInteresUtilidad, @MUB, @MUO, @MUN)";
+                                  @RazonRotacionInteresUtilidad, @MUB, @MUO, @MUN, @UtilidadporAccion, @RazonPrecio, @ValorenLibros, @ValorenLibrosporAccion )";
                 SqlCommand command = new SqlCommand(query, connection);
 
                 command.Parameters.AddWithValue("@ID_CuentasDeRazones", razon.ID_CuentasDeRazones);
@@ -129,7 +137,11 @@ namespace WindowsForm.IRepository.Repository
                 command.Parameters.AddWithValue("@RazonRotacionInteresUtilidad", razon.RazonRotacionInteresUtilidad);
                 command.Parameters.AddWithValue("@MUB", razon.MUB);
                 command.Parameters.AddWithValue("@MUO", razon.MUO);
-                command.Parameters.AddWithValue("@MUN", razon.MUN);
+                command.Parameters.AddWithValue("@MUN", razon.MUN); 
+                command.Parameters.AddWithValue("@UtilidadporAccion", razon.UtilidadporAccion);
+                command.Parameters.AddWithValue("@RazonPrecio", razon.RazonPrecio);
+                command.Parameters.AddWithValue("@ValorenLibros", razon.ValorenLibros);
+                command.Parameters.AddWithValue("@ValorenLibrosporAccion", razon.ValorenLibrosporAccion);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -157,11 +169,15 @@ namespace WindowsForm.IRepository.Repository
                                  RazonRotacionInteresUtilidad = @RazonRotacionInteresUtilidad,
                                  MUB = @MUB,
                                  MUO = @MUO,
-                                 MUN = @MUN
-                                 WHERE ID_RazonesFinancieras = @ID_RazonesFinancieras";
+                                 MUN = @MUN,                                 
+                                 UtilidadporAccion = @UtilidadporAccion,
+                                 RazonPrecio = @RazonPrecio,
+                                 ValorenLibros = @ValorenLibros,
+                                 ValorenLibrosporAccion = @ValorenLibrosporAccion
+                                 WHERE ID_RazonFinanciera = @ID_RazonFinanciera";
                 SqlCommand command = new SqlCommand(query, connection);
 
-                command.Parameters.AddWithValue("@ID_RazonesFinancieras", razon.ID_RazonesFinancieras);
+                command.Parameters.AddWithValue("@ID_RazonFinanciera", razon.ID_RazonFinanciera);
                 command.Parameters.AddWithValue("@ID_CuentasDeRazones", razon.ID_CuentasDeRazones);
                 command.Parameters.AddWithValue("@ID_DatosBalance", razon.ID_DatosBalance);
                 command.Parameters.AddWithValue("@ID_DatosER", razon.ID_DatosER);
@@ -179,6 +195,10 @@ namespace WindowsForm.IRepository.Repository
                 command.Parameters.AddWithValue("@MUB", razon.MUB);
                 command.Parameters.AddWithValue("@MUO", razon.MUO);
                 command.Parameters.AddWithValue("@MUN", razon.MUN);
+                command.Parameters.AddWithValue("@UtilidadporAccion", razon.UtilidadporAccion);
+                command.Parameters.AddWithValue("@RazonPrecio", razon.RazonPrecio);
+                command.Parameters.AddWithValue("@ValorenLibros", razon.ValorenLibros);
+                command.Parameters.AddWithValue("@ValorenLibrosporAccion", razon.ValorenLibrosporAccion);
 
                 connection.Open();
                 command.ExecuteNonQuery();

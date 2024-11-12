@@ -11,7 +11,7 @@ namespace WindowsForm.Models
         public RazonesFinanciera()
         {
         }
-        public int ID_RazonesFinancieras { get; set; }
+        public int ID_RazonFinanciera { get; set; }
         public int ID_CuentasDeRazones { get; set; }
         public int ID_DatosBalance { get; set; }
         public int ID_DatosER {  get; set; }
@@ -29,5 +29,9 @@ namespace WindowsForm.Models
         public decimal MUB { get; set; }
         public decimal MUO { get; set; }
         public decimal MUN { get; set; }
+        public decimal UtilidadporAccion {  get; set; }
+        public decimal RazonPrecio { get; set; }
+        public decimal ValorenLibros { get; set; }
+        public decimal ValorenLibrosporAccion { get; set; }
     }
 }
