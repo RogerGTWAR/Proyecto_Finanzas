@@ -88,7 +88,7 @@ CREATE TABLE CuentasRazones (
 );
 
 CREATE TABLE RazonesFinancieras (
-    ID_RazonFinanciera INT IDENTITY(1,1) PRIMARY KEY, //Cambiar nombre
+    ID_RazonFinanciera INT IDENTITY(1,1) PRIMARY KEY, 
     ID_CuentasDeRazones INT NOT NULL,
 	ID_DatosER INT,
 	ID_DatosBalance INT,
