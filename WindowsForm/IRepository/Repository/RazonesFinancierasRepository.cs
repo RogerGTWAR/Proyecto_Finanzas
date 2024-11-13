@@ -209,7 +209,7 @@ namespace WindowsForm.IRepository.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "DELETE FROM RazonesFinancieras WHERE ID_RazonesFinancieras = @Id";
+                string query = "DELETE FROM RazonesFinancieras WHERE ID_RazonFinanciera = @Id";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Id", id);
 

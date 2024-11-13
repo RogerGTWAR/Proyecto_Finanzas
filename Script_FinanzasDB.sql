@@ -54,24 +54,16 @@ CREATE DATABASE FinanzasDB;
 CREATE TABLE CuentasRazones (
     ID_CuentasDeRazones INT Identity(1,1) PRIMARY KEY,
     NombreDeLaEmpresa NVARCHAR(255) NOT NULL,
-
-    -- Balance General
     ActivoCirculante DECIMAL(18, 2),
     ActivoFijo DECIMAL(18, 2),
     ActivoTotal DECIMAL(18, 2),
     Inventario DECIMAL(18, 2),
     CuentasPorCobrar DECIMAL(18, 2),
-
-    -- Pasivo
     PasivoCirculante DECIMAL(18, 2),
     PasivoNoCirculante DECIMAL(18, 2),
     PasivoTotal DECIMAL(18, 2),
-
-    -- Capital
     CapitalContable DECIMAL(18, 2),
 	CapitalSocial DECIMAL(18, 2),
-
-    -- Estado de Resultados
     VentasCredito DECIMAL(18, 2),
     VentasNetas DECIMAL(18, 2),
     CostoVentas DECIMAL(18, 2),
@@ -81,8 +73,6 @@ CREATE TABLE CuentasRazones (
     UtilidadAntesDeInteresesImpuestos DECIMAL(18, 2),
     CargosporIntereses DECIMAL(18, 2),
     UtilidadNetaParaAccionista DECIMAL(18, 2),
-
-    -- Otras Cuentas (Ratios Financieros)
     AccionesenCirculacion DECIMAL(18, 2),
     PreciodelMercadoporAccion DECIMAL(18, 2),
 );
@@ -115,4 +105,40 @@ CREATE TABLE RazonesFinancieras (
     FOREIGN KEY (ID_DatosBalance) REFERENCES DatosBalance(ID_DatosBalance)
 );
 
+--Trigger para cuando se quiere eliminar una fila de cuentasRazones que esta siendo utilizada
+CREATE TRIGGER trg_InsteadOfDelete_CuentasRazones
+ON CuentasRazones
+INSTEAD OF DELETE
+AS
+BEGIN
+    DECLARE @ID_CuentasDeRazones INT;
+    SELECT @ID_CuentasDeRazones = ID_CuentasDeRazones FROM deleted;
+    IF EXISTS (SELECT 1 FROM RazonesFinancieras WHERE ID_CuentasDeRazones = @ID_CuentasDeRazones)
+    BEGIN
+        RAISERROR ('El registro no se puede eliminar porque está siendo utilizado en la tabla RazonesFinancieras.', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+    ELSE
+    BEGIN
+        DELETE FROM CuentasRazones WHERE ID_CuentasDeRazones = @ID_CuentasDeRazones;
+    END
+END;
 
+--Trigger para cuando se quiere eliminar una fila de Balance y esta siendo utilizada
+CREATE TRIGGER trg_InsteadOfDelete_DatosBalance
+ON DatosBalance
+INSTEAD OF DELETE
+AS
+BEGIN
+    DECLARE @ID_DatosBalance INT;
+    SELECT @ID_DatosBalance = ID_DatosBalance FROM deleted;
+    IF EXISTS (SELECT 1 FROM RazonesFinancieras WHERE ID_DatosBalance = @ID_DatosBalance)
+    BEGIN
+        RAISERROR ('El registro no se puede eliminar porque está siendo utilizado en la tabla RazonesFinancieras.', 16, 1);
+        ROLLBACK TRANSACTION;
+    END
+    ELSE
+    BEGIN
+        DELETE FROM DatosBalance WHERE ID_DatosBalance = @ID_DatosBalance;
+    END
+END;

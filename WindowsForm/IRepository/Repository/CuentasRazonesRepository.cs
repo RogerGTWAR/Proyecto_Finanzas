@@ -74,9 +74,9 @@ namespace WindowsForm.IRepository.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "DELETE FROM CuentasRazones WHERE ID_CuentasDeRazones = @ID";
+                string query = "DELETE FROM CuentasRazones WHERE ID_CuentasDeRazones = @Id";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@ID", id);
+                command.Parameters.AddWithValue("@Id", id);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
