@@ -7,6 +7,18 @@
     <Compile Update="Balance General Forms\ActivosBalanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Estado de Resultado Forms\ClasificacionesER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Estado de Resultado Forms\Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Estado de Resultado Forms\Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Estado de Resultado Forms\MenuERForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Razones Financieras Forms\CuentasRazonesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -20,9 +32,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Estado de Resultado Forms\ERForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Estado de Resultado Forms\MenuERForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MenuForm.cs">

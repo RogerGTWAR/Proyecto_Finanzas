@@ -111,9 +111,71 @@ namespace WindowsForm.IRepository.Repository
             }
         }
 
+        public int? GetIdByName(string name)
+        {
+            string query = "Select TOP 1 ID_DatosER from DatosERx where NombreER = @nombre";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+
+                command.Parameters.AddWithValue("@nombre", name);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+                    // Si el resultado no es nulo, convierte el valor a int y devuélvelo
+                    if (result != null && int.TryParse(result.ToString(), out int id))
+                    {
+                        return id;
+                    }
+                    else
+                    {
+                        return null;// Si no hay resultados, devuelve null
+                    }
+
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Error: " + e.Message);
+                }
+            }
+        }
+
+
         public void Add(Activo newCuenta)
         {
             throw new NotImplementedException();
+        }
+
+        public List<string> GetNameER()
+        {
+            List<string> lista = new List<string>();
+            DataTable name = new DataTable();
+            string query = "SELECT NombreER FROM DatosERx";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(name);
+
+                    // Recorrer cada fila del DataTable
+                    foreach (DataRow row in name.Rows)
+                    {
+                        lista.Add(row["NombreER"].ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Error: " + e.Message);
+                }
+            }
+            return lista;
         }
     }
 }

@@ -9,7 +9,7 @@ using WindowsForm.Models;
 
 namespace WindowsForm.IRepository.Repository
 {
-    public class IngresosERRepository : IRepository<Ingresos>
+    public class IngresosERRepository : IRepository<Ingreso>
     {
         private readonly string _connectionString;
 
@@ -18,9 +18,9 @@ namespace WindowsForm.IRepository.Repository
             _connectionString = connectionString;
         }
 
-        public IEnumerable<Ingresos> GetAll()
+        public IEnumerable<Ingreso> GetAll()
         {
-            List<Ingresos> ingresosList = new List<Ingresos>();
+            List<Ingreso> ingresosList = new List<Ingreso>();
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM IngresosER";
@@ -29,23 +29,23 @@ namespace WindowsForm.IRepository.Repository
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    ingresosList.Add(new Ingresos
+                    ingresosList.Add(new Ingreso
                     {
                         ID_Ingresos = (int)reader["ID_Ingresos"],
-                        ID_DatosER = reader["ID_DatosER"]?.ToString(),
+                        ID_DatosER = Convert.ToInt32(reader["ID_DatosER"]),
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreDeCuenta = reader["NombreDeCuenta"]?.ToString(),
-                        Monto = (decimal)reader["Monto"],
-                        Total = (decimal)reader["Total"]
+                        Monto = (decimal)reader["Monto"]
+                       
                     });
                 }
             }
             return ingresosList;
         }
 
-        public Ingresos GetById(int id)
+        public Ingreso GetById(int id)
         {
-            Ingresos ingreso = null;
+            Ingreso ingreso = null;
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "SELECT * FROM IngresosER WHERE ID_Ingresos = @Id";
@@ -55,51 +55,51 @@ namespace WindowsForm.IRepository.Repository
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    ingreso = new Ingresos
+                    ingreso = new Ingreso
                     {
                         ID_Ingresos = (int)reader["ID_Ingresos"],
-                        ID_DatosER = reader["ID_DatosER"]?.ToString(),
+                        ID_DatosER = Convert.ToInt32(reader["ID_DatosER"]),
                         ID_Clasificacion = (int)reader["ID_Clasificacion"],
                         NombreDeCuenta = reader["NombreDeCuenta"]?.ToString(),
                         Monto = (decimal)reader["Monto"],
-                        Total = (decimal)reader["Total"]
+                       
                     };
                 }
             }
             return ingreso;
         }
 
-        public void Add(Ingresos ingreso)
+        public void Add(Ingreso ingreso)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "INSERT INTO IngresosER (ID_DatosER, ID_Clasificacion, NombreDeCuenta, Monto, Total) " +
-                               "VALUES (@ID_DatosER, @ID_Clasificacion, @NombreDeCuenta, @Monto, @Total)";
+                string query = "INSERT INTO IngresosER (ID_DatosER, ID_Clasificacion, NombreDeCuenta, Monto) " +
+                               "VALUES (@ID_DatosER, @ID_Clasificacion, @NombreDeCuenta, @Monto)";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@ID_DatosER", ingreso.ID_DatosER ?? (object)DBNull.Value);
+                command.Parameters.AddWithValue("@ID_DatosER", ingreso.ID_DatosER);
                 command.Parameters.AddWithValue("@ID_Clasificacion", ingreso.ID_Clasificacion);
                 command.Parameters.AddWithValue("@NombreDeCuenta", ingreso.NombreDeCuenta ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@Monto", ingreso.Monto);
-                command.Parameters.AddWithValue("@Total", ingreso.Total);
+               
                 connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Ingresos ingreso)
+        public void Update(Ingreso ingreso)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "UPDATE IngresosER SET ID_DatosER = @ID_DatosER, ID_Clasificacion = @ID_Clasificacion, " +
-                               "NombreDeCuenta = @NombreDeCuenta, Monto = @Monto, Total = @Total " +
+                               "NombreDeCuenta = @NombreDeCuenta, Monto = @Monto " +
                                "WHERE ID_Ingresos = @ID_Ingresos";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ID_Ingresos", ingreso.ID_Ingresos);
-                command.Parameters.AddWithValue("@ID_DatosER", ingreso.ID_DatosER ?? (object)DBNull.Value);
+                command.Parameters.AddWithValue("@ID_DatosER", ingreso.ID_DatosER);
                 command.Parameters.AddWithValue("@ID_Clasificacion", ingreso.ID_Clasificacion);
                 command.Parameters.AddWithValue("@NombreDeCuenta", ingreso.NombreDeCuenta ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@Monto", ingreso.Monto);
-                command.Parameters.AddWithValue("@Total", ingreso.Total);
+             
                 connection.Open();
                 command.ExecuteNonQuery();
             }
