@@ -82,6 +82,7 @@
             txtUtilidadNetaparaAccionista = new TextBox();
             txtAccionesenCirculacion = new TextBox();
             dgv = new DataGridView();
+            cuentaDeLasRazonesBindingSource = new BindingSource(components);
             iDCuentasDeRazonesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nombreDeLaEmpresaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             activoCirculanteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -105,7 +106,6 @@
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             accionesenCirculacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             preciodelMercadoporAccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            cuentaDeLasRazonesBindingSource = new BindingSource(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
@@ -693,10 +693,14 @@
             dgv.TabIndex = 42;
             dgv.CellContentClick += dgv_CellContentClick;
             // 
+            // cuentaDeLasRazonesBindingSource
+            // 
+            cuentaDeLasRazonesBindingSource.DataSource = typeof(Models.CuentaDeLasRazones);
+            // 
             // iDCuentasDeRazonesDataGridViewTextBoxColumn
             // 
             iDCuentasDeRazonesDataGridViewTextBoxColumn.DataPropertyName = "ID_CuentasDeRazones";
-            iDCuentasDeRazonesDataGridViewTextBoxColumn.HeaderText = "ID_CuentasDeRazones";
+            iDCuentasDeRazonesDataGridViewTextBoxColumn.HeaderText = "ID";
             iDCuentasDeRazonesDataGridViewTextBoxColumn.MinimumWidth = 6;
             iDCuentasDeRazonesDataGridViewTextBoxColumn.Name = "iDCuentasDeRazonesDataGridViewTextBoxColumn";
             iDCuentasDeRazonesDataGridViewTextBoxColumn.ReadOnly = true;
@@ -705,7 +709,7 @@
             // nombreDeLaEmpresaDataGridViewTextBoxColumn
             // 
             nombreDeLaEmpresaDataGridViewTextBoxColumn.DataPropertyName = "NombreDeLaEmpresa";
-            nombreDeLaEmpresaDataGridViewTextBoxColumn.HeaderText = "NombreDeLaEmpresa";
+            nombreDeLaEmpresaDataGridViewTextBoxColumn.HeaderText = "Nombre de la Empresa";
             nombreDeLaEmpresaDataGridViewTextBoxColumn.MinimumWidth = 6;
             nombreDeLaEmpresaDataGridViewTextBoxColumn.Name = "nombreDeLaEmpresaDataGridViewTextBoxColumn";
             nombreDeLaEmpresaDataGridViewTextBoxColumn.ReadOnly = true;
@@ -714,7 +718,7 @@
             // activoCirculanteDataGridViewTextBoxColumn
             // 
             activoCirculanteDataGridViewTextBoxColumn.DataPropertyName = "ActivoCirculante";
-            activoCirculanteDataGridViewTextBoxColumn.HeaderText = "ActivoCirculante";
+            activoCirculanteDataGridViewTextBoxColumn.HeaderText = "Activo Circulante";
             activoCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
             activoCirculanteDataGridViewTextBoxColumn.Name = "activoCirculanteDataGridViewTextBoxColumn";
             activoCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
@@ -723,7 +727,7 @@
             // activoFijoDataGridViewTextBoxColumn
             // 
             activoFijoDataGridViewTextBoxColumn.DataPropertyName = "ActivoFijo";
-            activoFijoDataGridViewTextBoxColumn.HeaderText = "ActivoFijo";
+            activoFijoDataGridViewTextBoxColumn.HeaderText = "Activo Fijo";
             activoFijoDataGridViewTextBoxColumn.MinimumWidth = 6;
             activoFijoDataGridViewTextBoxColumn.Name = "activoFijoDataGridViewTextBoxColumn";
             activoFijoDataGridViewTextBoxColumn.ReadOnly = true;
@@ -732,7 +736,7 @@
             // activoTotalDataGridViewTextBoxColumn
             // 
             activoTotalDataGridViewTextBoxColumn.DataPropertyName = "ActivoTotal";
-            activoTotalDataGridViewTextBoxColumn.HeaderText = "ActivoTotal";
+            activoTotalDataGridViewTextBoxColumn.HeaderText = "Activo Total";
             activoTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             activoTotalDataGridViewTextBoxColumn.Name = "activoTotalDataGridViewTextBoxColumn";
             activoTotalDataGridViewTextBoxColumn.ReadOnly = true;
@@ -750,7 +754,7 @@
             // cuentasPorCobrarDataGridViewTextBoxColumn
             // 
             cuentasPorCobrarDataGridViewTextBoxColumn.DataPropertyName = "CuentasPorCobrar";
-            cuentasPorCobrarDataGridViewTextBoxColumn.HeaderText = "CuentasPorCobrar";
+            cuentasPorCobrarDataGridViewTextBoxColumn.HeaderText = "Cuentas por Cobrar";
             cuentasPorCobrarDataGridViewTextBoxColumn.MinimumWidth = 6;
             cuentasPorCobrarDataGridViewTextBoxColumn.Name = "cuentasPorCobrarDataGridViewTextBoxColumn";
             cuentasPorCobrarDataGridViewTextBoxColumn.ReadOnly = true;
@@ -759,7 +763,7 @@
             // pasivoCirculanteDataGridViewTextBoxColumn
             // 
             pasivoCirculanteDataGridViewTextBoxColumn.DataPropertyName = "PasivoCirculante";
-            pasivoCirculanteDataGridViewTextBoxColumn.HeaderText = "PasivoCirculante";
+            pasivoCirculanteDataGridViewTextBoxColumn.HeaderText = "Pasivo Circulante";
             pasivoCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
             pasivoCirculanteDataGridViewTextBoxColumn.Name = "pasivoCirculanteDataGridViewTextBoxColumn";
             pasivoCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
@@ -768,7 +772,7 @@
             // pasivoNoCirculanteDataGridViewTextBoxColumn
             // 
             pasivoNoCirculanteDataGridViewTextBoxColumn.DataPropertyName = "PasivoNoCirculante";
-            pasivoNoCirculanteDataGridViewTextBoxColumn.HeaderText = "PasivoNoCirculante";
+            pasivoNoCirculanteDataGridViewTextBoxColumn.HeaderText = "Pasivo No Circulante";
             pasivoNoCirculanteDataGridViewTextBoxColumn.MinimumWidth = 6;
             pasivoNoCirculanteDataGridViewTextBoxColumn.Name = "pasivoNoCirculanteDataGridViewTextBoxColumn";
             pasivoNoCirculanteDataGridViewTextBoxColumn.ReadOnly = true;
@@ -777,7 +781,7 @@
             // pasivoTotalDataGridViewTextBoxColumn
             // 
             pasivoTotalDataGridViewTextBoxColumn.DataPropertyName = "PasivoTotal";
-            pasivoTotalDataGridViewTextBoxColumn.HeaderText = "PasivoTotal";
+            pasivoTotalDataGridViewTextBoxColumn.HeaderText = "Pasivo Total";
             pasivoTotalDataGridViewTextBoxColumn.MinimumWidth = 6;
             pasivoTotalDataGridViewTextBoxColumn.Name = "pasivoTotalDataGridViewTextBoxColumn";
             pasivoTotalDataGridViewTextBoxColumn.ReadOnly = true;
@@ -786,7 +790,7 @@
             // capitalContableDataGridViewTextBoxColumn
             // 
             capitalContableDataGridViewTextBoxColumn.DataPropertyName = "CapitalContable";
-            capitalContableDataGridViewTextBoxColumn.HeaderText = "CapitalContable";
+            capitalContableDataGridViewTextBoxColumn.HeaderText = "Capital Contable";
             capitalContableDataGridViewTextBoxColumn.MinimumWidth = 6;
             capitalContableDataGridViewTextBoxColumn.Name = "capitalContableDataGridViewTextBoxColumn";
             capitalContableDataGridViewTextBoxColumn.ReadOnly = true;
@@ -795,7 +799,7 @@
             // capitalSocialDataGridViewTextBoxColumn
             // 
             capitalSocialDataGridViewTextBoxColumn.DataPropertyName = "CapitalSocial";
-            capitalSocialDataGridViewTextBoxColumn.HeaderText = "CapitalSocial";
+            capitalSocialDataGridViewTextBoxColumn.HeaderText = "Capital Social";
             capitalSocialDataGridViewTextBoxColumn.MinimumWidth = 6;
             capitalSocialDataGridViewTextBoxColumn.Name = "capitalSocialDataGridViewTextBoxColumn";
             capitalSocialDataGridViewTextBoxColumn.ReadOnly = true;
@@ -804,7 +808,7 @@
             // ventasCreditoDataGridViewTextBoxColumn
             // 
             ventasCreditoDataGridViewTextBoxColumn.DataPropertyName = "VentasCredito";
-            ventasCreditoDataGridViewTextBoxColumn.HeaderText = "VentasCredito";
+            ventasCreditoDataGridViewTextBoxColumn.HeaderText = "Ventas Credito";
             ventasCreditoDataGridViewTextBoxColumn.MinimumWidth = 6;
             ventasCreditoDataGridViewTextBoxColumn.Name = "ventasCreditoDataGridViewTextBoxColumn";
             ventasCreditoDataGridViewTextBoxColumn.ReadOnly = true;
@@ -813,7 +817,7 @@
             // ventasNetasDataGridViewTextBoxColumn
             // 
             ventasNetasDataGridViewTextBoxColumn.DataPropertyName = "VentasNetas";
-            ventasNetasDataGridViewTextBoxColumn.HeaderText = "VentasNetas";
+            ventasNetasDataGridViewTextBoxColumn.HeaderText = "Ventas Netas";
             ventasNetasDataGridViewTextBoxColumn.MinimumWidth = 6;
             ventasNetasDataGridViewTextBoxColumn.Name = "ventasNetasDataGridViewTextBoxColumn";
             ventasNetasDataGridViewTextBoxColumn.ReadOnly = true;
@@ -831,7 +835,7 @@
             // utilidadOperativaDataGridViewTextBoxColumn
             // 
             utilidadOperativaDataGridViewTextBoxColumn.DataPropertyName = "UtilidadOperativa";
-            utilidadOperativaDataGridViewTextBoxColumn.HeaderText = "UtilidadOperativa";
+            utilidadOperativaDataGridViewTextBoxColumn.HeaderText = "Utilidad Operativa";
             utilidadOperativaDataGridViewTextBoxColumn.MinimumWidth = 6;
             utilidadOperativaDataGridViewTextBoxColumn.Name = "utilidadOperativaDataGridViewTextBoxColumn";
             utilidadOperativaDataGridViewTextBoxColumn.ReadOnly = true;
@@ -840,7 +844,7 @@
             // utilidadAntesDeImpuestosDataGridViewTextBoxColumn
             // 
             utilidadAntesDeImpuestosDataGridViewTextBoxColumn.DataPropertyName = "UtilidadAntesDeImpuestos";
-            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.HeaderText = "UtilidadAntesDeImpuestos";
+            utilidadAntesDeImpuestosDataGridViewTextBoxColumn.HeaderText = "Utilidad antes de Impuestos";
             utilidadAntesDeImpuestosDataGridViewTextBoxColumn.MinimumWidth = 6;
             utilidadAntesDeImpuestosDataGridViewTextBoxColumn.Name = "utilidadAntesDeImpuestosDataGridViewTextBoxColumn";
             utilidadAntesDeImpuestosDataGridViewTextBoxColumn.ReadOnly = true;
@@ -849,7 +853,7 @@
             // utilidadNetaDataGridViewTextBoxColumn
             // 
             utilidadNetaDataGridViewTextBoxColumn.DataPropertyName = "UtilidadNeta";
-            utilidadNetaDataGridViewTextBoxColumn.HeaderText = "UtilidadNeta";
+            utilidadNetaDataGridViewTextBoxColumn.HeaderText = "Utilidad Neta";
             utilidadNetaDataGridViewTextBoxColumn.MinimumWidth = 6;
             utilidadNetaDataGridViewTextBoxColumn.Name = "utilidadNetaDataGridViewTextBoxColumn";
             utilidadNetaDataGridViewTextBoxColumn.ReadOnly = true;
@@ -858,7 +862,7 @@
             // utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn
             // 
             utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.DataPropertyName = "UtilidadAntesDeInteresesImpuestos";
-            utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.HeaderText = "UtilidadAntesDeInteresesImpuestos";
+            utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.HeaderText = "Utilidad antes de Intereses e Impuestos";
             utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.MinimumWidth = 6;
             utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.Name = "utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn";
             utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn.ReadOnly = true;
@@ -867,7 +871,7 @@
             // cargosporInteresesDataGridViewTextBoxColumn
             // 
             cargosporInteresesDataGridViewTextBoxColumn.DataPropertyName = "CargosporIntereses";
-            cargosporInteresesDataGridViewTextBoxColumn.HeaderText = "CargosporIntereses";
+            cargosporInteresesDataGridViewTextBoxColumn.HeaderText = "Cargos por Intereses";
             cargosporInteresesDataGridViewTextBoxColumn.MinimumWidth = 6;
             cargosporInteresesDataGridViewTextBoxColumn.Name = "cargosporInteresesDataGridViewTextBoxColumn";
             cargosporInteresesDataGridViewTextBoxColumn.ReadOnly = true;
@@ -876,7 +880,7 @@
             // utilidadNetaparaAccionistaDataGridViewTextBoxColumn
             // 
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn.DataPropertyName = "UtilidadNetaparaAccionista";
-            utilidadNetaparaAccionistaDataGridViewTextBoxColumn.HeaderText = "UtilidadNetaparaAccionista";
+            utilidadNetaparaAccionistaDataGridViewTextBoxColumn.HeaderText = "Utilidad Neta para Accionista";
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn.MinimumWidth = 6;
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn.Name = "utilidadNetaparaAccionistaDataGridViewTextBoxColumn";
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn.ReadOnly = true;
@@ -885,7 +889,7 @@
             // accionesenCirculacionDataGridViewTextBoxColumn
             // 
             accionesenCirculacionDataGridViewTextBoxColumn.DataPropertyName = "AccionesenCirculacion";
-            accionesenCirculacionDataGridViewTextBoxColumn.HeaderText = "AccionesenCirculacion";
+            accionesenCirculacionDataGridViewTextBoxColumn.HeaderText = "Acciones en Circulacion";
             accionesenCirculacionDataGridViewTextBoxColumn.MinimumWidth = 6;
             accionesenCirculacionDataGridViewTextBoxColumn.Name = "accionesenCirculacionDataGridViewTextBoxColumn";
             accionesenCirculacionDataGridViewTextBoxColumn.ReadOnly = true;
@@ -894,15 +898,11 @@
             // preciodelMercadoporAccionDataGridViewTextBoxColumn
             // 
             preciodelMercadoporAccionDataGridViewTextBoxColumn.DataPropertyName = "PreciodelMercadoporAccion";
-            preciodelMercadoporAccionDataGridViewTextBoxColumn.HeaderText = "PreciodelMercadoporAccion";
+            preciodelMercadoporAccionDataGridViewTextBoxColumn.HeaderText = "Precio del Mercado por Accion";
             preciodelMercadoporAccionDataGridViewTextBoxColumn.MinimumWidth = 6;
             preciodelMercadoporAccionDataGridViewTextBoxColumn.Name = "preciodelMercadoporAccionDataGridViewTextBoxColumn";
             preciodelMercadoporAccionDataGridViewTextBoxColumn.ReadOnly = true;
             preciodelMercadoporAccionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cuentaDeLasRazonesBindingSource
-            // 
-            cuentaDeLasRazonesBindingSource.DataSource = typeof(Models.CuentaDeLasRazones);
             // 
             // CuentasRazonesForm
             // 
@@ -982,6 +982,7 @@
         private Label label24;
         private Label label26;
         private Label label25;
+        private BindingSource cuentaDeLasRazonesBindingSource;
         private DataGridViewTextBoxColumn iDCuentasDeRazonesDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn nombreDeLaEmpresaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn activoCirculanteDataGridViewTextBoxColumn;
@@ -1005,6 +1006,5 @@
         private DataGridViewTextBoxColumn utilidadNetaparaAccionistaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn accionesenCirculacionDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn preciodelMercadoporAccionDataGridViewTextBoxColumn;
-        private BindingSource cuentaDeLasRazonesBindingSource;
     }
 }

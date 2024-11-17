@@ -52,7 +52,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(685, 40);
+            label1.Location = new Point(720, 56);
             label1.Name = "label1";
             label1.Size = new Size(588, 50);
             label1.TabIndex = 0;
@@ -64,7 +64,7 @@
             btnRazones.FlatStyle = FlatStyle.Popup;
             btnRazones.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRazones.ForeColor = SystemColors.ControlText;
-            btnRazones.Location = new Point(1023, 111);
+            btnRazones.Location = new Point(1058, 127);
             btnRazones.Name = "btnRazones";
             btnRazones.Size = new Size(175, 40);
             btnRazones.TabIndex = 1;
@@ -78,7 +78,7 @@
             btnCuentas.FlatStyle = FlatStyle.Popup;
             btnCuentas.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCuentas.ForeColor = SystemColors.ControlText;
-            btnCuentas.Location = new Point(766, 111);
+            btnCuentas.Location = new Point(801, 127);
             btnCuentas.Name = "btnCuentas";
             btnCuentas.Size = new Size(175, 40);
             btnCuentas.TabIndex = 0;

@@ -83,9 +83,10 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(1143, 177);
+            btnAgregar.ForeColor = Color.Black;
+            btnAgregar.Location = new Point(1163, 223);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(109, 70);
+            btnAgregar.Size = new Size(138, 70);
             btnAgregar.TabIndex = 2;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -131,6 +132,7 @@
             Controls.Add(txtDescripcion);
             Controls.Add(btnAgregar);
             Controls.Add(dgvClasificaciones);
+            ForeColor = Color.White;
             Name = "ClasificacionesForm";
             Text = "ClasificacionesForm";
             Load += ClasificacionesForm_Load;

@@ -134,3 +134,5 @@ C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-w
 C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.MenuRazonesFinancieras.resources
 C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.PasivoCapitalBalanceForm.resources
 C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.sourcelink.json
+C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\obj\Debug\net8.0-windows\WindowsForm.Properties.Resources.resources
+C:\Users\rpere\OneDrive\Desktop\Proyecto_Finanzas\WindowsForm\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll

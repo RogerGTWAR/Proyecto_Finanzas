@@ -146,5 +146,9 @@
         private Button btnER;
         private Button btnRazonesFinancieras;
         private Panel panelContenedor;
+        private Button btnNombreBG;
+        private Panel panel1;
+        private Panel panel4;
+        private Panel panel5;
     }
 }

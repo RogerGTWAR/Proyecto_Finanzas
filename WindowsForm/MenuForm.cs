@@ -6,6 +6,8 @@ namespace WindowsForm
         private MenuBalanceForm balanceForm;
         private MenuRazonesFinancieras razonesform;
         private MenuERForm menuERForm;
+        private Color originalColor;
+
         public MenuForm()
         {
             InitializeComponent();
@@ -52,5 +54,11 @@ namespace WindowsForm
             panelContenedor.Controls.Add(menuERForm);
             menuERForm.Show();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
