@@ -50,7 +50,7 @@
     NombreDeCuenta NVARCHAR(150) NULL,              
     Monto DECIMAL(18,2) NOT NULL,             
     
-    FOREIGN KEY (ID_Clasificacion) REFERENCES Clasificaciones(ID_Clasificacion),
+    FOREIGN KEY (ID_Clasificacion) REFERENCES ClasificacionesER(ID_Clasificacion),
     FOREIGN KEY (ID_DatosER) REFERENCES DatosERx(ID_DatosER)
 );
 
@@ -63,7 +63,7 @@ CREATE TABLE GastosER(
     ID_Clasificacion INT NOT NULL,
 	Nombre NVARCHAR(150) NOT NULL,
 	Monto DECIMAL(18,2) NOT NULL,
-	FOREIGN KEY (ID_Clasificacion) REFERENCES Clasificaciones(ID_Clasificacion),
+	FOREIGN KEY (ID_Clasificacion) REFERENCES ClasificacionesER(ID_Clasificacion),
     FOREIGN KEY (ID_DatosER) REFERENCES DatosERx(ID_DatosER)
 );
 
