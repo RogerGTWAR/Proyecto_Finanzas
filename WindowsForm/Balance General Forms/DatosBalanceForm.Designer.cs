@@ -55,9 +55,10 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(744, 370);
+            btnAgregar.Location = new Point(590, 255);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(129, 53);
+            btnAgregar.Size = new Size(113, 40);
             btnAgregar.TabIndex = 0;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -65,9 +66,10 @@
             // 
             // txtNombreBalance
             // 
-            txtNombreBalance.Location = new Point(708, 114);
+            txtNombreBalance.Location = new Point(559, 63);
+            txtNombreBalance.Margin = new Padding(3, 2, 3, 2);
             txtNombreBalance.Name = "txtNombreBalance";
-            txtNombreBalance.Size = new Size(190, 27);
+            txtNombreBalance.Size = new Size(167, 23);
             txtNombreBalance.TabIndex = 1;
             // 
             // dgvBalance
@@ -77,12 +79,13 @@
             dgvBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBalance.Columns.AddRange(new DataGridViewColumn[] { ID_DatosBalance, nombreBG, fechaInicioDataGridViewTextBoxColumn, fechafinDataGridViewTextBoxColumn });
             dgvBalance.DataSource = datosBalanceGBindingSource;
-            dgvBalance.Location = new Point(710, 156);
+            dgvBalance.Location = new Point(560, 94);
+            dgvBalance.Margin = new Padding(3, 2, 3, 2);
             dgvBalance.Name = "dgvBalance";
             dgvBalance.ReadOnly = true;
             dgvBalance.RowHeadersWidth = 51;
             dgvBalance.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBalance.Size = new Size(487, 188);
+            dgvBalance.Size = new Size(426, 141);
             dgvBalance.TabIndex = 2;
             // 
             // ID_DatosBalance
@@ -134,9 +137,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(695, 80);
+            label1.Location = new Point(547, 37);
             label1.Name = "label1";
-            label1.Size = new Size(215, 31);
+            label1.Size = new Size(178, 25);
             label1.TabIndex = 3;
             label1.Text = "Nombre de Balance";
             // 
@@ -145,9 +148,10 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEliminar.Location = new Point(1068, 370);
+            btnEliminar.Location = new Point(873, 255);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(129, 53);
+            btnEliminar.Size = new Size(113, 40);
             btnEliminar.TabIndex = 4;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -157,18 +161,20 @@
             // 
             dtpFechaInicio.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtpFechaInicio.Format = DateTimePickerFormat.Short;
-            dtpFechaInicio.Location = new Point(930, 116);
+            dtpFechaInicio.Location = new Point(753, 64);
+            dtpFechaInicio.Margin = new Padding(3, 2, 3, 2);
             dtpFechaInicio.Name = "dtpFechaInicio";
-            dtpFechaInicio.Size = new Size(133, 30);
+            dtpFechaInicio.Size = new Size(117, 26);
             dtpFechaInicio.TabIndex = 5;
             // 
             // dtpFechaFin
             // 
             dtpFechaFin.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtpFechaFin.Format = DateTimePickerFormat.Short;
-            dtpFechaFin.Location = new Point(1090, 114);
+            dtpFechaFin.Location = new Point(893, 63);
+            dtpFechaFin.Margin = new Padding(3, 2, 3, 2);
             dtpFechaFin.Name = "dtpFechaFin";
-            dtpFechaFin.Size = new Size(133, 30);
+            dtpFechaFin.Size = new Size(117, 26);
             dtpFechaFin.TabIndex = 6;
             // 
             // label2
@@ -176,9 +182,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(961, 80);
+            label2.Location = new Point(780, 37);
             label2.Name = "label2";
-            label2.Size = new Size(69, 31);
+            label2.Size = new Size(58, 25);
             label2.TabIndex = 7;
             label2.Text = "Inicio";
             // 
@@ -187,9 +193,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(1132, 80);
+            label3.Location = new Point(929, 37);
             label3.Name = "label3";
-            label3.Size = new Size(44, 31);
+            label3.Size = new Size(37, 25);
             label3.TabIndex = 8;
             label3.Text = "Fin";
             // 
@@ -198,18 +204,18 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(773, 42);
+            label4.Location = new Point(615, 9);
             label4.Name = "label4";
-            label4.Size = new Size(371, 38);
+            label4.Size = new Size(290, 30);
             label4.TabIndex = 9;
             label4.Text = "Creacion de Balance General";
             // 
             // DatosBalanceForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1620, 693);
+            ClientSize = new Size(1199, 520);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -220,6 +226,7 @@
             Controls.Add(dgvBalance);
             Controls.Add(txtNombreBalance);
             Controls.Add(btnAgregar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "DatosBalanceForm";
             Text = "CrearNumeroDeBalance";
             Load += CrearBalanceID_Load;

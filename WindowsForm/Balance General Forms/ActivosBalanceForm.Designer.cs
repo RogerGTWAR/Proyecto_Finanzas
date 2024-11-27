@@ -61,9 +61,10 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(593, 184);
+            btnAgregar.Location = new Point(451, 134);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(129, 44);
+            btnAgregar.Size = new Size(113, 33);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -76,12 +77,13 @@
             dgvActivos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvActivos.Columns.AddRange(new DataGridViewColumn[] { iDActivoDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
             dgvActivos.DataSource = activoBindingSource;
-            dgvActivos.Location = new Point(669, 253);
+            dgvActivos.Location = new Point(468, 190);
+            dgvActivos.Margin = new Padding(3, 2, 3, 2);
             dgvActivos.Name = "dgvActivos";
             dgvActivos.ReadOnly = true;
             dgvActivos.RowHeadersWidth = 51;
             dgvActivos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvActivos.Size = new Size(701, 326);
+            dgvActivos.Size = new Size(707, 244);
             dgvActivos.TabIndex = 2;
             // 
             // iDActivoDataGridViewTextBoxColumn
@@ -147,9 +149,10 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(820, 187);
+            btnEliminar.Location = new Point(650, 136);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(129, 39);
+            btnEliminar.Size = new Size(113, 29);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -157,16 +160,18 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(1295, 92);
+            txtTotal.Location = new Point(1065, 65);
+            txtTotal.Margin = new Padding(3, 2, 3, 2);
             txtTotal.Name = "txtTotal";
-            txtTotal.Size = new Size(125, 27);
+            txtTotal.Size = new Size(110, 23);
             txtTotal.TabIndex = 4;
             // 
             // txtMonto
             // 
-            txtMonto.Location = new Point(1144, 92);
+            txtMonto.Location = new Point(933, 65);
+            txtMonto.Margin = new Padding(3, 2, 3, 2);
             txtMonto.Name = "txtMonto";
-            txtMonto.Size = new Size(125, 27);
+            txtMonto.Size = new Size(110, 23);
             txtMonto.TabIndex = 5;
             // 
             // label1
@@ -174,9 +179,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(1164, 57);
+            label1.Location = new Point(950, 39);
             label1.Name = "label1";
-            label1.Size = new Size(82, 31);
+            label1.Size = new Size(68, 25);
             label1.TabIndex = 6;
             label1.Text = "Monto";
             // 
@@ -185,9 +190,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1000, 57);
+            label2.Location = new Point(807, 39);
             label2.Name = "label2";
-            label2.Size = new Size(86, 31);
+            label2.Size = new Size(72, 25);
             label2.TabIndex = 7;
             label2.Text = "Cuenta";
             // 
@@ -196,9 +201,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(1331, 57);
+            label3.Location = new Point(1097, 39);
             label3.Name = "label3";
-            label3.Size = new Size(63, 31);
+            label3.Size = new Size(52, 25);
             label3.TabIndex = 8;
             label3.Text = "Total";
             // 
@@ -207,9 +212,10 @@
             btnRefresh.BackColor = Color.SeaGreen;
             btnRefresh.FlatStyle = FlatStyle.Popup;
             btnRefresh.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnRefresh.Location = new Point(1291, 187);
+            btnRefresh.Location = new Point(1062, 136);
+            btnRefresh.Margin = new Padding(3, 2, 3, 2);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(129, 39);
+            btnRefresh.Size = new Size(113, 29);
             btnRefresh.TabIndex = 9;
             btnRefresh.Text = "Refrescar";
             btnRefresh.UseVisualStyleBackColor = false;
@@ -218,9 +224,10 @@
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
-            CbID_Balance.Location = new Point(593, 91);
+            CbID_Balance.Location = new Point(451, 64);
+            CbID_Balance.Margin = new Padding(3, 2, 3, 2);
             CbID_Balance.Name = "CbID_Balance";
-            CbID_Balance.Size = new Size(151, 28);
+            CbID_Balance.Size = new Size(133, 23);
             CbID_Balance.TabIndex = 10;
             // 
             // label4
@@ -228,9 +235,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(612, 57);
+            label4.Location = new Point(468, 39);
             label4.Name = "label4";
-            label4.Size = new Size(121, 31);
+            label4.Size = new Size(101, 25);
             label4.TabIndex = 11;
             label4.Text = "Balance ID";
             // 
@@ -239,9 +246,10 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(1060, 187);
+            btnActualizar.Location = new Point(860, 136);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(135, 39);
+            btnActualizar.Size = new Size(118, 29);
             btnActualizar.TabIndex = 12;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = false;
@@ -249,17 +257,19 @@
             // 
             // txtCuenta
             // 
-            txtCuenta.Location = new Point(985, 92);
+            txtCuenta.Location = new Point(794, 65);
+            txtCuenta.Margin = new Padding(3, 2, 3, 2);
             txtCuenta.Name = "txtCuenta";
-            txtCuenta.Size = new Size(125, 27);
+            txtCuenta.Size = new Size(110, 23);
             txtCuenta.TabIndex = 13;
             // 
             // cbClasificacioID
             // 
             cbClasificacioID.FormattingEnabled = true;
-            cbClasificacioID.Location = new Point(798, 91);
+            cbClasificacioID.Location = new Point(630, 64);
+            cbClasificacioID.Margin = new Padding(3, 2, 3, 2);
             cbClasificacioID.Name = "cbClasificacioID";
-            cbClasificacioID.Size = new Size(151, 28);
+            cbClasificacioID.Size = new Size(133, 23);
             cbClasificacioID.TabIndex = 14;
             // 
             // label5
@@ -267,9 +277,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(798, 57);
+            label5.Location = new Point(630, 39);
             label5.Name = "label5";
-            label5.Size = new Size(169, 31);
+            label5.Size = new Size(141, 25);
             label5.TabIndex = 15;
             label5.Text = "Clasificacion ID";
             // 
@@ -278,18 +288,18 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(956, 9);
+            label6.Location = new Point(768, 3);
             label6.Name = "label6";
-            label6.Size = new Size(105, 38);
+            label6.Size = new Size(82, 30);
             label6.TabIndex = 16;
             label6.Text = "Activos";
             // 
             // ActivosBalanceForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1538, 827);
+            ClientSize = new Size(1301, 562);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(cbClasificacioID);
@@ -306,6 +316,7 @@
             Controls.Add(btnEliminar);
             Controls.Add(dgvActivos);
             Controls.Add(btnAgregar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ActivosBalanceForm";
             Text = "CuentasBalanceForm";
             Load += ActivosCirculantesForm_Load;

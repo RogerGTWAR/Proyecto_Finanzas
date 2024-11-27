@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgvClasificaciones = new DataGridView();
             iDClasificacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             descripcionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -48,12 +49,21 @@
             dgvClasificaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClasificaciones.Columns.AddRange(new DataGridViewColumn[] { iDClasificacionDataGridViewTextBoxColumn, descripcionDataGridViewTextBoxColumn });
             dgvClasificaciones.DataSource = clasificacionBindingSource;
-            dgvClasificaciones.Location = new Point(815, 177);
+            dgvClasificaciones.Location = new Point(551, 153);
+            dgvClasificaciones.Margin = new Padding(3, 2, 3, 2);
             dgvClasificaciones.Name = "dgvClasificaciones";
             dgvClasificaciones.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvClasificaciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvClasificaciones.RowHeadersWidth = 51;
             dgvClasificaciones.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvClasificaciones.Size = new Size(308, 188);
+            dgvClasificaciones.Size = new Size(306, 141);
             dgvClasificaciones.TabIndex = 0;
             // 
             // iDClasificacionDataGridViewTextBoxColumn
@@ -84,9 +94,10 @@
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.ForeColor = Color.Black;
-            btnAgregar.Location = new Point(1163, 223);
+            btnAgregar.Location = new Point(863, 184);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(138, 70);
+            btnAgregar.Size = new Size(121, 52);
             btnAgregar.TabIndex = 2;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -94,9 +105,10 @@
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(905, 116);
+            txtDescripcion.Location = new Point(637, 104);
+            txtDescripcion.Margin = new Padding(3, 2, 3, 2);
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(161, 27);
+            txtDescripcion.Size = new Size(141, 23);
             txtDescripcion.TabIndex = 3;
             // 
             // label2
@@ -104,9 +116,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(930, 85);
+            label2.Location = new Point(659, 81);
             label2.Name = "label2";
-            label2.Size = new Size(114, 28);
+            label2.Size = new Size(91, 21);
             label2.TabIndex = 6;
             label2.Text = "Descripcion";
             // 
@@ -115,24 +127,25 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(839, 47);
+            label1.Location = new Point(579, 52);
             label1.Name = "label1";
-            label1.Size = new Size(338, 38);
+            label1.Size = new Size(261, 30);
             label1.TabIndex = 7;
             label1.Text = "Clasificaciones de cuentas";
             // 
             // ClasificacionesForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1360, 568);
+            ClientSize = new Size(1190, 426);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(txtDescripcion);
             Controls.Add(btnAgregar);
             Controls.Add(dgvClasificaciones);
-            ForeColor = Color.White;
+            ForeColor = SystemColors.ActiveCaptionText;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ClasificacionesForm";
             Text = "ClasificacionesForm";
             Load += ClasificacionesForm_Load;

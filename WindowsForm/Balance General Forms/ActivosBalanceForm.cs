@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsForm.IRepository;
 using WindowsForm.IRepository.Repository;
+using Microsoft.Data.SqlClient;
 
 namespace WindowsForm
 {
@@ -20,6 +21,7 @@ namespace WindowsForm
         private readonly IRepository<Activo> cuentaRepository;
         private readonly IRepository<DatosBalanceG> balanceRepository;
         private readonly IRepository<Clasificacion> clasificacionrepository;
+        private readonly CalculosBalanceRepository _repository;
 
         public ActivosBalanceForm()
         {
@@ -32,6 +34,8 @@ namespace WindowsForm
             CargarClasificacionesComboBox();
             RefreshData();
             txtMonto.TextChanged += (sender, args) => ActualizarTotal();
+            _repository = new CalculosBalanceRepository(connectionString);
+
         }
 
         private void ActualizarTotal()
@@ -91,6 +95,8 @@ namespace WindowsForm
             CargarBalancesComboBox();
             CargarClasificacionesComboBox();
             ActualizarTotal();
+            LoadComboBoxData();
+
         }
 
         private void CargarBalancesComboBox()
@@ -262,5 +268,44 @@ namespace WindowsForm
             }
 
         }
+        private void LoadComboBoxData()
+        {
+            try
+            {
+                var balances = balanceRepository.GetAll();
+                CbID_Balance.DataSource = balances;
+                CbID_Balance.DisplayMember = "NombreBG";
+                CbID_Balance.ValueMember = "ID_DatosBalance";
+                CbID_Balance.SelectedIndexChanged += (sender, args) => RefreshData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error al cargar balances.");
+            }
+        }
+        
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string nombreBG = CbID_Balance.Text;
+
+        //        if (string.IsNullOrWhiteSpace(nombreBG))
+        //        {
+        //            MessageBox.Show("Por favor, ingresa un nombre de balance válido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //            return;
+        //        }
+
+        //        decimal totalActivosCirculantes = _repository.GetTotalActivosCirculantes(nombreBG);
+
+        //        textBox1.Text = totalActivosCirculantes.ToString("C"); // Formato de moneda
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
     }
+    
 }

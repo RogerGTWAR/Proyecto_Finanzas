@@ -39,12 +39,9 @@
             totalDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             pasivoCapitalBindingSource = new BindingSource(components);
             btnEliminar = new Button();
-            txtTotal = new TextBox();
             txtMonto = new TextBox();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
-            btnRefresh = new Button();
             CbID_Balance = new ComboBox();
             label4 = new Label();
             btnActualizar = new Button();
@@ -52,6 +49,8 @@
             cbClasificacioID = new ComboBox();
             label5 = new Label();
             label6 = new Label();
+            txtTotal = new TextBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvPasivosCapital).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pasivoCapitalBindingSource).BeginInit();
             SuspendLayout();
@@ -61,9 +60,10 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(618, 145);
+            btnAgregar.Location = new Point(498, 113);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(129, 44);
+            btnAgregar.Size = new Size(113, 33);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -76,12 +76,13 @@
             dgvPasivosCapital.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPasivosCapital.Columns.AddRange(new DataGridViewColumn[] { iDPasivoCapitalDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
             dgvPasivosCapital.DataSource = pasivoCapitalBindingSource;
-            dgvPasivosCapital.Location = new Point(682, 212);
+            dgvPasivosCapital.Location = new Point(382, 148);
+            dgvPasivosCapital.Margin = new Padding(3, 2, 3, 2);
             dgvPasivosCapital.Name = "dgvPasivosCapital";
             dgvPasivosCapital.ReadOnly = true;
             dgvPasivosCapital.RowHeadersWidth = 51;
             dgvPasivosCapital.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPasivosCapital.Size = new Size(662, 316);
+            dgvPasivosCapital.Size = new Size(688, 237);
             dgvPasivosCapital.TabIndex = 2;
             // 
             // iDPasivoCapitalDataGridViewTextBoxColumn
@@ -147,26 +148,21 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(834, 148);
+            btnEliminar.Location = new Point(687, 115);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(129, 39);
+            btnEliminar.Size = new Size(113, 29);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
             btnEliminar.Click += btnEliminar_Click;
             // 
-            // txtTotal
-            // 
-            txtTotal.Location = new Point(1313, 100);
-            txtTotal.Name = "txtTotal";
-            txtTotal.Size = new Size(125, 27);
-            txtTotal.TabIndex = 4;
-            // 
             // txtMonto
             // 
-            txtMonto.Location = new Point(1163, 100);
+            txtMonto.Location = new Point(845, 77);
+            txtMonto.Margin = new Padding(3, 2, 3, 2);
             txtMonto.Name = "txtMonto";
-            txtMonto.Size = new Size(125, 27);
+            txtMonto.Size = new Size(110, 23);
             txtMonto.TabIndex = 5;
             // 
             // label1
@@ -174,9 +170,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(1184, 66);
+            label1.Location = new Point(863, 52);
             label1.Name = "label1";
-            label1.Size = new Size(82, 31);
+            label1.Size = new Size(68, 25);
             label1.TabIndex = 6;
             label1.Text = "Monto";
             // 
@@ -185,42 +181,19 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1025, 65);
+            label2.Location = new Point(724, 51);
             label2.Name = "label2";
-            label2.Size = new Size(86, 31);
+            label2.Size = new Size(72, 25);
             label2.TabIndex = 7;
             label2.Text = "Cuenta";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(1352, 66);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 31);
-            label3.TabIndex = 8;
-            label3.Text = "Total";
-            // 
-            // btnRefresh
-            // 
-            btnRefresh.BackColor = Color.SeaGreen;
-            btnRefresh.FlatStyle = FlatStyle.Popup;
-            btnRefresh.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnRefresh.Location = new Point(1305, 148);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(129, 39);
-            btnRefresh.TabIndex = 9;
-            btnRefresh.Text = "Refrescar";
-            btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click;
             // 
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
-            CbID_Balance.Location = new Point(611, 99);
+            CbID_Balance.Location = new Point(362, 76);
+            CbID_Balance.Margin = new Padding(3, 2, 3, 2);
             CbID_Balance.Name = "CbID_Balance";
-            CbID_Balance.Size = new Size(151, 28);
+            CbID_Balance.Size = new Size(133, 23);
             CbID_Balance.TabIndex = 10;
             // 
             // label4
@@ -228,9 +201,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(626, 66);
+            label4.Location = new Point(375, 52);
             label4.Name = "label4";
-            label4.Size = new Size(121, 31);
+            label4.Size = new Size(101, 25);
             label4.TabIndex = 11;
             label4.Text = "Balance ID";
             // 
@@ -239,9 +212,10 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(1074, 148);
+            btnActualizar.Location = new Point(897, 115);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(137, 39);
+            btnActualizar.Size = new Size(120, 29);
             btnActualizar.TabIndex = 12;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = false;
@@ -249,17 +223,19 @@
             // 
             // txtCuenta
             // 
-            txtCuenta.Location = new Point(1005, 99);
+            txtCuenta.Location = new Point(706, 76);
+            txtCuenta.Margin = new Padding(3, 2, 3, 2);
             txtCuenta.Name = "txtCuenta";
-            txtCuenta.Size = new Size(125, 27);
+            txtCuenta.Size = new Size(110, 23);
             txtCuenta.TabIndex = 13;
             // 
             // cbClasificacioID
             // 
             cbClasificacioID.FormattingEnabled = true;
-            cbClasificacioID.Location = new Point(792, 100);
+            cbClasificacioID.Location = new Point(520, 77);
+            cbClasificacioID.Margin = new Padding(3, 2, 3, 2);
             cbClasificacioID.Name = "cbClasificacioID";
-            cbClasificacioID.Size = new Size(193, 28);
+            cbClasificacioID.Size = new Size(169, 23);
             cbClasificacioID.TabIndex = 14;
             // 
             // label5
@@ -267,9 +243,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(816, 65);
+            label5.Location = new Point(541, 51);
             label5.Name = "label5";
-            label5.Size = new Size(169, 31);
+            label5.Size = new Size(141, 25);
             label5.TabIndex = 15;
             label5.Text = "Clasificacion ID";
             // 
@@ -278,18 +254,39 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(876, 9);
+            label6.Location = new Point(601, 9);
             label6.Name = "label6";
-            label6.Size = new Size(326, 38);
+            label6.Size = new Size(255, 30);
             label6.TabIndex = 16;
             label6.Text = "Pasivo y Capital Contable";
             // 
+            // txtTotal
+            // 
+            txtTotal.Location = new Point(995, 77);
+            txtTotal.Margin = new Padding(3, 2, 3, 2);
+            txtTotal.Name = "txtTotal";
+            txtTotal.Size = new Size(110, 23);
+            txtTotal.TabIndex = 17;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(1018, 52);
+            label7.Name = "label7";
+            label7.Size = new Size(52, 25);
+            label7.TabIndex = 18;
+            label7.Text = "Total";
+            // 
             // PasivoCapitalBalanceForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1485, 827);
+            ClientSize = new Size(1199, 562);
+            Controls.Add(label7);
+            Controls.Add(txtTotal);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(cbClasificacioID);
@@ -297,15 +294,13 @@
             Controls.Add(btnActualizar);
             Controls.Add(label4);
             Controls.Add(CbID_Balance);
-            Controls.Add(btnRefresh);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtMonto);
-            Controls.Add(txtTotal);
             Controls.Add(btnEliminar);
             Controls.Add(dgvPasivosCapital);
             Controls.Add(btnAgregar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PasivoCapitalBalanceForm";
             Text = "Pasivo y Capital";
             Load += ActivosCirculantesForm_Load;
@@ -319,12 +314,9 @@
         private Button btnAgregar;
         private DataGridView dgvPasivosCapital;
         private Button btnEliminar;
-        private TextBox txtTotal;
         private TextBox txtMonto;
         private Label label1;
         private Label label2;
-        private Label label3;
-        private Button btnRefresh;
         private ComboBox CbID_Balance;
         private Label label4;
         private Button btnActualizar;
@@ -339,5 +331,7 @@
         private DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
         private BindingSource pasivoCapitalBindingSource;
+        private TextBox txtTotal;
+        private Label label7;
     }
 }
