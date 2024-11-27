@@ -1,4 +1,4 @@
-﻿CREATE DATABASE FinanzasDB;
+﻿--CREATE DATABASE FinanzasDB;
 	Use FinanzasDB
 	--Balance General
 	Create table Clasificaciones(
@@ -53,9 +53,6 @@
     FOREIGN KEY (ID_Clasificacion) REFERENCES ClasificacionesER(ID_Clasificacion),
     FOREIGN KEY (ID_DatosER) REFERENCES DatosERx(ID_DatosER)
 );
-
-ALTER TABLE IngresosER
-drop column Total;
 
 CREATE TABLE GastosER(
 	ID_GastosER INT IDENTITY(1,1) PRIMARY KEY,  

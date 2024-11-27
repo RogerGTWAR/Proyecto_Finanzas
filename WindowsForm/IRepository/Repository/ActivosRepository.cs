@@ -51,7 +51,7 @@ namespace WindowsForm.IRepository.Repository
             {
                 string query = "SELECT * FROM Activos WHERE ID_Activo = @ID_Activo";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Id", id);
+                command.Parameters.AddWithValue("@ID_Activo", id);
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
@@ -92,7 +92,7 @@ namespace WindowsForm.IRepository.Repository
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
-                string query = "UPDATE Activos SET ID_DatosBalance = @ID_DatosBalance,ID_Clasificacion = @ID_Clasificacion, NombreCuenta = @NombreCuenta, Monto = @Monto, Total = @Total WHERE Id = @Id";
+                string query = "UPDATE Activos SET ID_DatosBalance = @ID_DatosBalance,ID_Clasificacion = @ID_Clasificacion, NombreCuenta = @NombreCuenta, Monto = @Monto, Total = @Total WHERE ID_Activo = @ID_Activo";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ID_DatosBalance", cuenta.ID_DatosBalance);
                 command.Parameters.AddWithValue("@ID_Clasificacion", cuenta.ID_Clasificacion);

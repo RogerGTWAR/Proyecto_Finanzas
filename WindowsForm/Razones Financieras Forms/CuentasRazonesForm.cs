@@ -195,7 +195,7 @@ namespace WindowsForm
                 MessageBox.Show($"Ocurrió un error al actualizar la cuenta: {ex.Message}");
             }
         }
-
+            
         private void LimpiarCampos()
         {
             txtNombreEmpresa.Clear();

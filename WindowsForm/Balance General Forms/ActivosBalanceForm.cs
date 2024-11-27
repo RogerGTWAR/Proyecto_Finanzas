@@ -34,7 +34,6 @@ namespace WindowsForm
             CargarClasificacionesComboBox();
             RefreshData();
             txtMonto.TextChanged += (sender, args) => ActualizarTotal();
-            _repository = new CalculosBalanceRepository(connectionString);
 
         }
 
@@ -199,12 +198,6 @@ namespace WindowsForm
                 MessageBox.Show("Error al eliminar la cuenta: " + ex.Message);
             }
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            RefreshData();
-        }
-
         private void btnBalanceID_Click(object sender, EventArgs e)
         {
             DatosBalanceForm balanceForm = new DatosBalanceForm();
