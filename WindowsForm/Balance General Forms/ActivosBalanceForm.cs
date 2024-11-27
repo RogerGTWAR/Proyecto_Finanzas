@@ -283,7 +283,6 @@ namespace WindowsForm
                 MessageBox.Show("Error al cargar balances.");
             }
         }
-        
 
         //private void button1_Click(object sender, EventArgs e)
         //{
@@ -307,5 +306,5 @@ namespace WindowsForm
         //    }
         //}
     }
-    
+
 }

@@ -44,7 +44,6 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            btnRefresh = new Button();
             CbID_Balance = new ComboBox();
             label4 = new Label();
             btnActualizar = new Button();
@@ -61,7 +60,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(451, 134);
+            btnAgregar.Location = new Point(579, 131);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(113, 33);
@@ -149,7 +148,7 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(650, 136);
+            btnEliminar.Location = new Point(778, 133);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(113, 29);
@@ -207,20 +206,6 @@
             label3.TabIndex = 8;
             label3.Text = "Total";
             // 
-            // btnRefresh
-            // 
-            btnRefresh.BackColor = Color.SeaGreen;
-            btnRefresh.FlatStyle = FlatStyle.Popup;
-            btnRefresh.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnRefresh.Location = new Point(1062, 136);
-            btnRefresh.Margin = new Padding(3, 2, 3, 2);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(113, 29);
-            btnRefresh.TabIndex = 9;
-            btnRefresh.Text = "Refrescar";
-            btnRefresh.UseVisualStyleBackColor = false;
-            btnRefresh.Click += btnRefresh_Click;
-            // 
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
@@ -246,7 +231,7 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(860, 136);
+            btnActualizar.Location = new Point(988, 133);
             btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(118, 29);
@@ -307,7 +292,6 @@
             Controls.Add(btnActualizar);
             Controls.Add(label4);
             Controls.Add(CbID_Balance);
-            Controls.Add(btnRefresh);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -335,7 +319,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private Button btnRefresh;
         private ComboBox CbID_Balance;
         private Label label4;
         private Button btnActualizar;

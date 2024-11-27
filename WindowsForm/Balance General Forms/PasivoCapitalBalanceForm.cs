@@ -20,6 +20,7 @@ namespace WindowsForm
         private readonly IRepository<Pasivo_Capital> pasivocapitalrepository;
         private readonly IRepository<DatosBalanceG> balanceRepository;
         private readonly IRepository<Clasificacion> clasificacionrepository;
+        private readonly CalculosBalanceRepository _repository;
 
         public PasivoCapitalBalanceForm()
         {
@@ -32,6 +33,8 @@ namespace WindowsForm
             CargarClasificacionesComboBox();
             RefreshData();
             txtMonto.TextChanged += (sender, args) => ActualizarTotal();
+            _repository = new CalculosBalanceRepository(connectionString);
+
         }
 
         private void ActualizarTotal()
@@ -259,5 +262,27 @@ namespace WindowsForm
             }
 
         }
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        string nombreBG = CbID_Balance.Text;
+
+        //        if (string.IsNullOrWhiteSpace(nombreBG))
+        //        {
+        //            MessageBox.Show("Por favor, ingresa un nombre de balance válido.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //            return;
+        //        }
+
+        //        decimal totalActivosCirculantes = _repository.GetCapitalSocial(nombreBG);
+
+        //        textBox1.Text = totalActivosCirculantes.ToString("C"); // Formato de moneda
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show($"Ocurrió un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
     }
 }
