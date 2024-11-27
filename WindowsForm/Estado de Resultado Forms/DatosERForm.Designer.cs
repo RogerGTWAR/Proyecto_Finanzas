@@ -30,6 +30,11 @@
         {
             components = new System.ComponentModel.Container();
             dgvDatosER = new DataGridView();
+            iDDatosERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nombreERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechaInicioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            fechafinDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            datosERBindingSource = new BindingSource(components);
             txtNombreER = new TextBox();
             dtpFechaInicio = new DateTimePicker();
             dtpFechaFIn = new DateTimePicker();
@@ -38,11 +43,6 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            datosERBindingSource = new BindingSource(components);
-            iDDatosERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            nombreERDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            fechaInicioDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            fechafinDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvDatosER).BeginInit();
             ((System.ComponentModel.ISupportInitialize)datosERBindingSource).BeginInit();
             SuspendLayout();
@@ -54,99 +54,14 @@
             dgvDatosER.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDatosER.Columns.AddRange(new DataGridViewColumn[] { iDDatosERDataGridViewTextBoxColumn, nombreERDataGridViewTextBoxColumn, fechaInicioDataGridViewTextBoxColumn, fechafinDataGridViewTextBoxColumn });
             dgvDatosER.DataSource = datosERBindingSource;
-            dgvDatosER.Location = new Point(434, 231);
+            dgvDatosER.Location = new Point(609, 153);
+            dgvDatosER.Margin = new Padding(3, 2, 3, 2);
             dgvDatosER.Name = "dgvDatosER";
             dgvDatosER.ReadOnly = true;
             dgvDatosER.RowHeadersWidth = 51;
             dgvDatosER.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDatosER.Size = new Size(521, 188);
+            dgvDatosER.Size = new Size(512, 141);
             dgvDatosER.TabIndex = 0;
-            // 
-            // txtNombreER
-            // 
-            txtNombreER.Location = new Point(448, 131);
-            txtNombreER.Name = "txtNombreER";
-            txtNombreER.Size = new Size(167, 27);
-            txtNombreER.TabIndex = 1;
-            // 
-            // dtpFechaInicio
-            // 
-            dtpFechaInicio.CalendarFont = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dtpFechaInicio.Format = DateTimePickerFormat.Short;
-            dtpFechaInicio.Location = new Point(648, 129);
-            dtpFechaInicio.Name = "dtpFechaInicio";
-            dtpFechaInicio.Size = new Size(104, 27);
-            dtpFechaInicio.TabIndex = 2;
-            // 
-            // dtpFechaFIn
-            // 
-            dtpFechaFIn.CalendarFont = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dtpFechaFIn.Format = DateTimePickerFormat.Short;
-            dtpFechaFIn.Location = new Point(786, 127);
-            dtpFechaFIn.Name = "dtpFechaFIn";
-            dtpFechaFIn.Size = new Size(104, 27);
-            dtpFechaFIn.TabIndex = 3;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.BackColor = Color.SeaGreen;
-            btnAgregar.FlatStyle = FlatStyle.Popup;
-            btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(640, 176);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(112, 49);
-            btnAgregar.TabIndex = 4;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = false;
-            btnAgregar.Click += btnAgregar_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(460, 100);
-            label1.Name = "label1";
-            label1.Size = new Size(144, 28);
-            label1.TabIndex = 5;
-            label1.Text = "Nombre del ER";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(667, 100);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 28);
-            label2.TabIndex = 6;
-            label2.Text = "Inicio";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(820, 100);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 28);
-            label3.TabIndex = 7;
-            label3.Text = "Fin";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(469, 51);
-            label4.Name = "label4";
-            label4.Size = new Size(421, 38);
-            label4.TabIndex = 8;
-            label4.Text = "Creacion de Estado de Resultado";
-            // 
-            // datosERBindingSource
-            // 
-            datosERBindingSource.DataSource = typeof(Models.DatosER);
             // 
             // iDDatosERDataGridViewTextBoxColumn
             // 
@@ -184,12 +99,102 @@
             fechafinDataGridViewTextBoxColumn.ReadOnly = true;
             fechafinDataGridViewTextBoxColumn.Width = 125;
             // 
+            // datosERBindingSource
+            // 
+            datosERBindingSource.DataSource = typeof(Models.DatosER);
+            // 
+            // txtNombreER
+            // 
+            txtNombreER.Location = new Point(666, 69);
+            txtNombreER.Margin = new Padding(3, 2, 3, 2);
+            txtNombreER.Name = "txtNombreER";
+            txtNombreER.Size = new Size(147, 23);
+            txtNombreER.TabIndex = 1;
+            // 
+            // dtpFechaInicio
+            // 
+            dtpFechaInicio.CalendarFont = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dtpFechaInicio.Format = DateTimePickerFormat.Short;
+            dtpFechaInicio.Location = new Point(841, 68);
+            dtpFechaInicio.Margin = new Padding(3, 2, 3, 2);
+            dtpFechaInicio.Name = "dtpFechaInicio";
+            dtpFechaInicio.Size = new Size(92, 23);
+            dtpFechaInicio.TabIndex = 2;
+            // 
+            // dtpFechaFIn
+            // 
+            dtpFechaFIn.CalendarFont = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dtpFechaFIn.Format = DateTimePickerFormat.Short;
+            dtpFechaFIn.Location = new Point(962, 66);
+            dtpFechaFIn.Margin = new Padding(3, 2, 3, 2);
+            dtpFechaFIn.Name = "dtpFechaFIn";
+            dtpFechaFIn.Size = new Size(92, 23);
+            dtpFechaFIn.TabIndex = 3;
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.BackColor = Color.SeaGreen;
+            btnAgregar.FlatStyle = FlatStyle.Popup;
+            btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(835, 112);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(98, 37);
+            btnAgregar.TabIndex = 4;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(676, 46);
+            label1.Name = "label1";
+            label1.Size = new Size(115, 21);
+            label1.TabIndex = 5;
+            label1.Text = "Nombre del ER";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(858, 46);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 21);
+            label2.TabIndex = 6;
+            label2.Text = "Inicio";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(992, 46);
+            label3.Name = "label3";
+            label3.Size = new Size(31, 21);
+            label3.TabIndex = 7;
+            label3.Text = "Fin";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(684, 9);
+            label4.Name = "label4";
+            label4.Size = new Size(330, 30);
+            label4.TabIndex = 8;
+            label4.Text = "Creacion de Estado de Resultado";
+            // 
             // DatosERForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1222, 756);
+            ClientSize = new Size(1088, 567);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -199,6 +204,7 @@
             Controls.Add(dtpFechaInicio);
             Controls.Add(txtNombreER);
             Controls.Add(dgvDatosER);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "DatosERForm";
             Text = "DatosER";
             Load += DatosER_Load;

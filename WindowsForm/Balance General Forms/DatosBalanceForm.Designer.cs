@@ -55,7 +55,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(590, 255);
+            btnAgregar.Location = new Point(665, 255);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(113, 40);
@@ -66,7 +66,7 @@
             // 
             // txtNombreBalance
             // 
-            txtNombreBalance.Location = new Point(559, 63);
+            txtNombreBalance.Location = new Point(634, 63);
             txtNombreBalance.Margin = new Padding(3, 2, 3, 2);
             txtNombreBalance.Name = "txtNombreBalance";
             txtNombreBalance.Size = new Size(167, 23);
@@ -79,13 +79,13 @@
             dgvBalance.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBalance.Columns.AddRange(new DataGridViewColumn[] { ID_DatosBalance, nombreBG, fechaInicioDataGridViewTextBoxColumn, fechafinDataGridViewTextBoxColumn });
             dgvBalance.DataSource = datosBalanceGBindingSource;
-            dgvBalance.Location = new Point(560, 94);
+            dgvBalance.Location = new Point(635, 94);
             dgvBalance.Margin = new Padding(3, 2, 3, 2);
             dgvBalance.Name = "dgvBalance";
             dgvBalance.ReadOnly = true;
             dgvBalance.RowHeadersWidth = 51;
             dgvBalance.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBalance.Size = new Size(426, 141);
+            dgvBalance.Size = new Size(488, 141);
             dgvBalance.TabIndex = 2;
             // 
             // ID_DatosBalance
@@ -137,7 +137,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(547, 37);
+            label1.Location = new Point(622, 37);
             label1.Name = "label1";
             label1.Size = new Size(178, 25);
             label1.TabIndex = 3;
@@ -148,7 +148,7 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEliminar.Location = new Point(873, 255);
+            btnEliminar.Location = new Point(948, 255);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(113, 40);
@@ -161,7 +161,7 @@
             // 
             dtpFechaInicio.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtpFechaInicio.Format = DateTimePickerFormat.Short;
-            dtpFechaInicio.Location = new Point(753, 64);
+            dtpFechaInicio.Location = new Point(828, 64);
             dtpFechaInicio.Margin = new Padding(3, 2, 3, 2);
             dtpFechaInicio.Name = "dtpFechaInicio";
             dtpFechaInicio.Size = new Size(117, 26);
@@ -171,7 +171,7 @@
             // 
             dtpFechaFin.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtpFechaFin.Format = DateTimePickerFormat.Short;
-            dtpFechaFin.Location = new Point(893, 63);
+            dtpFechaFin.Location = new Point(968, 63);
             dtpFechaFin.Margin = new Padding(3, 2, 3, 2);
             dtpFechaFin.Name = "dtpFechaFin";
             dtpFechaFin.Size = new Size(117, 26);
@@ -182,7 +182,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(780, 37);
+            label2.Location = new Point(855, 37);
             label2.Name = "label2";
             label2.Size = new Size(58, 25);
             label2.TabIndex = 7;
@@ -193,7 +193,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(929, 37);
+            label3.Location = new Point(1004, 37);
             label3.Name = "label3";
             label3.Size = new Size(37, 25);
             label3.TabIndex = 8;
@@ -204,7 +204,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(615, 9);
+            label4.Location = new Point(690, 9);
             label4.Name = "label4";
             label4.Size = new Size(290, 30);
             label4.TabIndex = 9;

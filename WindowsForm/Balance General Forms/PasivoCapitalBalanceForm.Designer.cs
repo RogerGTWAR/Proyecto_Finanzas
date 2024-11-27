@@ -60,7 +60,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(498, 113);
+            btnAgregar.Location = new Point(586, 113);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(113, 33);
@@ -76,7 +76,7 @@
             dgvPasivosCapital.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvPasivosCapital.Columns.AddRange(new DataGridViewColumn[] { iDPasivoCapitalDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
             dgvPasivosCapital.DataSource = pasivoCapitalBindingSource;
-            dgvPasivosCapital.Location = new Point(382, 148);
+            dgvPasivosCapital.Location = new Point(470, 148);
             dgvPasivosCapital.Margin = new Padding(3, 2, 3, 2);
             dgvPasivosCapital.Name = "dgvPasivosCapital";
             dgvPasivosCapital.ReadOnly = true;
@@ -148,7 +148,7 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(687, 115);
+            btnEliminar.Location = new Point(775, 115);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(113, 29);
@@ -159,7 +159,7 @@
             // 
             // txtMonto
             // 
-            txtMonto.Location = new Point(845, 77);
+            txtMonto.Location = new Point(933, 77);
             txtMonto.Margin = new Padding(3, 2, 3, 2);
             txtMonto.Name = "txtMonto";
             txtMonto.Size = new Size(110, 23);
@@ -170,7 +170,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(863, 52);
+            label1.Location = new Point(951, 52);
             label1.Name = "label1";
             label1.Size = new Size(68, 25);
             label1.TabIndex = 6;
@@ -181,7 +181,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(724, 51);
+            label2.Location = new Point(812, 51);
             label2.Name = "label2";
             label2.Size = new Size(72, 25);
             label2.TabIndex = 7;
@@ -190,7 +190,7 @@
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
-            CbID_Balance.Location = new Point(362, 76);
+            CbID_Balance.Location = new Point(450, 76);
             CbID_Balance.Margin = new Padding(3, 2, 3, 2);
             CbID_Balance.Name = "CbID_Balance";
             CbID_Balance.Size = new Size(133, 23);
@@ -201,7 +201,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(375, 52);
+            label4.Location = new Point(463, 52);
             label4.Name = "label4";
             label4.Size = new Size(101, 25);
             label4.TabIndex = 11;
@@ -212,7 +212,7 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(897, 115);
+            btnActualizar.Location = new Point(985, 115);
             btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(120, 29);
@@ -223,7 +223,7 @@
             // 
             // txtCuenta
             // 
-            txtCuenta.Location = new Point(706, 76);
+            txtCuenta.Location = new Point(794, 76);
             txtCuenta.Margin = new Padding(3, 2, 3, 2);
             txtCuenta.Name = "txtCuenta";
             txtCuenta.Size = new Size(110, 23);
@@ -232,7 +232,7 @@
             // cbClasificacioID
             // 
             cbClasificacioID.FormattingEnabled = true;
-            cbClasificacioID.Location = new Point(520, 77);
+            cbClasificacioID.Location = new Point(608, 77);
             cbClasificacioID.Margin = new Padding(3, 2, 3, 2);
             cbClasificacioID.Name = "cbClasificacioID";
             cbClasificacioID.Size = new Size(169, 23);
@@ -243,7 +243,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(541, 51);
+            label5.Location = new Point(629, 51);
             label5.Name = "label5";
             label5.Size = new Size(141, 25);
             label5.TabIndex = 15;
@@ -254,7 +254,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(601, 9);
+            label6.Location = new Point(689, 9);
             label6.Name = "label6";
             label6.Size = new Size(255, 30);
             label6.TabIndex = 16;
@@ -262,7 +262,7 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(995, 77);
+            txtTotal.Location = new Point(1083, 77);
             txtTotal.Margin = new Padding(3, 2, 3, 2);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(110, 23);
@@ -273,7 +273,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(1018, 52);
+            label7.Location = new Point(1106, 52);
             label7.Name = "label7";
             label7.Size = new Size(52, 25);
             label7.TabIndex = 18;

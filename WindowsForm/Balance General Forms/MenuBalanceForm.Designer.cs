@@ -43,7 +43,7 @@
             btnActivos.BackColor = Color.SeaGreen;
             btnActivos.FlatStyle = FlatStyle.Popup;
             btnActivos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnActivos.Location = new Point(487, 74);
+            btnActivos.Location = new Point(580, 84);
             btnActivos.Margin = new Padding(3, 2, 3, 2);
             btnActivos.Name = "btnActivos";
             btnActivos.Size = new Size(209, 30);
@@ -72,7 +72,7 @@
             btnClasificaciones.BackColor = Color.SeaGreen;
             btnClasificaciones.FlatStyle = FlatStyle.Popup;
             btnClasificaciones.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnClasificaciones.Location = new Point(487, 120);
+            btnClasificaciones.Location = new Point(580, 130);
             btnClasificaciones.Margin = new Padding(3, 2, 3, 2);
             btnClasificaciones.Name = "btnClasificaciones";
             btnClasificaciones.Size = new Size(209, 30);
@@ -86,7 +86,7 @@
             btnBalances.BackColor = Color.SeaGreen;
             btnBalances.FlatStyle = FlatStyle.Popup;
             btnBalances.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBalances.Location = new Point(755, 118);
+            btnBalances.Location = new Point(848, 130);
             btnBalances.Margin = new Padding(3, 2, 3, 2);
             btnBalances.Name = "btnBalances";
             btnBalances.Size = new Size(220, 30);
@@ -100,7 +100,7 @@
             btnPasivoYCapital.BackColor = Color.SeaGreen;
             btnPasivoYCapital.FlatStyle = FlatStyle.Popup;
             btnPasivoYCapital.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPasivoYCapital.Location = new Point(755, 70);
+            btnPasivoYCapital.Location = new Point(848, 84);
             btnPasivoYCapital.Margin = new Padding(3, 2, 3, 2);
             btnPasivoYCapital.Name = "btnPasivoYCapital";
             btnPasivoYCapital.Size = new Size(209, 34);
@@ -112,11 +112,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(557, 39);
+            label1.Location = new Point(630, 42);
             label1.Name = "label1";
-            label1.Size = new Size(312, 32);
+            label1.Size = new Size(377, 40);
             label1.TabIndex = 2;
             label1.Text = "Menu del Balance General";
             // 

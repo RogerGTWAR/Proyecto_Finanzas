@@ -60,7 +60,7 @@
             btnAgregar.BackColor = Color.SeaGreen;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnAgregar.Location = new Point(579, 131);
+            btnAgregar.Location = new Point(613, 132);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(113, 33);
@@ -76,7 +76,7 @@
             dgvActivos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvActivos.Columns.AddRange(new DataGridViewColumn[] { iDActivoDataGridViewTextBoxColumn, iDDatosBalanceDataGridViewTextBoxColumn, iDClasificacionDataGridViewTextBoxColumn, nombreCuentaDataGridViewTextBoxColumn, montoDataGridViewTextBoxColumn, totalDataGridViewTextBoxColumn });
             dgvActivos.DataSource = activoBindingSource;
-            dgvActivos.Location = new Point(468, 190);
+            dgvActivos.Location = new Point(502, 191);
             dgvActivos.Margin = new Padding(3, 2, 3, 2);
             dgvActivos.Name = "dgvActivos";
             dgvActivos.ReadOnly = true;
@@ -148,7 +148,7 @@
             btnEliminar.BackColor = Color.SeaGreen;
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnEliminar.Location = new Point(778, 133);
+            btnEliminar.Location = new Point(812, 134);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(113, 29);
@@ -159,7 +159,7 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(1065, 65);
+            txtTotal.Location = new Point(1099, 66);
             txtTotal.Margin = new Padding(3, 2, 3, 2);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(110, 23);
@@ -167,7 +167,7 @@
             // 
             // txtMonto
             // 
-            txtMonto.Location = new Point(933, 65);
+            txtMonto.Location = new Point(967, 66);
             txtMonto.Margin = new Padding(3, 2, 3, 2);
             txtMonto.Name = "txtMonto";
             txtMonto.Size = new Size(110, 23);
@@ -178,7 +178,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(950, 39);
+            label1.Location = new Point(984, 40);
             label1.Name = "label1";
             label1.Size = new Size(68, 25);
             label1.TabIndex = 6;
@@ -189,7 +189,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(807, 39);
+            label2.Location = new Point(841, 40);
             label2.Name = "label2";
             label2.Size = new Size(72, 25);
             label2.TabIndex = 7;
@@ -200,7 +200,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(1097, 39);
+            label3.Location = new Point(1131, 40);
             label3.Name = "label3";
             label3.Size = new Size(52, 25);
             label3.TabIndex = 8;
@@ -209,7 +209,7 @@
             // CbID_Balance
             // 
             CbID_Balance.FormattingEnabled = true;
-            CbID_Balance.Location = new Point(451, 64);
+            CbID_Balance.Location = new Point(485, 65);
             CbID_Balance.Margin = new Padding(3, 2, 3, 2);
             CbID_Balance.Name = "CbID_Balance";
             CbID_Balance.Size = new Size(133, 23);
@@ -220,7 +220,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(468, 39);
+            label4.Location = new Point(502, 40);
             label4.Name = "label4";
             label4.Size = new Size(101, 25);
             label4.TabIndex = 11;
@@ -231,7 +231,7 @@
             btnActualizar.BackColor = Color.SeaGreen;
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            btnActualizar.Location = new Point(988, 133);
+            btnActualizar.Location = new Point(1022, 134);
             btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
             btnActualizar.Size = new Size(118, 29);
@@ -242,7 +242,7 @@
             // 
             // txtCuenta
             // 
-            txtCuenta.Location = new Point(794, 65);
+            txtCuenta.Location = new Point(828, 66);
             txtCuenta.Margin = new Padding(3, 2, 3, 2);
             txtCuenta.Name = "txtCuenta";
             txtCuenta.Size = new Size(110, 23);
@@ -251,7 +251,7 @@
             // cbClasificacioID
             // 
             cbClasificacioID.FormattingEnabled = true;
-            cbClasificacioID.Location = new Point(630, 64);
+            cbClasificacioID.Location = new Point(664, 65);
             cbClasificacioID.Margin = new Padding(3, 2, 3, 2);
             cbClasificacioID.Name = "cbClasificacioID";
             cbClasificacioID.Size = new Size(133, 23);
@@ -262,7 +262,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(630, 39);
+            label5.Location = new Point(664, 40);
             label5.Name = "label5";
             label5.Size = new Size(141, 25);
             label5.TabIndex = 15;
@@ -273,7 +273,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(768, 3);
+            label6.Location = new Point(802, 4);
             label6.Name = "label6";
             label6.Size = new Size(82, 30);
             label6.TabIndex = 16;

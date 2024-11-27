@@ -31,9 +31,6 @@
     <Compile Update="Estado de Resultado Forms\DatosERForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Estado de Resultado Forms\ERForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="MenuForm.cs">
       <SubType>Form</SubType>
     </Compile>

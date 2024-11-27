@@ -118,65 +118,73 @@
             // txtActivoCirculante
             // 
             txtActivoCirculante.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtActivoCirculante.Location = new Point(18, 68);
+            txtActivoCirculante.Location = new Point(16, 51);
+            txtActivoCirculante.Margin = new Padding(3, 2, 3, 2);
             txtActivoCirculante.Name = "txtActivoCirculante";
-            txtActivoCirculante.Size = new Size(156, 27);
+            txtActivoCirculante.Size = new Size(137, 23);
             txtActivoCirculante.TabIndex = 0;
             // 
             // txtPasivoCirculante
             // 
             txtPasivoCirculante.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPasivoCirculante.Location = new Point(230, 225);
+            txtPasivoCirculante.Location = new Point(201, 169);
+            txtPasivoCirculante.Margin = new Padding(3, 2, 3, 2);
             txtPasivoCirculante.Name = "txtPasivoCirculante";
-            txtPasivoCirculante.Size = new Size(156, 27);
+            txtPasivoCirculante.Size = new Size(137, 23);
             txtPasivoCirculante.TabIndex = 1;
             // 
             // txtActivoTotal
             // 
             txtActivoTotal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtActivoTotal.Location = new Point(28, 145);
+            txtActivoTotal.Location = new Point(24, 109);
+            txtActivoTotal.Margin = new Padding(3, 2, 3, 2);
             txtActivoTotal.Name = "txtActivoTotal";
-            txtActivoTotal.Size = new Size(156, 27);
+            txtActivoTotal.Size = new Size(137, 23);
             txtActivoTotal.TabIndex = 2;
             // 
             // txtPasivoTotal
             // 
             txtPasivoTotal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPasivoTotal.Location = new Point(222, 296);
+            txtPasivoTotal.Location = new Point(194, 222);
+            txtPasivoTotal.Margin = new Padding(3, 2, 3, 2);
             txtPasivoTotal.Name = "txtPasivoTotal";
-            txtPasivoTotal.Size = new Size(156, 27);
+            txtPasivoTotal.Size = new Size(137, 23);
             txtPasivoTotal.TabIndex = 3;
             // 
             // txtActivosFijos
             // 
             txtActivosFijos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtActivosFijos.Location = new Point(220, 68);
+            txtActivosFijos.Location = new Point(192, 51);
+            txtActivosFijos.Margin = new Padding(3, 2, 3, 2);
             txtActivosFijos.Name = "txtActivosFijos";
-            txtActivosFijos.Size = new Size(156, 27);
+            txtActivosFijos.Size = new Size(137, 23);
             txtActivosFijos.TabIndex = 4;
             // 
             // txtCapitalContable
             // 
             txtCapitalContable.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCapitalContable.Location = new Point(27, 369);
+            txtCapitalContable.Location = new Point(24, 277);
+            txtCapitalContable.Margin = new Padding(3, 2, 3, 2);
             txtCapitalContable.Name = "txtCapitalContable";
-            txtCapitalContable.Size = new Size(156, 27);
+            txtCapitalContable.Size = new Size(137, 23);
             txtCapitalContable.TabIndex = 5;
             // 
             // txtInventario
             // 
             txtInventario.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtInventario.Location = new Point(226, 145);
+            txtInventario.Location = new Point(198, 109);
+            txtInventario.Margin = new Padding(3, 2, 3, 2);
             txtInventario.Name = "txtInventario";
-            txtInventario.Size = new Size(156, 27);
+            txtInventario.Size = new Size(137, 23);
             txtInventario.TabIndex = 6;
             // 
             // txtCuentasPorCobrar
             // 
             txtCuentasPorCobrar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCuentasPorCobrar.Location = new Point(24, 225);
+            txtCuentasPorCobrar.Location = new Point(21, 169);
+            txtCuentasPorCobrar.Margin = new Padding(3, 2, 3, 2);
             txtCuentasPorCobrar.Name = "txtCuentasPorCobrar";
-            txtCuentasPorCobrar.Size = new Size(156, 27);
+            txtCuentasPorCobrar.Size = new Size(137, 23);
             txtCuentasPorCobrar.TabIndex = 7;
             // 
             // label1
@@ -184,9 +192,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(6, 34);
+            label1.Location = new Point(5, 26);
             label1.Name = "label1";
-            label1.Size = new Size(187, 31);
+            label1.Size = new Size(155, 25);
             label1.TabIndex = 8;
             label1.Text = "Activo Circulante";
             // 
@@ -195,9 +203,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(222, 191);
+            label2.Location = new Point(194, 143);
             label2.Name = "label2";
-            label2.Size = new Size(187, 31);
+            label2.Size = new Size(156, 25);
             label2.TabIndex = 9;
             label2.Text = "Pasivo Circulante";
             // 
@@ -206,9 +214,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(230, 262);
+            label3.Location = new Point(201, 196);
             label3.Name = "label3";
-            label3.Size = new Size(133, 31);
+            label3.Size = new Size(110, 25);
             label3.TabIndex = 10;
             label3.Text = "Pasivo Total";
             // 
@@ -217,9 +225,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(26, 111);
+            label4.Location = new Point(23, 83);
             label4.Name = "label4";
-            label4.Size = new Size(133, 31);
+            label4.Size = new Size(109, 25);
             label4.TabIndex = 11;
             label4.Text = "Activo Total";
             // 
@@ -228,9 +236,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(230, 34);
+            label5.Location = new Point(201, 26);
             label5.Name = "label5";
-            label5.Size = new Size(140, 31);
+            label5.Size = new Size(115, 25);
             label5.TabIndex = 12;
             label5.Text = "Activos Fijos";
             // 
@@ -239,9 +247,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(18, 340);
+            label6.Location = new Point(16, 255);
             label6.Name = "label6";
-            label6.Size = new Size(184, 31);
+            label6.Size = new Size(152, 25);
             label6.TabIndex = 13;
             label6.Text = "Capital Contable";
             // 
@@ -250,9 +258,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(252, 111);
+            label7.Location = new Point(220, 83);
             label7.Name = "label7";
-            label7.Size = new Size(116, 31);
+            label7.Size = new Size(97, 25);
             label7.TabIndex = 14;
             label7.Text = "Inventario";
             // 
@@ -261,58 +269,64 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(9, 191);
+            label8.Location = new Point(8, 143);
             label8.Name = "label8";
-            label8.Size = new Size(210, 31);
+            label8.Size = new Size(176, 25);
             label8.TabIndex = 15;
             label8.Text = "Cuentas Por Cobrar";
             // 
             // txtVentasNetas
             // 
             txtVentasNetas.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtVentasNetas.Location = new Point(57, 68);
+            txtVentasNetas.Location = new Point(50, 51);
+            txtVentasNetas.Margin = new Padding(3, 2, 3, 2);
             txtVentasNetas.Name = "txtVentasNetas";
-            txtVentasNetas.Size = new Size(156, 27);
+            txtVentasNetas.Size = new Size(137, 23);
             txtVentasNetas.TabIndex = 20;
             // 
             // txtCostoVentas
             // 
             txtCostoVentas.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCostoVentas.Location = new Point(273, 145);
+            txtCostoVentas.Location = new Point(239, 109);
+            txtCostoVentas.Margin = new Padding(3, 2, 3, 2);
             txtCostoVentas.Name = "txtCostoVentas";
-            txtCostoVentas.Size = new Size(156, 27);
+            txtCostoVentas.Size = new Size(137, 23);
             txtCostoVentas.TabIndex = 21;
             // 
             // txtUtilidadOperativa
             // 
             txtUtilidadOperativa.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUtilidadOperativa.Location = new Point(64, 145);
+            txtUtilidadOperativa.Location = new Point(56, 109);
+            txtUtilidadOperativa.Margin = new Padding(3, 2, 3, 2);
             txtUtilidadOperativa.Name = "txtUtilidadOperativa";
-            txtUtilidadOperativa.Size = new Size(156, 27);
+            txtUtilidadOperativa.Size = new Size(137, 23);
             txtUtilidadOperativa.TabIndex = 22;
             // 
             // txtCapitalSocial
             // 
             txtCapitalSocial.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCapitalSocial.Location = new Point(230, 374);
+            txtCapitalSocial.Location = new Point(201, 280);
+            txtCapitalSocial.Margin = new Padding(3, 2, 3, 2);
             txtCapitalSocial.Name = "txtCapitalSocial";
-            txtCapitalSocial.Size = new Size(156, 27);
+            txtCapitalSocial.Size = new Size(137, 23);
             txtCapitalSocial.TabIndex = 23;
             // 
             // txtUtilidadNeta
             // 
             txtUtilidadNeta.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUtilidadNeta.Location = new Point(273, 296);
+            txtUtilidadNeta.Location = new Point(239, 222);
+            txtUtilidadNeta.Margin = new Padding(3, 2, 3, 2);
             txtUtilidadNeta.Name = "txtUtilidadNeta";
-            txtUtilidadNeta.Size = new Size(156, 27);
+            txtUtilidadNeta.Size = new Size(137, 23);
             txtUtilidadNeta.TabIndex = 24;
             // 
             // txtUtilidadAntesImpuestos
             // 
             txtUtilidadAntesImpuestos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUtilidadAntesImpuestos.Location = new Point(273, 219);
+            txtUtilidadAntesImpuestos.Location = new Point(239, 164);
+            txtUtilidadAntesImpuestos.Margin = new Padding(3, 2, 3, 2);
             txtUtilidadAntesImpuestos.Name = "txtUtilidadAntesImpuestos";
-            txtUtilidadAntesImpuestos.Size = new Size(156, 27);
+            txtUtilidadAntesImpuestos.Size = new Size(137, 23);
             txtUtilidadAntesImpuestos.TabIndex = 25;
             // 
             // label12
@@ -320,9 +334,9 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(45, 111);
+            label12.Location = new Point(39, 83);
             label12.Name = "label12";
-            label12.Size = new Size(202, 31);
+            label12.Size = new Size(165, 25);
             label12.TabIndex = 26;
             label12.Text = "Utilidad Operativa";
             // 
@@ -331,9 +345,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
-            label13.Location = new Point(265, 111);
+            label13.Location = new Point(232, 83);
             label13.Name = "label13";
-            label13.Size = new Size(178, 31);
+            label13.Size = new Size(147, 25);
             label13.TabIndex = 27;
             label13.Text = "Costo de Ventas";
             // 
@@ -342,9 +356,9 @@
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(63, 34);
+            label14.Location = new Point(55, 26);
             label14.Name = "label14";
-            label14.Size = new Size(147, 31);
+            label14.Size = new Size(121, 25);
             label14.TabIndex = 28;
             label14.Text = "Ventas Netas";
             // 
@@ -353,9 +367,9 @@
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.White;
-            label15.Location = new Point(230, 340);
+            label15.Location = new Point(201, 255);
             label15.Name = "label15";
-            label15.Size = new Size(152, 31);
+            label15.Size = new Size(126, 25);
             label15.TabIndex = 29;
             label15.Text = "Capital Social";
             // 
@@ -364,20 +378,20 @@
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(247, 185);
+            label16.Location = new Point(233, 137);
             label16.Name = "label16";
-            label16.Size = new Size(304, 31);
+            label16.Size = new Size(147, 25);
             label16.TabIndex = 30;
-            label16.Text = "Utilidad Antes de Impuestos";
+            label16.Text = "Utilidad.Ant.Imp";
             // 
             // label17
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(278, 262);
+            label17.Location = new Point(243, 196);
             label17.Name = "label17";
-            label17.Size = new Size(151, 31);
+            label17.Size = new Size(123, 25);
             label17.TabIndex = 31;
             label17.Text = "Utilidad Neta";
             // 
@@ -387,9 +401,10 @@
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.ForeColor = SystemColors.ControlText;
-            btnAgregar.Location = new Point(61, 488);
+            btnAgregar.Location = new Point(53, 366);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(131, 44);
+            btnAgregar.Size = new Size(115, 33);
             btnAgregar.TabIndex = 32;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -401,9 +416,10 @@
             btnEliminar.FlatStyle = FlatStyle.Popup;
             btnEliminar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = SystemColors.ControlText;
-            btnEliminar.Location = new Point(1082, 488);
+            btnEliminar.Location = new Point(766, 367);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(131, 44);
+            btnEliminar.Size = new Size(115, 33);
             btnEliminar.TabIndex = 34;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -415,9 +431,10 @@
             btnActualizar.FlatStyle = FlatStyle.Popup;
             btnActualizar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnActualizar.ForeColor = SystemColors.ControlText;
-            btnActualizar.Location = new Point(453, 488);
+            btnActualizar.Location = new Point(396, 366);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(131, 44);
+            btnActualizar.Size = new Size(115, 33);
             btnActualizar.TabIndex = 35;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = false;
@@ -428,17 +445,18 @@
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.White;
-            label18.Location = new Point(695, 12);
+            label18.Location = new Point(608, 9);
             label18.Name = "label18";
-            label18.Size = new Size(130, 41);
+            label18.Size = new Size(105, 32);
             label18.TabIndex = 36;
             label18.Text = "Cuentas";
             // 
             // txtNombreEmpresa
             // 
-            txtNombreEmpresa.Location = new Point(749, 81);
+            txtNombreEmpresa.Location = new Point(655, 61);
+            txtNombreEmpresa.Margin = new Padding(3, 2, 3, 2);
             txtNombreEmpresa.Name = "txtNombreEmpresa";
-            txtNombreEmpresa.Size = new Size(187, 27);
+            txtNombreEmpresa.Size = new Size(164, 23);
             txtNombreEmpresa.TabIndex = 38;
             // 
             // groupBox1
@@ -465,9 +483,11 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(35, 44);
+            groupBox1.Location = new Point(31, 33);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(418, 438);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(366, 328);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
             groupBox1.Text = "Balance General";
@@ -477,18 +497,19 @@
             label19.AutoSize = true;
             label19.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label19.ForeColor = Color.White;
-            label19.Location = new Point(-4, 262);
+            label19.Location = new Point(-4, 196);
             label19.Name = "label19";
-            label19.Size = new Size(223, 31);
+            label19.Size = new Size(186, 25);
             label19.TabIndex = 19;
             label19.Text = "Pasivo No Circulante";
             // 
             // txtPasivoNoCirculante
             // 
             txtPasivoNoCirculante.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPasivoNoCirculante.Location = new Point(24, 296);
+            txtPasivoNoCirculante.Location = new Point(21, 222);
+            txtPasivoNoCirculante.Margin = new Padding(3, 2, 3, 2);
             txtPasivoNoCirculante.Name = "txtPasivoNoCirculante";
-            txtPasivoNoCirculante.Size = new Size(156, 27);
+            txtPasivoNoCirculante.Size = new Size(137, 23);
             txtPasivoNoCirculante.TabIndex = 18;
             // 
             // groupBox2
@@ -511,9 +532,11 @@
             groupBox2.Controls.Add(txtUtilidadNeta);
             groupBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox2.ForeColor = Color.White;
-            groupBox2.Location = new Point(478, 135);
+            groupBox2.Location = new Point(418, 101);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(554, 347);
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(401, 260);
             groupBox2.TabIndex = 41;
             groupBox2.TabStop = false;
             groupBox2.Text = "Estado de Resultado";
@@ -523,9 +546,9 @@
             label23.AutoSize = true;
             label23.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.White;
-            label23.Location = new Point(45, 262);
+            label23.Location = new Point(39, 196);
             label23.Name = "label23";
-            label23.Size = new Size(213, 31);
+            label23.Size = new Size(177, 25);
             label23.TabIndex = 48;
             label23.Text = "Cargo por intereses";
             // 
@@ -534,9 +557,9 @@
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(57, 185);
+            label22.Location = new Point(50, 139);
             label22.Name = "label22";
-            label22.Size = new Size(173, 31);
+            label22.Size = new Size(140, 25);
             label22.TabIndex = 47;
             label22.Text = "Ut.Ant.Imp.E.Int";
             // 
@@ -545,34 +568,37 @@
             label20.AutoSize = true;
             label20.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.White;
-            label20.Location = new Point(257, 34);
+            label20.Location = new Point(225, 26);
             label20.Name = "label20";
-            label20.Size = new Size(187, 31);
+            label20.Size = new Size(155, 25);
             label20.TabIndex = 34;
             label20.Text = "Ventas al Credito";
             // 
             // txtCargosporIntereses
             // 
             txtCargosporIntereses.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtCargosporIntereses.Location = new Point(71, 296);
+            txtCargosporIntereses.Location = new Point(62, 222);
+            txtCargosporIntereses.Margin = new Padding(3, 2, 3, 2);
             txtCargosporIntereses.Name = "txtCargosporIntereses";
-            txtCargosporIntereses.Size = new Size(156, 27);
+            txtCargosporIntereses.Size = new Size(137, 23);
             txtCargosporIntereses.TabIndex = 43;
             // 
             // txtUtilidadAntesDeInteresesImpuestos
             // 
             txtUtilidadAntesDeInteresesImpuestos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUtilidadAntesDeInteresesImpuestos.Location = new Point(63, 219);
+            txtUtilidadAntesDeInteresesImpuestos.Location = new Point(55, 164);
+            txtUtilidadAntesDeInteresesImpuestos.Margin = new Padding(3, 2, 3, 2);
             txtUtilidadAntesDeInteresesImpuestos.Name = "txtUtilidadAntesDeInteresesImpuestos";
-            txtUtilidadAntesDeInteresesImpuestos.Size = new Size(156, 27);
+            txtUtilidadAntesDeInteresesImpuestos.Size = new Size(137, 23);
             txtUtilidadAntesDeInteresesImpuestos.TabIndex = 44;
             // 
             // txtVentasCredito
             // 
             txtVentasCredito.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtVentasCredito.Location = new Point(273, 68);
+            txtVentasCredito.Location = new Point(239, 51);
+            txtVentasCredito.Margin = new Padding(3, 2, 3, 2);
             txtVentasCredito.Name = "txtVentasCredito";
-            txtVentasCredito.Size = new Size(156, 27);
+            txtVentasCredito.Size = new Size(137, 23);
             txtVentasCredito.TabIndex = 20;
             // 
             // label10
@@ -580,17 +606,17 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(478, 78);
+            label10.Location = new Point(418, 58);
             label10.Name = "label10";
-            label10.Size = new Size(248, 31);
+            label10.Size = new Size(204, 25);
             label10.TabIndex = 18;
             label10.Text = "Nombre de la Empresa";
             // 
             // panel1
             // 
             panel1.Controls.Add(btnGetCuentas);
-            panel1.Controls.Add(groupBox3);
             panel1.Controls.Add(dgv);
+            panel1.Controls.Add(groupBox3);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(txtNombreEmpresa);
             panel1.Controls.Add(btnActualizar);
@@ -599,9 +625,10 @@
             panel1.Controls.Add(label18);
             panel1.Controls.Add(btnAgregar);
             panel1.Controls.Add(groupBox1);
-            panel1.Location = new Point(365, -3);
+            panel1.Location = new Point(264, 11);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1460, 743);
+            panel1.Size = new Size(1278, 557);
             panel1.TabIndex = 42;
             // 
             // btnGetCuentas
@@ -610,9 +637,10 @@
             btnGetCuentas.FlatStyle = FlatStyle.Popup;
             btnGetCuentas.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGetCuentas.ForeColor = SystemColors.ControlText;
-            btnGetCuentas.Location = new Point(971, 71);
+            btnGetCuentas.Location = new Point(862, 33);
+            btnGetCuentas.Margin = new Padding(3, 2, 3, 2);
             btnGetCuentas.Name = "btnGetCuentas";
-            btnGetCuentas.Size = new Size(394, 44);
+            btnGetCuentas.Size = new Size(176, 62);
             btnGetCuentas.TabIndex = 44;
             btnGetCuentas.Text = "Obtener cuentas de la empresa";
             btnGetCuentas.UseVisualStyleBackColor = false;
@@ -628,9 +656,11 @@
             groupBox3.Controls.Add(txtAccionesenCirculacion);
             groupBox3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox3.ForeColor = Color.White;
-            groupBox3.Location = new Point(1082, 135);
+            groupBox3.Location = new Point(825, 117);
+            groupBox3.Margin = new Padding(3, 2, 3, 2);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(342, 273);
+            groupBox3.Padding = new Padding(3, 2, 3, 2);
+            groupBox3.Size = new Size(281, 205);
             groupBox3.TabIndex = 43;
             groupBox3.TabStop = false;
             groupBox3.Text = "Otras Cuentas";
@@ -640,18 +670,19 @@
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.White;
-            label26.Location = new Point(6, 185);
+            label26.Location = new Point(5, 139);
             label26.Name = "label26";
-            label26.Size = new Size(328, 31);
+            label26.Size = new Size(272, 25);
             label26.TabIndex = 23;
             label26.Text = "Precio del Mercado por Accion";
             // 
             // txtPreciodelMercadoPorAccion
             // 
             txtPreciodelMercadoPorAccion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtPreciodelMercadoPorAccion.Location = new Point(80, 219);
+            txtPreciodelMercadoPorAccion.Location = new Point(70, 164);
+            txtPreciodelMercadoPorAccion.Margin = new Padding(3, 2, 3, 2);
             txtPreciodelMercadoPorAccion.Name = "txtPreciodelMercadoPorAccion";
-            txtPreciodelMercadoPorAccion.Size = new Size(156, 27);
+            txtPreciodelMercadoPorAccion.Size = new Size(137, 23);
             txtPreciodelMercadoPorAccion.TabIndex = 21;
             // 
             // label25
@@ -659,9 +690,9 @@
             label25.AutoSize = true;
             label25.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.ForeColor = Color.White;
-            label25.Location = new Point(28, 111);
+            label25.Location = new Point(24, 83);
             label25.Name = "label25";
-            label25.Size = new Size(255, 31);
+            label25.Size = new Size(213, 25);
             label25.TabIndex = 22;
             label25.Text = "Acciones en Circulacion";
             // 
@@ -670,26 +701,28 @@
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.White;
-            label24.Location = new Point(28, 34);
+            label24.Location = new Point(24, 26);
             label24.Name = "label24";
-            label24.Size = new Size(266, 31);
+            label24.Size = new Size(219, 25);
             label24.TabIndex = 20;
             label24.Text = "UN Accionistas comunes";
             // 
             // txtUtilidadNetaparaAccionista
             // 
             txtUtilidadNetaparaAccionista.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtUtilidadNetaparaAccionista.Location = new Point(80, 68);
+            txtUtilidadNetaparaAccionista.Location = new Point(70, 51);
+            txtUtilidadNetaparaAccionista.Margin = new Padding(3, 2, 3, 2);
             txtUtilidadNetaparaAccionista.Name = "txtUtilidadNetaparaAccionista";
-            txtUtilidadNetaparaAccionista.Size = new Size(156, 27);
+            txtUtilidadNetaparaAccionista.Size = new Size(137, 23);
             txtUtilidadNetaparaAccionista.TabIndex = 20;
             // 
             // txtAccionesenCirculacion
             // 
             txtAccionesenCirculacion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAccionesenCirculacion.Location = new Point(80, 145);
+            txtAccionesenCirculacion.Location = new Point(70, 109);
+            txtAccionesenCirculacion.Margin = new Padding(3, 2, 3, 2);
             txtAccionesenCirculacion.Name = "txtAccionesenCirculacion";
-            txtAccionesenCirculacion.Size = new Size(156, 27);
+            txtAccionesenCirculacion.Size = new Size(137, 23);
             txtAccionesenCirculacion.TabIndex = 21;
             // 
             // dgv
@@ -699,12 +732,13 @@
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv.Columns.AddRange(new DataGridViewColumn[] { iDCuentasDeRazonesDataGridViewTextBoxColumn, nombreDeLaEmpresaDataGridViewTextBoxColumn, activoCirculanteDataGridViewTextBoxColumn, activoFijoDataGridViewTextBoxColumn, activoTotalDataGridViewTextBoxColumn, inventarioDataGridViewTextBoxColumn, cuentasPorCobrarDataGridViewTextBoxColumn, pasivoCirculanteDataGridViewTextBoxColumn, pasivoNoCirculanteDataGridViewTextBoxColumn, pasivoTotalDataGridViewTextBoxColumn, capitalContableDataGridViewTextBoxColumn, capitalSocialDataGridViewTextBoxColumn, ventasCreditoDataGridViewTextBoxColumn, ventasNetasDataGridViewTextBoxColumn, costoVentasDataGridViewTextBoxColumn, utilidadOperativaDataGridViewTextBoxColumn, utilidadAntesDeImpuestosDataGridViewTextBoxColumn, utilidadNetaDataGridViewTextBoxColumn, utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn, cargosporInteresesDataGridViewTextBoxColumn, utilidadNetaparaAccionistaDataGridViewTextBoxColumn, accionesenCirculacionDataGridViewTextBoxColumn, preciodelMercadoporAccionDataGridViewTextBoxColumn });
             dgv.DataSource = cuentaDeLasRazonesBindingSource;
-            dgv.Location = new Point(80, 538);
+            dgv.Location = new Point(0, 401);
+            dgv.Margin = new Padding(3, 2, 3, 2);
             dgv.Name = "dgv";
             dgv.ReadOnly = true;
             dgv.RowHeadersWidth = 51;
             dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.Size = new Size(1429, 205);
+            dgv.Size = new Size(1048, 154);
             dgv.TabIndex = 42;
             dgv.CellContentClick += dgv_CellContentClick;
             // 
@@ -921,11 +955,12 @@
             // 
             // CuentasRazonesForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1801, 1055);
+            ClientSize = new Size(1304, 562);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "CuentasRazonesForm";
             Text = "CuentasRazonesForm";
             Load += CuentasRazonesForm_Load;

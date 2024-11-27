@@ -49,7 +49,7 @@
             dgvClasificaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClasificaciones.Columns.AddRange(new DataGridViewColumn[] { iDClasificacionDataGridViewTextBoxColumn, descripcionDataGridViewTextBoxColumn });
             dgvClasificaciones.DataSource = clasificacionBindingSource;
-            dgvClasificaciones.Location = new Point(551, 153);
+            dgvClasificaciones.Location = new Point(642, 110);
             dgvClasificaciones.Margin = new Padding(3, 2, 3, 2);
             dgvClasificaciones.Name = "dgvClasificaciones";
             dgvClasificaciones.ReadOnly = true;
@@ -94,7 +94,7 @@
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregar.ForeColor = Color.Black;
-            btnAgregar.Location = new Point(863, 184);
+            btnAgregar.Location = new Point(954, 141);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(121, 52);
@@ -105,7 +105,7 @@
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(637, 104);
+            txtDescripcion.Location = new Point(728, 61);
             txtDescripcion.Margin = new Padding(3, 2, 3, 2);
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(141, 23);
@@ -116,7 +116,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(659, 81);
+            label2.Location = new Point(750, 38);
             label2.Name = "label2";
             label2.Size = new Size(91, 21);
             label2.TabIndex = 6;
@@ -127,7 +127,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(579, 52);
+            label1.Location = new Point(670, 9);
             label1.Name = "label1";
             label1.Size = new Size(261, 30);
             label1.TabIndex = 7;

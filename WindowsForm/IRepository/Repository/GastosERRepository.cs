@@ -104,18 +104,18 @@ namespace WindowsForm.IRepository.Repository
             return gastos;
         }
 
-        public void Update(Models.Gasto gastos)
+        public void Update(Gasto gastos)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 string query = "UPDATE GastosER SET ID_DatosER = @ID_DatosER, ID_Clasificacion = @ID_Clasificacion, " +
-                               "NombreDeCuenta = @NombreDeCuenta, Monto = @Monto " +
+                               "Nombre = @NombreDeCuenta, Monto = @Monto " +
                                "WHERE ID_GastosER = @ID_Gastos";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@ID_Gastos", gastos.ID_Gastos);
                 command.Parameters.AddWithValue("@ID_DatosER", gastos.ID_DatosER);
                 command.Parameters.AddWithValue("@ID_Clasificacion", gastos.ID_Clasificacion);
-                command.Parameters.AddWithValue("@NombreDeCuenta", gastos.NombreDeCuenta ?? (object)DBNull.Value);
+                command.Parameters.AddWithValue("@NombreDeCuenta", gastos.NombreDeCuenta);
                 command.Parameters.AddWithValue("@Monto", gastos.Monto);
 
                 connection.Open();
