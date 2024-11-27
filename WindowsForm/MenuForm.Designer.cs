@@ -48,10 +48,9 @@
             btnRegistro.ForeColor = Color.White;
             btnRegistro.Image = (Image)resources.GetObject("btnRegistro.Image");
             btnRegistro.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistro.Location = new Point(10, 28);
-            btnRegistro.Margin = new Padding(3, 2, 3, 2);
+            btnRegistro.Location = new Point(11, 37);
             btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(258, 46);
+            btnRegistro.Size = new Size(295, 61);
             btnRegistro.TabIndex = 0;
             btnRegistro.Text = "Balance General";
             btnRegistro.UseVisualStyleBackColor = false;
@@ -62,9 +61,8 @@
             panelTitulo.BackColor = Color.FromArgb(0, 80, 200);
             panelTitulo.Dock = DockStyle.Top;
             panelTitulo.Location = new Point(0, 0);
-            panelTitulo.Margin = new Padding(3, 2, 3, 2);
             panelTitulo.Name = "panelTitulo";
-            panelTitulo.Size = new Size(1199, 32);
+            panelTitulo.Size = new Size(1546, 43);
             panelTitulo.TabIndex = 5;
             // 
             // panel2
@@ -74,10 +72,9 @@
             panel2.Controls.Add(btnRazonesFinancieras);
             panel2.Controls.Add(btnRegistro);
             panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 32);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(0, 43);
             panel2.Name = "panel2";
-            panel2.Size = new Size(229, 530);
+            panel2.Size = new Size(262, 738);
             panel2.TabIndex = 6;
             // 
             // btnER
@@ -90,10 +87,9 @@
             btnER.ForeColor = Color.White;
             btnER.Image = (Image)resources.GetObject("btnER.Image");
             btnER.ImageAlign = ContentAlignment.MiddleLeft;
-            btnER.Location = new Point(10, 86);
-            btnER.Margin = new Padding(3, 2, 3, 2);
+            btnER.Location = new Point(11, 115);
             btnER.Name = "btnER";
-            btnER.Size = new Size(203, 71);
+            btnER.Size = new Size(232, 95);
             btnER.TabIndex = 7;
             btnER.Text = "Estado de Resultado";
             btnER.UseVisualStyleBackColor = false;
@@ -109,10 +105,9 @@
             btnRazonesFinancieras.ForeColor = Color.White;
             btnRazonesFinancieras.Image = (Image)resources.GetObject("btnRazonesFinancieras.Image");
             btnRazonesFinancieras.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRazonesFinancieras.Location = new Point(10, 146);
-            btnRazonesFinancieras.Margin = new Padding(3, 2, 3, 2);
+            btnRazonesFinancieras.Location = new Point(11, 195);
             btnRazonesFinancieras.Name = "btnRazonesFinancieras";
-            btnRazonesFinancieras.Size = new Size(203, 97);
+            btnRazonesFinancieras.Size = new Size(232, 129);
             btnRazonesFinancieras.TabIndex = 6;
             btnRazonesFinancieras.Text = "Razones Financieras";
             btnRazonesFinancieras.UseVisualStyleBackColor = false;
@@ -123,22 +118,20 @@
             panelContenedor.BackColor = Color.FromArgb(49, 66, 82);
             panelContenedor.Dock = DockStyle.Fill;
             panelContenedor.Location = new Point(0, 0);
-            panelContenedor.Margin = new Padding(3, 2, 3, 2);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(1199, 562);
+            panelContenedor.Size = new Size(1546, 781);
             panelContenedor.TabIndex = 0;
             // 
             // MenuForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1546, 781);
             Controls.Add(panel2);
             Controls.Add(panelTitulo);
             Controls.Add(panelContenedor);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "MenuForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";

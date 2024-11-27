@@ -48,7 +48,7 @@
             txtVentasNetas = new TextBox();
             txtCostoVentas = new TextBox();
             txtUtilidadOperativa = new TextBox();
-            txtVentas = new TextBox();
+            txtCapitalSocial = new TextBox();
             txtUtilidadNeta = new TextBox();
             txtUtilidadAntesImpuestos = new TextBox();
             label12 = new Label();
@@ -74,6 +74,7 @@
             txtVentasCredito = new TextBox();
             label10 = new Label();
             panel1 = new Panel();
+            btnGetCuentas = new Button();
             groupBox3 = new GroupBox();
             label26 = new Label();
             txtPreciodelMercadoPorAccion = new TextBox();
@@ -82,7 +83,6 @@
             txtUtilidadNetaparaAccionista = new TextBox();
             txtAccionesenCirculacion = new TextBox();
             dgv = new DataGridView();
-            cuentaDeLasRazonesBindingSource = new BindingSource(components);
             iDCuentasDeRazonesDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             nombreDeLaEmpresaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             activoCirculanteDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -106,6 +106,7 @@
             utilidadNetaparaAccionistaDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             accionesenCirculacionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             preciodelMercadoporAccionDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cuentaDeLasRazonesBindingSource = new BindingSource(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
@@ -290,13 +291,13 @@
             txtUtilidadOperativa.Size = new Size(156, 27);
             txtUtilidadOperativa.TabIndex = 22;
             // 
-            // txtVentas
+            // txtCapitalSocial
             // 
-            txtVentas.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtVentas.Location = new Point(230, 374);
-            txtVentas.Name = "txtVentas";
-            txtVentas.Size = new Size(156, 27);
-            txtVentas.TabIndex = 23;
+            txtCapitalSocial.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCapitalSocial.Location = new Point(230, 374);
+            txtCapitalSocial.Name = "txtCapitalSocial";
+            txtCapitalSocial.Size = new Size(156, 27);
+            txtCapitalSocial.TabIndex = 23;
             // 
             // txtUtilidadNeta
             // 
@@ -459,7 +460,7 @@
             groupBox1.Controls.Add(label15);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(txtVentas);
+            groupBox1.Controls.Add(txtCapitalSocial);
             groupBox1.Controls.Add(txtCuentasPorCobrar);
             groupBox1.Controls.Add(label8);
             groupBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -533,11 +534,11 @@
             label22.AutoSize = true;
             label22.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.White;
-            label22.Location = new Point(121, 185);
+            label22.Location = new Point(57, 185);
             label22.Name = "label22";
-            label22.Size = new Size(42, 31);
+            label22.Size = new Size(173, 31);
             label22.TabIndex = 47;
-            label22.Text = "UII";
+            label22.Text = "Ut.Ant.Imp.E.Int";
             // 
             // label20
             // 
@@ -587,6 +588,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnGetCuentas);
             panel1.Controls.Add(groupBox3);
             panel1.Controls.Add(dgv);
             panel1.Controls.Add(label10);
@@ -601,6 +603,20 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1460, 743);
             panel1.TabIndex = 42;
+            // 
+            // btnGetCuentas
+            // 
+            btnGetCuentas.BackColor = Color.SeaGreen;
+            btnGetCuentas.FlatStyle = FlatStyle.Popup;
+            btnGetCuentas.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGetCuentas.ForeColor = SystemColors.ControlText;
+            btnGetCuentas.Location = new Point(971, 71);
+            btnGetCuentas.Name = "btnGetCuentas";
+            btnGetCuentas.Size = new Size(394, 44);
+            btnGetCuentas.TabIndex = 44;
+            btnGetCuentas.Text = "Obtener cuentas de la empresa";
+            btnGetCuentas.UseVisualStyleBackColor = false;
+            btnGetCuentas.Click += btnGetCuentas_Click;
             // 
             // groupBox3
             // 
@@ -683,19 +699,14 @@
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv.Columns.AddRange(new DataGridViewColumn[] { iDCuentasDeRazonesDataGridViewTextBoxColumn, nombreDeLaEmpresaDataGridViewTextBoxColumn, activoCirculanteDataGridViewTextBoxColumn, activoFijoDataGridViewTextBoxColumn, activoTotalDataGridViewTextBoxColumn, inventarioDataGridViewTextBoxColumn, cuentasPorCobrarDataGridViewTextBoxColumn, pasivoCirculanteDataGridViewTextBoxColumn, pasivoNoCirculanteDataGridViewTextBoxColumn, pasivoTotalDataGridViewTextBoxColumn, capitalContableDataGridViewTextBoxColumn, capitalSocialDataGridViewTextBoxColumn, ventasCreditoDataGridViewTextBoxColumn, ventasNetasDataGridViewTextBoxColumn, costoVentasDataGridViewTextBoxColumn, utilidadOperativaDataGridViewTextBoxColumn, utilidadAntesDeImpuestosDataGridViewTextBoxColumn, utilidadNetaDataGridViewTextBoxColumn, utilidadAntesDeInteresesImpuestosDataGridViewTextBoxColumn, cargosporInteresesDataGridViewTextBoxColumn, utilidadNetaparaAccionistaDataGridViewTextBoxColumn, accionesenCirculacionDataGridViewTextBoxColumn, preciodelMercadoporAccionDataGridViewTextBoxColumn });
             dgv.DataSource = cuentaDeLasRazonesBindingSource;
-            dgv.Dock = DockStyle.Bottom;
-            dgv.Location = new Point(0, 538);
+            dgv.Location = new Point(80, 538);
             dgv.Name = "dgv";
             dgv.ReadOnly = true;
             dgv.RowHeadersWidth = 51;
             dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv.Size = new Size(1460, 205);
+            dgv.Size = new Size(1429, 205);
             dgv.TabIndex = 42;
             dgv.CellContentClick += dgv_CellContentClick;
-            // 
-            // cuentaDeLasRazonesBindingSource
-            // 
-            cuentaDeLasRazonesBindingSource.DataSource = typeof(Models.CuentaDeLasRazones);
             // 
             // iDCuentasDeRazonesDataGridViewTextBoxColumn
             // 
@@ -904,12 +915,16 @@
             preciodelMercadoporAccionDataGridViewTextBoxColumn.ReadOnly = true;
             preciodelMercadoporAccionDataGridViewTextBoxColumn.Width = 125;
             // 
+            // cuentaDeLasRazonesBindingSource
+            // 
+            cuentaDeLasRazonesBindingSource.DataSource = typeof(Models.CuentaDeLasRazones);
+            // 
             // CuentasRazonesForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(49, 66, 82);
-            ClientSize = new Size(1801, 1105);
+            ClientSize = new Size(1801, 1055);
             Controls.Add(panel1);
             Name = "CuentasRazonesForm";
             Text = "CuentasRazonesForm";
@@ -948,7 +963,7 @@
         private TextBox txtVentasNetas;
         private TextBox txtCostoVentas;
         private TextBox txtUtilidadOperativa;
-        private TextBox txtVentas;
+        private TextBox txtCapitalSocial;
         private TextBox txtUtilidadNeta;
         private TextBox txtUtilidadAntesImpuestos;
         private Label label12;
@@ -1006,5 +1021,6 @@
         private DataGridViewTextBoxColumn utilidadNetaparaAccionistaDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn accionesenCirculacionDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn preciodelMercadoporAccionDataGridViewTextBoxColumn;
+        private Button btnGetCuentas;
     }
 }

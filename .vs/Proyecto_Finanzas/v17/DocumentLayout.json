@@ -3,76 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\menuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\ActivosRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\IRepository\\Repository\\ActivosRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\calculosbalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\calculosbalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\activosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\activosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\Estado de Resultado Forms\\Gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\cuentasrazonesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\cuentasrazonesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\IBalanceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\IRepository\\IBalanceRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\balance general forms\\activosbalanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\ibalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\ibalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WindowsForm\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -107,19 +107,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PasivoCapitalRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
-              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwF8AAADYAAAAAAAAAA==",
+              "Title": "MenuForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\MenuForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\MenuForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\MenuForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\MenuForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:56:02.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T16:48:32.913Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CuentasRazonesForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "RelativeToolTip": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAgwCwBAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:45:42.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalculosBalanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwEMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:55:49.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ActivosBalanceForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAkwMwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:52:15.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ActivosRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\ActivosRepository.cs",
               "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\ActivosRepository.cs",
@@ -131,20 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ActivosBalanceForm.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
-              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
-              "ViewState": "AQIAAM8AAAAAAAAAAAAkwMwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:52:15.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Gastos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
@@ -155,43 +180,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CuentasRazonesForm.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
-              "RelativeToolTip": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAIwMYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:45:42.156Z",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
+              "RelativeDocumentMoniker": "WindowsForm\\App.config",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
+              "RelativeToolTip": "WindowsForm\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-27T01:42:22.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CuentasRazonesForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
-              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T15:45:39.356Z"
+              "WhenOpened": "2024-11-27T16:42:39.593Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CalculosBalanceRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
-              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwB8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T01:55:49.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Gastos.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
@@ -203,18 +217,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ActivosBalanceForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
-              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:56:07.619Z"
+              "WhenOpened": "2024-11-27T14:56:07.619Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CuentasRazonesRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
               "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
@@ -226,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PasivoCapitalBalanceForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
@@ -237,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PasivoCapitalBalanceForm.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
@@ -249,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ActivosBalanceForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
@@ -257,11 +272,12 @@
               "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
               "ViewState": "AQIAABkBAAAAAAAAAAAMwBkBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T14:55:59.057Z"
+              "WhenOpened": "2024-11-27T14:55:59.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IBalanceRepository.cs",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\IBalanceRepository.cs",
               "RelativeDocumentMoniker": "WindowsForm\\IRepository\\IBalanceRepository.cs",
@@ -273,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "MenuBalanceForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\MenuBalanceForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\MenuBalanceForm.cs",
@@ -284,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DatosBalanceForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\DatosBalanceForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\DatosBalanceForm.cs",
@@ -295,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ClasificacionesForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\ClasificacionesForm.cs",
               "RelativeDocumentMoniker": "WindowsForm\\ClasificacionesForm.cs",
@@ -303,18 +319,6 @@
               "RelativeToolTip": "..\\..\\..\\..\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\ClasificacionesForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T01:45:27.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
-              "RelativeDocumentMoniker": "WindowsForm\\App.config",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
-              "RelativeToolTip": "WindowsForm\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-27T01:42:22.031Z"
             }
           ]
         },

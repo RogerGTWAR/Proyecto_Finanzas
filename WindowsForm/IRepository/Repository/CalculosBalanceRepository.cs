@@ -63,6 +63,10 @@ namespace WindowsForm.IRepository.Repository
             return ExecuteFunction("dbo.ObtenerInventario", "@nombreBG", nombreBG);
         }
 
+        public decimal GetCuentasxCobrar(string nombreBG)
+        {
+            return ExecuteFunction("dbo.ObtenerCuentasxCobrar", "@nombreBG", nombreBG);
+        }
         public decimal GetTotalPasivos(string nombreBG)
         {
             return ExecuteFunction("dbo.SumarPasivosPorBalance", "@nombreBG", nombreBG);

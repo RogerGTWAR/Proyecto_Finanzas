@@ -18,11 +18,13 @@ namespace WindowsForm
     public partial class CuentasRazonesForm : Form
     {
         private readonly IRepository<CuentaDeLasRazones> cuentasRazonesrepository;
+        public CalculosBalanceRepository calculos;
         public CuentasRazonesForm()
         {
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             cuentasRazonesrepository = new CuentasRazonesRepository(connectionString);
+            calculos = new CalculosBalanceRepository(connectionString);
             RefreshData();
         }
 
@@ -76,7 +78,7 @@ namespace WindowsForm
                 string.IsNullOrWhiteSpace(txtUtilidadOperativa.Text) ||
                 string.IsNullOrWhiteSpace(txtVentasNetas.Text) ||
                 string.IsNullOrWhiteSpace(txtCostoVentas.Text) ||
-                string.IsNullOrWhiteSpace(txtVentas.Text) ||
+                string.IsNullOrWhiteSpace(txtCapitalSocial.Text) ||
                 string.IsNullOrWhiteSpace(txtUtilidadAntesImpuestos.Text) ||
                 string.IsNullOrWhiteSpace(txtUtilidadNeta.Text) ||
                 string.IsNullOrWhiteSpace(txtVentasCredito.Text) ||
@@ -107,7 +109,7 @@ namespace WindowsForm
                     UtilidadOperativa = Convert.ToDecimal(txtUtilidadOperativa.Text, CultureInfo.InvariantCulture),
                     VentasNetas = Convert.ToDecimal(txtVentasNetas.Text, CultureInfo.InvariantCulture),
                     CostoVentas = Convert.ToDecimal(txtCostoVentas.Text, CultureInfo.InvariantCulture),
-                    CapitalSocial = Convert.ToDecimal(txtVentas.Text, CultureInfo.InvariantCulture),
+                    CapitalSocial = Convert.ToDecimal(txtCapitalSocial.Text, CultureInfo.InvariantCulture),
                     UtilidadAntesDeImpuestos = Convert.ToDecimal(txtUtilidadAntesImpuestos.Text, CultureInfo.InvariantCulture),
                     UtilidadNeta = Convert.ToDecimal(txtUtilidadNeta.Text, CultureInfo.InvariantCulture),
                     VentasCredito = Convert.ToDecimal(txtVentasCredito.Text, CultureInfo.InvariantCulture),
@@ -150,7 +152,7 @@ namespace WindowsForm
                     !decimal.TryParse(txtUtilidadOperativa.Text, out decimal utilidadOperativa) ||
                     !decimal.TryParse(txtVentasNetas.Text, out decimal ventasNetas) ||
                     !decimal.TryParse(txtCostoVentas.Text, out decimal costoVentas) ||
-                    !decimal.TryParse(txtVentas.Text, out decimal ventas) ||
+                    !decimal.TryParse(txtCapitalSocial.Text, out decimal ventas) ||
                     !decimal.TryParse(txtUtilidadAntesImpuestos.Text, out decimal utilidadAntesImpuestos) ||
                     !decimal.TryParse(txtUtilidadNeta.Text, out decimal utilidadNeta) ||
                     !decimal.TryParse(txtVentasCredito.Text, out decimal ventasCredito) ||
@@ -195,7 +197,7 @@ namespace WindowsForm
                 MessageBox.Show($"Ocurrió un error al actualizar la cuenta: {ex.Message}");
             }
         }
-            
+
         private void LimpiarCampos()
         {
             txtNombreEmpresa.Clear();
@@ -211,7 +213,7 @@ namespace WindowsForm
             txtUtilidadOperativa.Clear();
             txtVentasNetas.Clear();
             txtCostoVentas.Clear();
-            txtVentas.Clear();
+            txtCapitalSocial.Clear();
             txtUtilidadAntesImpuestos.Clear();
             txtUtilidadNeta.Clear();
             txtVentasCredito.Clear();
@@ -247,7 +249,7 @@ namespace WindowsForm
                     txtPasivoTotal.Text = selectedRow.Cells["pasivoTotalDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
 
                     txtCapitalContable.Text = selectedRow.Cells["capitalContableDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
-                    txtVentas.Text = selectedRow.Cells["capitalSocialDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
+                    txtCapitalSocial.Text = selectedRow.Cells["capitalSocialDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
 
                     txtVentasCredito.Text = selectedRow.Cells["ventasCreditoDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
                     txtVentasNetas.Text = selectedRow.Cells["ventasNetasDataGridViewTextBoxColumn"].Value?.ToString() ?? string.Empty;
@@ -267,6 +269,42 @@ namespace WindowsForm
             catch (Exception ex)
             {
                 MessageBox.Show($"Error al seleccionar la fila: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnGetCuentas_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string nombre = txtNombreEmpresa.Text;
+
+                txtActivoCirculante.Text = calculos.GetTotalActivosCirculantes(nombre).ToString();
+                txtActivoTotal.Text = calculos.GetTotalActivos(nombre).ToString();
+                txtCuentasPorCobrar.Text = calculos.GetCuentasxCobrar(nombre).ToString();
+                txtPasivoNoCirculante.Text = calculos.GetPasivosNoCirculantes(nombre).ToString();
+                txtCapitalContable.Text = calculos.GetTotalCapital(nombre).ToString();
+                txtActivosFijos.Text = calculos.GetActivosFijos(nombre).ToString();
+                txtInventario.Text = calculos.GetInventario(nombre).ToString();
+                txtPasivoCirculante.Text = calculos.GetPasivosCirculantes(nombre).ToString();
+                txtPasivoTotal.Text = calculos.GetTotalPasivos(nombre).ToString();
+                txtCapitalSocial.Text = calculos.GetCapitalSocial(nombre).ToString();
+                txtVentasNetas.Text = calculos.GetVentasNetas(nombre).ToString();
+                txtUtilidadOperativa.Text = calculos.GetUtilidadOperativa(nombre).ToString();
+                txtUtilidadAntesDeInteresesImpuestos.Text = calculos.GetUtilidadAntesDeInteresesEImpuestos(nombre).ToString();
+                txtCargosporIntereses.Text = calculos.GetCargoPorIntereses(nombre).ToString();
+                txtVentasCredito.Text = calculos.GetVentasAlCredito(nombre).ToString();
+                txtCostoVentas.Text = calculos.GetCostoDeVenta(nombre).ToString();
+                txtUtilidadAntesImpuestos.Text = calculos.GetUtilidadAntesDeImpuestos(nombre).ToString();
+                txtUtilidadNeta.Text = calculos.GetUtilidadNeta(nombre).ToString();
+                txtUtilidadNetaparaAccionista.Text = calculos.GetUtilidadNetaParaAccionistas(nombre).ToString();
+                txtAccionesenCirculacion.Text = calculos.GetAccionesEnCirculacion(nombre).ToString();
+                txtPreciodelMercadoPorAccion.Text = calculos.GetPrecioMercadoPorAccion(nombre).ToString();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
