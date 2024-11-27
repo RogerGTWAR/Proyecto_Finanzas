@@ -1718,19 +1718,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wsofneell\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wsofneell\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
       "projectName": "WindowsForm",
-      "projectPath": "C:\\Users\\Wsofneell\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
-      "packagesPath": "C:\\Users\\Wsofneell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wsofneell\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\WindowsForm.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\Proyecto_Finanzas\\WindowsForm\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Wsofneell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1738,6 +1743,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1793,7 +1799,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

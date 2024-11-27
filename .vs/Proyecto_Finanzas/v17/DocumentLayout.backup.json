@@ -1,22 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\",
+  "WorkspaceRootPath": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas2\\windowsform\\estado de resultado forms\\menuerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\menuerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\pasivocapitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\pasivocapitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas2\\windowsform\\estado de resultado forms\\menuerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\menuerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\activosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\activosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas2\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\irepository\\repository\\calculosbalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\calculosbalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\gastos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\lenovo\\source\\repos\\proyecto_finanzas2\\windowsform\\estado de resultado forms\\erform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\estado de resultado forms\\erform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\irepository\\repository\\cuentasrazonesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\repository\\cuentasrazonesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\razones financieras forms\\cuentasrazonesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|c:\\users\\wsofneell\\source\\repos\\proyecto_finanzas\\windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\pasivocapitalbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\activosbalanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\activosbalanceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\irepository\\ibalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\irepository\\ibalancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\clasificacionesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\datosbalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\balance general forms\\menubalanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\windowsform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{67AD0FF0-F315-4C23-9E7A-24E18CAA9E34}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +82,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 233,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -47,52 +95,233 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MenuERForm.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwCMAAAAsAAAAAAAAAA==",
+              "Title": "PasivoCapitalRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs*",
+              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\PasivoCapitalRepository.cs*",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAIwF8AAADYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:51:25.528Z",
+              "WhenOpened": "2024-11-27T15:56:02.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuERForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\MenuERForm.cs [Dise\u00F1o]",
+              "Title": "ActivosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\ActivosRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\ActivosRepository.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\ActivosRepository.cs*",
+              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\ActivosRepository.cs*",
+              "ViewState": "AQIAALIAAAAAAAAAAAAYwF4AAADIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:51:21.644Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Gastos.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
-              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:46:28.481Z",
+              "WhenOpened": "2024-11-27T15:54:12.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ERForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\ERForm.cs",
-              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\ERForm.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Proyecto_Finanzas2\\WindowsForm\\Estado de Resultado Forms\\ERForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\ERForm.cs [Dise\u00F1o]",
+              "Title": "ActivosBalanceForm.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAkwMwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:46:03.366Z",
+              "WhenOpened": "2024-11-27T15:52:15.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Gastos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:46:38.334Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CuentasRazonesForm.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "RelativeToolTip": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAIwMYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:45:42.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CuentasRazonesForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Razones Financieras Forms\\CuentasRazonesForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:45:39.356Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalculosBalanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\CalculosBalanceRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwB8AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:55:49.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Gastos.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "RelativeToolTip": "WindowsForm\\Estado de Resultado Forms\\Gastos.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAkwDgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:46:41.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivosBalanceForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:56:07.619Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CuentasRazonesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
+              "RelativeToolTip": "WindowsForm\\IRepository\\Repository\\CuentasRazonesRepository.cs",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:48:29.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PasivoCapitalBalanceForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:09:01.83Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasivoCapitalBalanceForm.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\PasivoCapitalBalanceForm.cs",
+              "ViewState": "AQIAAAcBAAAAAAAAAIAwwB0BAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:36:37.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ActivosBalanceForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\ActivosBalanceForm.Designer.cs",
+              "ViewState": "AQIAABkBAAAAAAAAAAAMwBkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:55:59.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBalanceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\IBalanceRepository.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\IRepository\\IBalanceRepository.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\IRepository\\IBalanceRepository.cs",
+              "RelativeToolTip": "WindowsForm\\IRepository\\IBalanceRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAuwB4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T14:36:33.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MenuBalanceForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\MenuBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\MenuBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\MenuBalanceForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\MenuBalanceForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:40:19.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DatosBalanceForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\DatosBalanceForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\Balance General Forms\\DatosBalanceForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\Balance General Forms\\DatosBalanceForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\Balance General Forms\\DatosBalanceForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:40:50.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ClasificacionesForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\ClasificacionesForm.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\ClasificacionesForm.cs",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\ClasificacionesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsForm\\ClasificacionesForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T01:45:27.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
+              "RelativeDocumentMoniker": "WindowsForm\\App.config",
+              "ToolTip": "C:\\Users\\Wsofneell\\source\\repos\\Proyecto_Finanzas\\WindowsForm\\App.config",
+              "RelativeToolTip": "WindowsForm\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-27T01:42:22.031Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 218,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
